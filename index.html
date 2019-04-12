@@ -397,9 +397,9 @@
     <span lang="ko"> 불안정한 푯말들이 나와 타인, 우리와 그들에대한 경계의 불분명함을 나타낸다. 12,741km는 지구의 반지름이다. </span>
     </p>
 
-    <img class="carousel-cell-image" data-flickity-lazyload="works/imgs/other/circle_002.gif"
+    <img src="works/imgs/other/circle_002.gif"
     style="display: block; padding-bottom: 8px; transform: translateX(50%);">
-    <img class="carousel-cell-image" data-flickity-lazyload="works/imgs/other/circle_001.jpg"
+    <img src="works/imgs/other/circle_001.jpg"
     style="display: block; padding-bottom: 8px; transform: translateX(50%);width: 50%; height:auto;">
 
   </div>
@@ -484,7 +484,7 @@
     <div class="carousel-cell"> <img class="carousel-cell-image" data-flickity-lazyload="works/imgs/tck/004.jpg"></div>
     <div class="carousel-cell"> <img class="carousel-cell-image" data-flickity-lazyload="works/imgs/tck/005.jpg"></div>
   </div>
-  <div id="scroll" style="width:100%; "><img src="works/imgs/tck/006.jpg"
+  <div id="scroll" style="width:100%; "><img class="carousel-cell-image" data-flickity-lazyload="works/imgs/tck/006.jpg"
   style="display: block; padding-bottom: 8px; height:280px; width:auto;">
   </div>
 
@@ -509,15 +509,14 @@
       $(".info").toggle();
     });
   });
-
-  var $carousel = $('.carousel').flickity({
+  var flkty = new Flickity( '.carousel', {
   lazyLoad: true
-  });
+});
 
-  $carousel.on( 'lazyLoad.flickity', function( event, cellElement ) {
-    var img = event.originalEvent.target;
-    console.log( event.originalEvent.type, img.src );
-  });
+flkty.on( 'lazyLoad', function( event ) {
+  var img = event.target;
+  console.log( event.type, img.src );
+});
 
 
   // $(document).ready(function(){
