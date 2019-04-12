@@ -228,6 +228,10 @@ span:lang(ko){
   display: block;
 }
 
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
 /* draggable */
 
 .flickity-enabled.is-draggable {
