@@ -1,0 +1,354 @@
+@font-face {
+  font-family: "font";
+  src: url('NewParisSkyline-Regular.otf') format('opentype');
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: "font";
+  src: url('arita-Medium.otf') format('opentype');
+  unicode-range: U+1100-11FF, U+3130-318F, U+AC00-D7AF;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  height:100%;
+  width:100%;
+  background-color: white;
+  font-family: 'font';
+}
+
+span:lang(ko){
+    font-size: 14px;
+}
+
+
+#b_top{position:fixed;z-index:1000;top:0;left:0;border-bottom:1px solid black;}
+#b_bot{position:fixed;z-index:1000;bottom:0;border-top:1px solid black;}
+#b_left{position:fixed;z-index:1000;left:0;top:0;border-right:1px solid black;}
+#b_right{position:fixed;z-index:1000;right:0;top:0;border-left:1px solid black;}
+#b2_top{position:fixed;z-index:1000;top:0;left:0;}
+#b2_bot{position:fixed;z-index:1000;bottom:0;}
+#b2_left{position:fixed;z-index:1000;left:0;top:0;}
+#b2_right{position:fixed;z-index:1000;right:0;top:0;}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  position: fixed;
+  margin: 19px;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 5px;
+  /* margin-bottom: 0.5px; */
+  border-bottom: 1px solid #000 !important;
+  background-color: white;
+  overflow: auto;
+}
+
+.header div {
+  display: inline-block;
+  margin: 1px;
+  font-size: 14pt;
+  font-family:'NewParisSkyline-Regular';
+}
+
+.info {
+  
+}
+
+.projects{
+  font-family:'NewParisSkyline-Regular';
+  overflow: visible;
+  margin-top:56px;
+  margin-left:19px;
+  margin-right:19px;
+  margin-bottom: 19px;
+}
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  width: 100%;
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 1px solid #000;
+  outline: none;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.accordion div {
+  display: inline-block;
+  font-size:14pt;
+  font-family:'NewParisSkyline-Regular';
+}
+
+.accordion img {
+  position: fixed;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  opacity: 0.9;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 80vh;
+  max-width: 50vw;
+}
+
+.accordion:hover img {
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 1001;
+}
+.accordion.active:hover img {
+  display: none;
+}
+.accordion:after {
+}
+
+.active {
+  top: 55px;
+  position: sticky;
+  position: -webkit-sticky;
+  /* border-bottom: solid 0.3px; */
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+
+
+}
+
+
+.active:after {
+}
+
+.panel {
+  margin: -1px 0;
+
+  z-index: 50;
+  position: relative;
+  padding: 0;
+  background-color: transparent;
+  max-height: 0;
+  border: 0;
+  border-bottom: 1px solid #000;
+  overflow-y: hidden;
+  overflow-x: auto;
+  transition: max-height 0.5s ease-out;
+}
+#scroll {
+  overflow-x: scroll;
+}
+.panel p{
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+
+.panel a {
+  color: black;
+  text-decoration: none;
+}
+
+.panel a:hover {
+  opacity: 0.1;
+}
+
+.panel img {
+}
+
+.wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.wrapper img{
+  position: relative;
+  vertical-align: bottom;
+  width: 97vw;
+  height: auto;
+  left:0;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* iframe{
+  width: 90%;
+  height: 80vh;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+} */
+
+
+#label{
+  font-size:14pt;
+  padding-top:0.7vh;
+  margin-bottom:-2vh;
+}
+
+
+
+
+.slide {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.flickity-slider img{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  cursor: url('cursor.png'),auto;
+  -webkit-tap-highlight-color: transparent;
+          tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: url('cursor.png'),auto;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  /* cursor: url('cursor.png'),auto; */
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+  position: absolute;
+  background: hsla(0, 0%, 100%, 0.75);
+  border: none;
+  color: #333;
+}
+
+.flickity-button:hover {
+  background: white;
+  cursor: url('cursor.png'),auto;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
+}
+
+.flickity-button:active {
+  /* opacity: 0.6; */
+}
+
+.flickity-button:disabled {
+  /* opacity: 0.3; */
+  cursor: url('cursor.png'),auto;
+
+  /* cursor: auto; */
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+.flickity-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  /* border-radius: 50%; */
+  /* vertically center */
+  transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 0; /* 50%; */
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
