@@ -121,17 +121,13 @@ span:lang(ko){
   border-left: 1px solid #000;
   border-right: 1px solid #000;
   border-top: 1px solid #000;
-
-
 }
-
 
 .active:after {
 }
 
 .panel {
   margin: -1px 0;
-
   z-index: 50;
   position: relative;
   padding: 0;
@@ -146,6 +142,7 @@ span:lang(ko){
 #scroll {
   overflow-x: scroll;
 }
+
 .panel p{
   padding-left: 8px;
   padding-right: 8px;
@@ -154,31 +151,15 @@ span:lang(ko){
 
 .panel a {
   color: black;
+  opacity: 0.5;
   text-decoration: none;
 }
 
 .panel a:hover {
-  opacity: 0.1;
+  opacity: 1;
 }
 
 .panel img {
-}
-
-.wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-
-.wrapper img{
-  position: relative;
-  vertical-align: bottom;
-  width: 97vw;
-  height: auto;
-  left:0;
-  padding: 0;
-  margin: 0;
-  white-space: nowrap;
 }
 
 /* iframe{
@@ -209,23 +190,26 @@ span:lang(ko){
 }
 
 .flickity-slider {
-  position: absolute;
+  /* position: absolute;
   width: 100%;
   height: 100%;
+  display: block;
+  text-align: center;
+  margin:0; */
+
 }
 
 .carousel-cell {
   width: 100%;
   height: auto;
-  text-align: center;
 }
 
 .carousel-cell-image {
   max-width: 100%;
   max-height: 100%;
-  width: auto;
-  height: auto;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel-cell-image.flickity-lazyloaded,
