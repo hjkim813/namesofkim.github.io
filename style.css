@@ -19,7 +19,7 @@ html,body{
 }
 
 span:lang(ko){
-    font-size: 13px;
+    font-size: 13.5px;
 }
 
 
@@ -43,7 +43,6 @@ span:lang(ko){
   right: 0;
   z-index: 999;
   padding: 5px;
-  /* margin-bottom: 0.5px; */
   border-bottom: 1px solid #000 !important;
   background-color: white;
   overflow: auto;
@@ -56,7 +55,36 @@ span:lang(ko){
   font-family:'NewParisSkyline-Regular';
 }
 
-.info {
+.header2 {
+  font-size: 13pt;
+  font-family: 'NewParisSkyline-Regular';
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  position: fixed;
+  margin: 19px;
+  bottom: 120vh;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 5px;
+  border: 1px solid #000 !important;
+  background-color: white;
+  overflow: hidden;
+}
+
+.header2_show{
+  bottom:0;
+}
+
+.header2 p{
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#show {
+  cursor: pointer;
 
 }
 
@@ -79,7 +107,7 @@ span:lang(ko){
   border-bottom: 1px solid #000;
   outline: none;
   transition: 0.5s;
-  z-index: 1000;
+  z-index: 999;
 }
 
 #title{
@@ -143,7 +171,7 @@ span:lang(ko){
   overflow-x: scroll;
 }
 
-.panel p{
+.panel p , .info p{
   padding-left: 8px;
   padding-right: 8px;
   padding-bottom: 8px;
@@ -151,7 +179,7 @@ span:lang(ko){
 
 .panel a {
   color: black;
-  opacity: 0.5;
+  opacity: 0.4;
   text-decoration: none;
 }
 
@@ -160,16 +188,8 @@ span:lang(ko){
 }
 
 .panel img {
+  /* max-width: 100%; */
 }
-
-/* iframe{
-  width: 90%;
-  height: 80vh;
-  padding: 0;
-  margin: 0;
-  white-space: nowrap;
-} */
-
 
 #label{
   font-size:13pt;
