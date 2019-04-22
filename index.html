@@ -506,11 +506,17 @@
 <script>
 
   var header2 = $('.header2');
+
   $(document).ready(function(){
+
     $("#show").click(function(){
       header2.toggleClass('header2_show')
+      var cssHSL = "hsl(" + 360 * Math.random() + ',' +
+                       (25 + 70 * Math.random()) + '%,' +
+                       (85 + 10 * Math.random()) + '%)';
+      header2.css('background-color', cssHSL);
     });
-  });
+
 
 
   var $carousel = $('.carousel').flickity({
@@ -560,10 +566,14 @@
         $(this).css('background-color','')
     });
 
+
+
+
+
     $( '.carousel' ).flickity( );
   })
 
-
+});
 
 
 </script>
