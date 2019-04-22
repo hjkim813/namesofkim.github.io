@@ -195,15 +195,15 @@ span:lang(ko){
   width: auto;
   height: auto;
   text-align: center;
-  opacity: 0;
+  /* opacity: 0; */
   margin-left: auto;
   margin-right: auto;
 }
 
-
+/*
 .panel:hover .singleimg {
   opacity: 1;
-}
+} */
 
 #label{
   font-size:13pt;
