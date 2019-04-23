@@ -58,10 +58,9 @@ span:lang(ko){
 .header2 {
   font-size: 13pt;
   font-family: 'NewParisSkyline-Regular';
-  height: 96px;
+  height: 120px;
   display: flex;
-  justify-content: space-between;
-  text-align: justify;
+  text-align: left;
   position: fixed;
   margin: 19px;
   bottom: 120vh;
@@ -81,6 +80,16 @@ span:lang(ko){
 .header2 p{
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+.header2 a {
+  color: black;
+  opacity: 0.4;
+  text-decoration: none;
+}
+
+.header2 a:hover {
+  opacity: 1;
 }
 
 #show {
@@ -195,13 +204,12 @@ span:lang(ko){
   width: auto;
   height: auto;
   text-align: center;
-  /* opacity: 0; */
   margin-left: auto;
   margin-right: auto;
 }
 
-/*
-.panel:hover .singleimg {
+
+/* .panel:hover .singleimg {
   opacity: 1;
 } */
 
