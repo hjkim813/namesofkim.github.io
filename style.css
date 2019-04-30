@@ -42,14 +42,14 @@ span:lang(ko){
 }
 
 
-#b_top{position:fixed;z-index:1000;top:0;left:0;border-bottom:1px solid black;}
-#b_bot{position:fixed;z-index:1000;bottom:0;border-top:1px solid black;}
-#b_left{position:fixed;z-index:1000;left:0;top:0;border-right:1px solid black;}
-#b_right{position:fixed;z-index:1000;right:0;top:0;border-left:1px solid black;}
-#b2_top{position:fixed;z-index:1000;top:0;left:0;}
-#b2_bot{position:fixed;z-index:1000;bottom:0;}
-#b2_left{position:fixed;z-index:1000;left:0;top:0;}
-#b2_right{position:fixed;z-index:1000;right:0;top:0;}
+#b_top{position:fixed;z-index:1001;top:0;left:0;border-bottom:1px solid black;}
+#b_bot{position:fixed;z-index:1001;bottom:0;border-top:1px solid black;}
+#b_left{position:fixed;z-index:1001;left:0;top:0;border-right:1px solid black;}
+#b_right{position:fixed;z-index:1001;right:0;top:0;border-left:1px solid black;}
+#b2_top{position:fixed;z-index:1001;top:0;left:0;}
+#b2_bot{position:fixed;z-index:1001;bottom:0;}
+#b2_left{position:fixed;z-index:1001;left:0;top:0;}
+#b2_right{position:fixed;z-index:1001;right:0;top:0;}
 
 .header {
   display: flex;
@@ -60,7 +60,7 @@ span:lang(ko){
   top:0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 1000;
   padding: 5px;
   border-bottom: 1px solid #000 !important;
   background-color: white;
@@ -136,11 +136,27 @@ span:lang(ko){
   padding: 5px;
   border-bottom: 1px solid #000;
   outline: none;
+  -webkit-outline: none;
   transition: 0.5s;
   z-index: 999;
   background-color: white;
-  box-shadow: none !important;
+  margin-bottom: 0;
 }
+
+button {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border: none;
+  -webkit-border:none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+
 
 #title{
   display: inline-block;
@@ -170,22 +186,32 @@ span:lang(ko){
 .accordion.active:hover img {
   display: none;
 }
-.accordion:after {
 
+.accordion:after {
 }
 
 .active {
-  top: 55px;
+  top: 53px;
   position: sticky;
   position: -webkit-sticky;
-  /* border-bottom: solid 0.3px; */
   border-left: 1px solid #000;
   border-right: 1px solid #000;
   border-top: 1px solid #000;
+  margin: 0;
+  margin-top: -1px;
+  -webkit-border-style: outset;
+  border-style: outset;
+  -webkit-appearance: none;
+  appearance:none;
 }
 
 .active:after {
+  -webkit-border-style: outset;
+  border-style: outset;
+  -webkit-appearance: none;
+  appearance:none;
 }
+
 
 .panel {
   margin: -1px 0;
