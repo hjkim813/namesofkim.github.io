@@ -1,12 +1,21 @@
-@font-face {
+/* @font-face {
   font-family: 'NewParisSkyline-Regular';
   src: url('fonts/NewParisSkyline-Regular.eot');
   src: url('fonts/NewParisSkyline-Regular.otf') format('opentype'),
        url('fonts/NewParisSkyline-Regular.woff') format('woff'),
        url('fonts/NewParisSkyline-Regular.woff2') format('woff2'),
-       url('fonts/NewParisSkyline-Regular.otf') format('opentype'),
        url('fonts/NewParisSkyline-Regular.ttf') format('truetype'),
        url('fonts/NewParisSkyline-Regular.svg') format('svg');
+} */
+
+@font-face {
+  font-family: 'NewParisSkyline-Regular';
+  src: url('fonts/NewParisSkyline-Regular.eot'),
+  src: url('fonts/NewParisSkyline-Regular.otf'),
+       url('fonts/NewParisSkyline-Regular.woff'),
+       url('fonts/NewParisSkyline-Regular.woff2'),
+       url('fonts/NewParisSkyline-Regular.ttf'),
+       url('fonts/NewParisSkyline-Regular.svg');
 }
 
 @font-face {
@@ -15,7 +24,6 @@
   src: url('fonts/arita-Medium.otf') format('opentype'),
        url('fonts/arita-Medium.woff') format('woff'),
        url('fonts/arita-Medium.woff2') format('woff2'),
-       url('fonts/arita-Medium.otf') format('opentype'),
        url('fonts/arita-Medium.ttf') format('truetype'),
        url('fonts/arita-Medium.svg') format('svg');
 }
@@ -128,6 +136,7 @@ span:lang(ko){
   outline: none;
   transition: 0.5s;
   z-index: 999;
+  background-color: white;
 }
 
 #title{
