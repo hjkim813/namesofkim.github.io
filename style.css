@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'NewParisSkyline-Regular';
   src: url('fonts/NewParisSkyline-Regular.eot'),
-  src: url('fonts/NewParisSkyline-Regular.otf'),
+       url('fonts/NewParisSkyline-Regular.otf'),
        url('fonts/NewParisSkyline-Regular.woff'),
        url('fonts/NewParisSkyline-Regular.woff2'),
        url('fonts/NewParisSkyline-Regular.ttf'),
@@ -20,12 +20,12 @@
 
 @font-face {
   font-family: 'arita-Medium';
-  src: url('fonts/arita-Medium.eot');
-  src: url('fonts/arita-Medium.otf') format('opentype'),
-       url('fonts/arita-Medium.woff') format('woff'),
-       url('fonts/arita-Medium.woff2') format('woff2'),
-       url('fonts/arita-Medium.ttf') format('truetype'),
-       url('fonts/arita-Medium.svg') format('svg');
+  src: url('fonts/arita-Medium.eot'),
+       url('fonts/arita-Medium.otf'),
+       url('fonts/arita-Medium.woff'),
+       url('fonts/arita-Medium.woff2'),
+       url('fonts/arita-Medium.ttf'),
+       url('fonts/arita-Medium.svg');
 }
 
 html,body{
