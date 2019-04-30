@@ -7,7 +7,6 @@
        url('fonts/NewParisSkyline-Regular.otf') format('opentype'),
        url('fonts/NewParisSkyline-Regular.ttf') format('truetype'),
        url('fonts/NewParisSkyline-Regular.svg') format('svg');
-  unicode-range: U+000-5FF;
 }
 
 @font-face {
@@ -19,7 +18,6 @@
        url('fonts/arita-Medium.otf') format('opentype'),
        url('fonts/arita-Medium.ttf') format('truetype'),
        url('fonts/arita-Medium.svg') format('svg');
-  unicode-range: U+1100-11FF, U+3130-318F, U+AC00-D7AF;
 }
 
 html,body{
