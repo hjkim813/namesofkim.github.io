@@ -51,11 +51,13 @@ span:lang(ko){
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 9px;
-  padding-bottom: 3px;
+  padding: 7px;
+  padding-bottom: 2px;
+  line-height: 25px;
   border-bottom: 1px solid #000 !important;
   background-color: white;
   overflow: auto;
+  transition: 1s;
 }
 
 .header div {
@@ -63,13 +65,13 @@ span:lang(ko){
   margin: 1px;
   font-size: 18pt;
   font-family:'F-Grotesk-Thin';
-  line-height: 25px;
+  line-height: 26px;
 }
 
 .header2 {
   font-size: 18pt;
   font-family: 'F-Grotesk-Thin';
-  line-height: 25px;
+  line-height: 26px;
   display: flex;
   text-align: left;
   position: fixed;
@@ -155,8 +157,9 @@ span:lang(ko){
   text-align: justify;
   width: 100%;
   cursor: pointer;
-  padding: 9px;
-  padding-bottom: 3px;
+  padding: 7px;
+  padding-bottom: 2px;
+  line-height: 26px;
   border-bottom: 1px solid #000;
   outline: none;
   -webkit-outline: none;
@@ -180,7 +183,9 @@ button {
   border-radius: 0px;
 }
 
-
+button.accordion {
+  transition: 1s;
+}
 #title{
   display: inline-block;
   font-size: 18pt;
@@ -215,7 +220,7 @@ button {
 }
 
 .active {
-  top: 57px;
+  top: 56px;
   position: sticky;
   position: -webkit-sticky;
   border-left: 1px solid #000;

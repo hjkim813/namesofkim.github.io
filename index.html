@@ -515,6 +515,13 @@
       header2.toggleClass('header2_show')
   });
 
+  $(".header").hover(
+  function() {
+      $(this).css('color', 'white')
+  }, function() {
+      $(this).css('color','')
+  });
+
 
 
   var $carousel = $('.carousel').flickity({
