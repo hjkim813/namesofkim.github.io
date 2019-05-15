@@ -554,18 +554,22 @@
       $(this).attr('src',$(this).attr('data-orig'));
     });
 
+    // $("button.accordion").hover(
+    // function() {
+    //   var cssHSL = "hsl(" + 360 * Math.random() + ',' +
+    //                  (25 + 70 * Math.random()) + '%,' +
+    //                  (85 + 10 * Math.random()) + '%)';
+    //     $(this).css('background-color', cssHSL)
+    // }, function() {
+    //     $(this).css('background-color','')
+    // });
+
     $("button.accordion").hover(
     function() {
-      var cssHSL = "hsl(" + 360 * Math.random() + ',' +
-                     (25 + 70 * Math.random()) + '%,' +
-                     (85 + 10 * Math.random()) + '%)';
-        $(this).css('background-color', cssHSL)
+        $(this).css('color', 'white')
     }, function() {
-        $(this).css('background-color','')
+        $(this).css('color','')
     });
-
-
-
 
 
     $( '.carousel' ).flickity( );

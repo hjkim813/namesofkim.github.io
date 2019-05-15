@@ -183,9 +183,10 @@ button {
 
 #title{
   display: inline-block;
-  font-size:18pt;
+  font-size: 18pt;
   font-family:'F-Grotesk-Thin';
 }
+
 
 .accordion img {
   position: fixed;
@@ -214,7 +215,7 @@ button {
 }
 
 .active {
-  top: 53px;
+  top: 57px;
   position: sticky;
   position: -webkit-sticky;
   border-left: 1px solid #000;
