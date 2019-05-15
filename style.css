@@ -1,21 +1,11 @@
-/* @font-face {
-  font-family: 'NewParisSkyline-Regular';
-  src: url('fonts/NewParisSkyline-Regular.eot');
-  src: url('fonts/NewParisSkyline-Regular.otf') format('opentype'),
-       url('fonts/NewParisSkyline-Regular.woff') format('woff'),
-       url('fonts/NewParisSkyline-Regular.woff2') format('woff2'),
-       url('fonts/NewParisSkyline-Regular.ttf') format('truetype'),
-       url('fonts/NewParisSkyline-Regular.svg') format('svg');
-} */
-
 @font-face {
-  font-family: 'NewParisSkyline-Regular';
-  src: url('fonts/NewParisSkyline-Regular.eot'),
-       url('fonts/NewParisSkyline-Regular.otf'),
-       url('fonts/NewParisSkyline-Regular.woff'),
-       url('fonts/NewParisSkyline-Regular.woff2'),
-       url('fonts/NewParisSkyline-Regular.ttf'),
-       url('fonts/NewParisSkyline-Regular.svg');
+  font-family: 'F-Grotesk-Thin';
+  src: url('fonts/F-Grotesk-Thin.eot'),
+       url('fonts/F-Grotesk-Thin.otf'),
+       url('fonts/F-Grotesk-Thin.woff'),
+       url('fonts/F-Grotesk-Thin.woff2'),
+       url('fonts/F-Grotesk-Thin.ttf'),
+       url('fonts/F-Grotesk-Thin.svg');
 }
 
 @font-face {
@@ -38,7 +28,7 @@ html,body{
 
 span:lang(ko){
     font-family: 'arita-Medium';
-    font-size: 11pt;
+    font-size: 15pt;
 }
 
 
@@ -61,7 +51,8 @@ span:lang(ko){
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 5px;
+  padding: 9px;
+  padding-bottom: 3px;
   border-bottom: 1px solid #000 !important;
   background-color: white;
   overflow: auto;
@@ -70,19 +61,20 @@ span:lang(ko){
 .header div {
   display: inline-block;
   margin: 1px;
-  font-size: 13pt;
-  font-family:'NewParisSkyline-Regular';
+  font-size: 18pt;
+  font-family:'F-Grotesk-Thin';
+  line-height: 25px;
 }
 
 .header2 {
-  font-size: 13pt;
-  font-family: 'NewParisSkyline-Regular';
-  height: 120px;
+  font-size: 18pt;
+  font-family: 'F-Grotesk-Thin';
+  line-height: 25px;
   display: flex;
   text-align: left;
   position: fixed;
   margin: 19px;
-  bottom: 120vh;
+  bottom: 0;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -90,10 +82,11 @@ span:lang(ko){
   border: 1px solid #000 !important;
   background-color: white;
   overflow: hidden;
+  visibility: hidden;
 }
 
 .header2_show{
-  bottom:0;
+  visibility: visible;
 }
 
 .header2 p{
@@ -141,7 +134,8 @@ span:lang(ko){
 }
 
 .projects{
-  font-family:'NewParisSkyline-Regular';
+  font-family:'F-Grotesk-Thin';
+  line-height: 19px;
   overflow: visible;
   margin-top:56px;
   margin-left:19px;
@@ -149,13 +143,20 @@ span:lang(ko){
   margin-bottom: 19px;
 }
 
+.projects span:lang(ko){
+    font-family: 'arita-Medium';
+    font-size: 11pt;
+}
+
+
 .accordion {
   display: flex;
   justify-content: space-between;
   text-align: justify;
   width: 100%;
   cursor: pointer;
-  padding: 5px;
+  padding: 9px;
+  padding-bottom: 3px;
   border-bottom: 1px solid #000;
   outline: none;
   -webkit-outline: none;
@@ -182,8 +183,8 @@ button {
 
 #title{
   display: inline-block;
-  font-size:13pt;
-  font-family:'NewParisSkyline-Regular';
+  font-size:18pt;
+  font-family:'F-Grotesk-Thin';
 }
 
 .accordion img {
@@ -285,7 +286,7 @@ button {
 } */
 
 #label{
-  font-size:13pt;
+  font-size:18pt;
   padding-top:0.7vh;
   margin-bottom:-2vh;
 }
