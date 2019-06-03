@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="fs_style.css" />
+    <title> Foreign State </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+<body>
+    <div class="container">
+        <textarea id="text" spellcheck="false"></textarea>
+      <!-- <div class="area2">
+        <textarea class="text2" spellcheck="false"></textarea>
+      </div> -->
+    </div>
+
+
+  <script>
+  $(function() {
+    $('textarea').focus();
+  });
+
+  window.onbeforeunload = function() {
+       $('textarea').each(function(){
+          var id = $(this).attr('id');
+          var value = $(this).val();
+         localStorage.setItem(id, value);
+      });
+  }
+  window.onload = function() {
+      $('textarea').each(function(){
+         var id = $(this).attr('id');
+         var text = localStorage.getItem(id);
+         if (text !== null) $('#'+id).val(text);
+      });
+  }
+
+
+  </script>
+
+  </body>
+
+  </html>
