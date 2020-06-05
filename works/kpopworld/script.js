@@ -67,38 +67,36 @@ function visualiseOutput(id) {
 
   let countries = document.getElementById('topcountries');
   let numDancingBodies = document.getElementById('num-dancingbodies');
-  let artistTitle = document.getElementById('artistTitle'); 
-  let date = document.getElementById('date'); 
-  let viewcount = document.getElementById('viewcount'); 
-  let company = document.getElementById('company'); 
+  let firstline = document.getElementById('firstline'); 
+  let secondline = document.getElementById('secondline'); 
+  let thirdline = document.getElementById('thirdline'); 
   let totalBodies = document.getElementById('num-total'); 
 
   entry = data[0][id];
   countries.innerHTML = entry['Countries'];
   numDancingBodies.innerHTML = `Dancing Bodies: ${entry['Dancing Bodies']}`;
   totalBodies.innerHTML = entry['Total Bodies']
-  artistTitle.innerHTML = `${entry['Artist']} – ${entry['Song Title']}`;
-  date.innerHTML = entry['Date'];
-  viewcount.innerHTML = entry['Viewcount'];
-  company.innerHTML = entry['Company'];
+  firstline.innerHTML = `${entry['Artist']} – ${entry['Song Title']}`;
+  secondline.innerHTML =`${entry['Company']}   ${entry['Date']}`;
+  thirdline.innerHTML = entry['Viewcount'];
 
 }
 
 
 function changeContent(time) {
-  if (time > 0 && time < 10) {
+  if (time > 0 && time < 5) {
     visualiseOutput(1);
   } 
-   else if (time > 10 && time < 15) {
+   else if (time > 5 && time < 10) {
     visualiseOutput(2);
   }
-  else if (time > 15 && time < 20) {
+  else if (time > 10 && time < 15) {
     visualiseOutput(3);
   }
-  else if (time > 20 && time < 25) {
+  else if (time > 15 && time < 20) {
     visualiseOutput(4);
   }
-  else if (time > 25 && time < 30) {
+  else if (time > 20 && time < 25) {
     visualiseOutput(5);
   }
 
@@ -136,6 +134,11 @@ function changeContent(time) {
       playerVars: {
         'controls': 1,
         'autoplay':0,
+        'iv_load_policy':3,
+        'loop':1,
+        'fs':0,
+        // 'rel':0,
+        'modestbranding':1
     },
       events: {
         'onReady': onPlayerReady,

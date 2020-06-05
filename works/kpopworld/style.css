@@ -104,10 +104,6 @@ textarea {
 }
 
 .wrapper nav {
-  /* background: url('/res/img/typo_bg.png');
-  background-repeat: no-repeat;
-  background-size: cover; */
-
   /* position: absolute; */
   position: fixed;
   width: 100%;
@@ -127,18 +123,33 @@ textarea {
 }
 
 .wrapper nav .about {
-  /* background-image: url('/res/img/bg1.png'); */
+
   text-align-last: right;
-  left: -36vh;
-  bottom: 49.5%;
-  width: 85vh;
-  height: 5.94rem;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  white-space:nowrap;
+  left: 0;
+  top: 0;
+  width: 5.544rem;
 }
 
+.wrapper nav .about img{
+  left: 0;
+  top:0;
+  width: 80px;
+  height: 200px;
+}
+
+/* .wrapper nav .about p {
+  right:0;
+  height:100%;
+  width:100%; 
+  padding: 0;
+  display:table-cell;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+} */
+
 .wrapper nav .num-dancingbodies {
-  font-family: 'Swift-Big';
+  font-size: 50pt;
   text-align-last: right;
   width: 39vw;
   height: 5.544rem;
@@ -147,7 +158,7 @@ textarea {
 }
 
 .wrapper nav .num-total{
-  font-family: 'Swift-Big';
+  font-size: 50pt;
   text-align-last: right;
   width: 39vw;
   height: 5.544rem;
@@ -164,20 +175,11 @@ textarea {
           transform: rotate(-90deg);
 }
 
-.wrapper nav .songinfo #date{
+.wrapper nav .songinfo #secondline{
   top: 25%;
 }
 
-.wrapper nav .songinfo #viewcount{
-  top: 25%;
-  left: 50%;
-}
-
-.wrapper nav .songinfo #date{
-  top: 25%;
-}
-
-.wrapper nav .songinfo #company{
+.wrapper nav .songinfo #thirdline{
   top: 50%;
 }
 
