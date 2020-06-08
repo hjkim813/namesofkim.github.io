@@ -10,7 +10,7 @@ const data = [
       "Song Title": "Oh My God",
       "Date": "06.04.2020",
       "Viewcount": 91222062,
-      "Countries": "1. Thailand  2. Vietnam  3. Indonesia  4. United States  5. Brazil  6. Taiwan  7. India  8. Mexico  9. Philippines"
+      "Countries": "1. Thailand  2. Vietnam  3. Indonesia  4. United States <br> 5. Brazil  6. Taiwan  7. India  8. Mexico  9. Philippines"
     },
     "2": {
       "SearchResult": 51082,
@@ -22,7 +22,7 @@ const data = [
       "Song Title": "Wannabe",
       "Date": "09.03.2020",
       "Viewcount": 136934108,
-      "Countries": "1. Indonesia  2. Japan  3. Thailand  4. Phillipines  5. Vietnam,  6. United States  7. Brazil  8. Mexico  9. Taiwan"
+      "Countries": "1. Indonesia  2. Japan  3. Thailand  4. Phillipines  <br>5. Vietnam,  6. United States  7. Brazil  8. Mexico  9. Taiwan"
     },
     "3": {
       "SearchResult": 21198,
@@ -34,7 +34,7 @@ const data = [
       "Song Title": "On",
       "Date": "27.02.2020",
       "Viewcount": 136950417,
-      "Countries": "1. United States  2. Indonesia  3. Brazil  4. Mexico  5. Japan  6. Vietnam  7. Thailand  8. Philippines  9. India"
+      "Countries": "1. United States  2. Indonesia  3. Brazil  4. Mexico  <br>5. Japan  6. Vietnam  7. Thailand  8. Philippines  9. India"
     },
     "4": {
       "SearchResult": 29531,
@@ -46,7 +46,7 @@ const data = [
       "Song Title": "Dun Dun",
       "Date": "03.02.2020",
       "Viewcount": 123784414,
-      "Countries": "1. Vietnam  2. Indonesia  3. Thailand  4. Brazil  5. Mexico  6. United States  7. Philippines  8. Japan  9. Russia"
+      "Countries": "1. Vietnam  2. Indonesia  3. Thailand  4. Brazil  <br>5. Mexico  6. United States  7. Philippines  8. Japan  9. Russia"
     },
     "5": {
       "SearchResult": 49555,
@@ -58,7 +58,7 @@ const data = [
       "Song Title": "Hip",
       "Date": "14.11.2019",
       "Viewcount": 119826496,
-      "Countries": "1. Japan  2. United States  3. Mexico  4. Taiwan  5. Brazil  6. Thailand  7. Vietnam  8. Indonesia  9. Philippines"
+      "Countries": "1. Japan  2. United States  3. Mexico  4. Taiwan  <br>5. Brazil  6. Thailand  7. Vietnam  8. Indonesia  9. Philippines"
     },
   },
 ];
@@ -67,18 +67,16 @@ function visualiseOutput(id) {
 
   let countries = document.getElementById('topcountries');
   let numDancingBodies = document.getElementById('num-dancingbodies');
-  let firstline = document.getElementById('firstline'); 
-  let secondline = document.getElementById('secondline'); 
-  let thirdline = document.getElementById('thirdline'); 
+  let firstcol = document.getElementById('firstcol'); 
+  let secondcol = document.getElementById('secondcol'); 
   let totalBodies = document.getElementById('num-total'); 
 
   entry = data[0][id];
-  countries.innerHTML = entry['Countries'];
-  numDancingBodies.innerHTML = `Dancing Bodies: ${entry['Dancing Bodies']}`;
+  countries.innerHTML = `<p>${entry['Countries']}</p>`;
+  numDancingBodies.innerHTML = entry['Dancing Bodies'];
   totalBodies.innerHTML = entry['Total Bodies']
-  firstline.innerHTML = `${entry['Artist']} – ${entry['Song Title']}`;
-  secondline.innerHTML =`${entry['Company']}   ${entry['Date']}`;
-  thirdline.innerHTML = entry['Viewcount'];
+  firstcol.innerHTML = entry['Viewcount'];
+  secondcol.innerHTML =`<p> ${entry['Artist']} – ${entry['Song Title']} &emsp; ${entry['Date']} &emsp; ${entry['Company']} </p>`;;
 
 }
 
@@ -154,7 +152,6 @@ function changeContent(time) {
 
   // 5. The API calls this function when the player's state changes.
   //    The function indicates that when playing a video (state=1),
-  //    the player should play for six seconds and then stop.
   function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.PLAYING) {
       event.target.setPlaybackQuality('hd1080'); 
@@ -162,7 +159,6 @@ function changeContent(time) {
         let time = player.getCurrentTime()
         changeContent(time)
       }, 1000)
-      
     }
   }
   function stopVideo() {

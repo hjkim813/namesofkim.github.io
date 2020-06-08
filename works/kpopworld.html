@@ -9,27 +9,35 @@
     <link rel="stylesheet" href="kpopworld/style.css">
     <script src="kpopworld/script.js"></script>
 </head>
+
 <body>
+
     <div class="wrapper">
         <nav>
-            <div id="topcountries" class="topcountries"><p>Top 5 countries (running text)</p></div>
-            <div id="num-dancingbodies" class="num-dancingbodies"><p>Dancing Bodies</p>  </div>
-            <div id="num-total" class="num-total"><p>num: total</p></div>
+            <div id="topcountries" class="topcountries"><p>Top9 countries </p></div>
+            <div id="dancingbodies" class="dancingbodies">
+                <div id="txt-dancingbodies"><p>Dancing Bodies</p></div>
+                <div id="num-dancingbodies"><p>num:bodies</p>  </div>
+                <div id="num-total"><p>num:total</p></div>
+            </div>
             <div id="songinfo" class="songinfo">
-                <div id="firstline"> artist-title </div>
-                <div id="secondline"> company    release date </div>
-                <div id="thirdline"> viewcount </div>
+                <div id="firstcol"> viewcount </div>
+                <div id="secondcol"> artist-title    company    release date </div>
             </div>
             <div id="about" class="about"><img src= "/res/img/bg1.png"><p></p></div>
         </nav>
-        <div class="container">
-            <figure class="video">
-                <div id="player"></div>
-            </figure> 
+    <div class="slider">
+        <div id="progress"></div>
         </div>
     </div>
 
+    <div class="container">
+        <figure class="video">
+            <div id="player"></div>
+        </figure> 
+    </div>
     
+    </div>
 
 </body>
 
