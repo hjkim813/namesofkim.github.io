@@ -337,7 +337,6 @@ textarea {
   height: 100%;
   z-index: 1000;
   position: fixed;
-  opacity: 0.5;
 }
 
 #placeholder img {
