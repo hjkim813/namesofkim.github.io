@@ -318,7 +318,6 @@ textarea {
 .wrapper .slider #current-time {
   position: absolute;
   left: -15rem;
-  /* padding: 2px; */
   top: -3px;
 }
 
