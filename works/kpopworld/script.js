@@ -75,14 +75,14 @@ const currentTimeSpan = document.getElementById('current-time');
 let progress = 0;
 
 function visualiseOutput(id) {
-  let countries = document.getElementById('topcountries');
+  let countries= document.getElementById('topcountries');
   let numDancingBodies = document.getElementById('num-dancingbodies');
   let firstcol = document.getElementById('firstcol');
   let secondcol = document.getElementById('secondcol');
   let totalBodies = document.getElementById('num-total');
 
   entry = data[0][id];
-  countries.innerHTML = `<p>${entry['Countries']}</p>`;
+  countries.innerHTML = `${entry['Countries']}`;
   numDancingBodies.innerHTML = entry['Dancing Bodies'];
   totalBodies.innerHTML = entry['Total Bodies'];
   firstcol.innerHTML = entry['Viewcount'];
@@ -193,25 +193,22 @@ function onPlayerReady(event) {
 //    The function indicates that when playing a video (state=1),
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING) {
+    var get = $("#current-time");
+    var txt = get.html();
+    if (txt == ""){
+      player.pauseVideo();
+      console.log("video paused")
+    }
+    
     // Set the onclick event to the button for pause the YouTube video.
-    event.target.setPlaybackQuality('hd1080');
+    event.target.setPlaybackQuality('highres');
     setInterval(() => {
       let currentTime = player.getCurrentTime();
       let totalTime = player.getDuration();
       changeContent(currentTime);
       updatePlayer(currentTime, totalTime);
       clickOnPlayer(player, totalTime);
-    }, 1000);
-
-    var get = $("#current-time");
-    var txt = get.html();
-
-    // console.log(txt);
-
-    if (txt == ""){
-      player.pauseVideo();
-      console.log("video paused")
-    }
+    }, 2000);
 
     document.getElementById('box').onclick = function() {
       player.pauseVideo();
