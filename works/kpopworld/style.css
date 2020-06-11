@@ -52,7 +52,7 @@ body {
   background-color: white;
   width: 100%;
   font-weight: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1;
   color: black;
   /* overflow-x: hidden; */
@@ -60,7 +60,6 @@ body {
   text-transform: uppercase;
   src: local('Swift');
 }
-
 
 a {
   text-decoration: none;
@@ -77,8 +76,8 @@ a:active {
   text-decoration: underline;
 }
 
-.chapter-title a:hover, .chapter-title
-a:active {
+.chapter-title a:hover,
+.chapter-title a:active {
   text-decoration: none;
 }
 
@@ -112,62 +111,82 @@ textarea {
 
 .wrapper nav div {
   position: absolute;
+  margin: 1.5%;
   /* border: 1px solid red; */
 }
 
 .wrapper nav div p {
-  margin: 1%;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+}
+
+.wrapper nav .topcountries {
+  transform: rotate(-90deg);
+  left: 4.6rem;
+  bottom: 0;
+  width: 80vh;
+  height: 4.6rem;
+  transform-origin: left bottom;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 1));
+  background-size: 150% 150%;
+  -webkit-animation: gradient 10s ease infinite;
+  -moz-animation: gradient 10s ease infinite;
+  animation: gradient 10s ease infinite;
+}
+
+.wrapper nav .topcountries p {
+  text-align-last: left;
+  white-space: nowrap;
+  color: white;
+  line-height: 1.7rem;
 }
 
 .wrapper nav .about {
-  margin: 1%;
-  text-align-last: right;
-  white-space:nowrap;
-  left: 0;
+  right: 0;
   top: 0;
-  width: 5.544rem;
-}
-
-.wrapper nav .about img{
-  width: 57px;
-  height: 120px;
+  width: 4.6rem;
+  height: 15vw;
+  transform-origin: right top;
+  background-image: url("./res/img/menu2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  white-space: nowrap;  
 }
 
 .wrapper nav .dancingbodies {
-  margin: 1%;
-  text-align-last: right;
-  width: 92vw;
-  height: 5.544rem;
-  right: 0;
-  top: 0%;
+  margin:0;
+  text-align-last: left;
+  width: 90vw;
+  height: 7.5rem;
+  left: 0;
+  top: 0;
 }
 
 .wrapper nav #txt-dancingbodies {
   color: white;
-  width: 33%;
+  width: 30vw;
   left: 0;
-  height: 1.8rem;
+  height: 3rem;
   top: 0%;
-  background: linear-gradient(-90deg,rgba(255,255,255,0.5), rgba(0,0,0,1));
-  background-size: 150% 150%;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 1));
+  background-size: 200% 200%;
+  background-clip: text;
   -webkit-animation: gradient 10s ease infinite;
   -moz-animation: gradient 10s ease infinite;
-  animation: gradient 10s ease infinite
+  animation: gradient 10s ease infinite;
 }
 .wrapper nav #txt-dancingbodies p {
   font-weight: lighter;
-  padding-right: 5px;
+  margin:0;
 }
 
 .wrapper nav #num-dancingbodies {
-  width: 33%;
-  left: 33%;
-  font-size: 50pt;
-  height: 5.544rem;
-  top: 0%;
+  left: 33vw;
+  font-size: 7rem;
+  top: 0;
   font-weight: bolder;
-  background: linear-gradient(-90deg,rgba(255,255,255,0), rgba(0,0,0,1));
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
   background-clip: text;
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: gradient 10s ease infinite;
@@ -175,14 +194,14 @@ textarea {
   animation: gradient 10s ease infinite;
   -webkit-text-stroke: 1px black;
 }
-.wrapper nav #num-total{
-  right: 0;
-  width: 33%;
-  font-size: 50pt;
-  height: 5.544rem;
+
+.wrapper nav #num-total {
+  text-align-last:left;
+  left: 66vw;
+  font-size: 7rem;
   top: 0%;
   font-weight: bolder;
-  background: linear-gradient(-90deg,rgba(255,255,255,0), rgba(0,0,0,1));
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -193,19 +212,20 @@ textarea {
 }
 
 .wrapper nav .songinfo {
-  margin: 1%;
+  text-align-last: right;
   text-transform: uppercase;
-  width: 88%;
-  height: 5.544rem;
-  left: 0;
-  bottom: 3vh;
+  width: 90vw;
+  height: 7.5rem;
+  right: 0;
+  bottom: 2vw;
 }
 
-.wrapper nav .songinfo #firstcol{
-  top: 0;
-  font-size: 50pt;
+.wrapper nav .songinfo #firstcol {
+  bottom: -3.2rem;
+  right: 65%;
+  font-size: 7rem;
   font-weight: bolder;
-  background: linear-gradient(90deg,rgba(255,255,255,0), rgba(0,0,0,1));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 1));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -215,103 +235,136 @@ textarea {
   -webkit-text-stroke: 1px black;
 }
 
-.wrapper nav .songinfo #secondcol{
-  width: 66%;
-  height: 1.8rem;
+.wrapper nav .songinfo #secondcol {
+  color: white;
+  width: 64%;
+  right: 0;
+  height: 3rem;
   bottom: 0;
-  left: 35vw;
-  background: linear-gradient(90deg,rgba(255,255,255,0.5), rgba(0,0,0,1));
-  background-size: 150% 150%;
+  margin: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 1));
+  background-size: 200% 200%;
+  background-clip: text;
   -webkit-animation: gradient 10s ease infinite;
   -moz-animation: gradient 10s ease infinite;
   animation: gradient 10s ease infinite;
+
 }
-.wrapper nav .songinfo #secondcol p{
+.wrapper nav .songinfo #secondcol p {
   font-weight: lighter;
-  top:-1%;
   color: white;
 }
 
-/* .wrapper nav .songinfo #thirdline{
-  top: 50%;
-} */
 
-.wrapper nav .topcountries {
-  margin: 1%;
-  right: -40vh;
-  bottom: 40vh;
-  width: 85vh;
-  height: 3.94rem;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  background: linear-gradient(90deg,rgba(255,255,255,0.5), rgba(0,0,0,1));
-  background-size: 150% 150%;
-  -webkit-animation: gradient 10s ease infinite;
-  -moz-animation: gradient 10s ease infinite;
-  animation: gradient 10s ease infinite;
-}
 
 @-webkit-keyframes gradient {
-  0% {background-position: 0% 51%}
-  50% {background-position: 100% 50%}
-  100% {background-position: 0% 51%}
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
 @-moz-keyframes gradient {
-  0% {background-position: 0% 51%}
-  50% {background-position: 100% 50%}
-  100% {background-position: 0% 51%}
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
 @keyframes gradient {
-  0% {background-position: 0% 51%}
-  50% {background-position: 100% 50%}
-  100% {background-position: 0% 51%}
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
-.wrapper nav .topcountries p {
-  color: white;
-  line-height: 1.5rem;
-}
+
 
 .wrapper .slider {
   position: fixed;
-  left: 0;
-  bottom: 0;
   background-color: grey;
-  margin: 1%;
-  width: 93%;
-  height: 0.9rem;
+  width: 80vw;
+  height: 1rem;
+  right: 0;
+  bottom: 0;
+  margin: 1.5%;
 }
 
-.wrapper .slider #progress{
-  background-color: red;
-  width: 20%;
-  height: 0.9rem;
+.wrapper .slider:hover {
+  cursor: pointer;
 }
 
- .container {
-  z-index: -1000;
-  position: fixed;
-  top: 0; 
-  left:0;
-  position: sticky;
-  width: 200vw;
-  height: 200vh;
-  overflow: scroll;
-  /* border: solid 1px blue; */
-}
-
- .container .video {
+.wrapper .slider #desired-time {
   position: absolute;
-  left: 25%;
-  top: 25%;
-  width: 100vw;
-  height: 100vh;
-  overflow: scroll;
-  transform: scale(2);
-  /* border: solid 1px red; */
+  top: -2em;
+  opacity: 0;
+  padding: 2px;
+  transition: opacity 0.2s ease-out;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
- .container .video iframe {
+.wrapper .slider #current-time {
+  position: absolute;
+  left: -15rem;
+  /* padding: 2px; */
+  top: -3px;
+}
+
+.wrapper .slider #desired-time.active {
   opacity: 1;
+}
+
+.wrapper .slider #progress {
+  background-color: red;
+  width: 0;
+  height: 1rem;
+}
+#placeholder {
   width: 100%;
   height: 100%;
+  z-index: 1000;
+  position: fixed;
+}
+
+#placeholder img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  z-index: -1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  position: sticky;
+  width: 90%;
+  height: 90%;  
+}
+
+.container .video {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 100%;
+  width: 100%;
+  transform: scale(1.5);
+}
+
+.container .video iframe {
+  opacity: 1;
+  width: 2040px;
+  height: 1080px;
+
 }
