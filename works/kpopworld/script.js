@@ -143,6 +143,7 @@ function clickOnPlayer(player, totalTime) {
   });
 }
 
+
 // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
 
@@ -152,15 +153,11 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 document.getElementById("placeholder").addEventListener("click", function(){
   this.style.display = 'none';
-  loadYT()
+  player.playVideo();
+  console.log("video plays")
 });
+
 // 2. This code loads the IFrame Player API code asynchronously.
-function loadYT() {
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-}
 
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
@@ -172,7 +169,7 @@ function onYouTubeIframeAPIReady() {
     videoId: 'os1el4T6-yo',
     playerVars: {
       controls: 0,
-      autoplay: 0,
+      autoplay: 1,
       iv_load_policy: 3,
       loop: 1,
       fs: 0,
@@ -196,7 +193,8 @@ function onPlayerReady(event) {
 //    The function indicates that when playing a video (state=1),
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING) {
-    event.target.setPlaybackQuality('hd720');
+    // Set the onclick event to the button for pause the YouTube video.
+    event.target.setPlaybackQuality('hd1080');
     setInterval(() => {
       let currentTime = player.getCurrentTime();
       let totalTime = player.getDuration();
@@ -204,8 +202,31 @@ function onPlayerStateChange(event) {
       updatePlayer(currentTime, totalTime);
       clickOnPlayer(player, totalTime);
     }, 1000);
+
+    var get = $("#current-time");
+    var txt = get.html();
+
+    // console.log(txt);
+
+    if (txt == ""){
+      player.pauseVideo();
+      console.log("video paused")
+    }
+
+    document.getElementById('box').onclick = function() {
+      player.pauseVideo();
+      console.log("video paused")
+  }
+
+}
+  if (event.data == YT.PlayerState.PAUSED) {
+    document.getElementById('box').onclick = function() {
+      player.playVideo();
+      console.log("video plays")
+    };
   }
 }
+
 function stopVideo() {
   console.log('asdds');
 }
