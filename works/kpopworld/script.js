@@ -1,72 +1,73 @@
-const data = [
-  {
-    '1': {
-      SearchResult: 10713,
-      Bodies: 6,
-      'Dancing Bodies': 64278,
-      'Total Bodies': 64278,
-      Company: 'Cube Entertainment',
-      Artist: '(G)I-dle ((여자)아이들)',
-      'Song Title': 'Oh My God',
-      Date: '06.04.2020',
-      Viewcount: 91222062,
-      Countries:
-        '1. Thailand  2. Vietnam  3. Indonesia  4. United States <br> 5. Brazil  6. Taiwan  7. India  8. Mexico  9. Philippines',
-    },
-    '2': {
-      SearchResult: 51082,
-      Bodies: 5,
-      'Dancing Bodies': 255410,
-      'Total Bodies': 319688,
-      Company: 'JYP Entertainment ',
-      Artist: 'ITZY (있지)',
-      'Song Title': 'Wannabe',
-      Date: '09.03.2020',
-      Viewcount: 136934108,
-      Countries:
-        '1. Indonesia  2. Japan  3. Thailand  4. Phillipines  <br>5. Vietnam,  6. United States  7. Brazil  8. Mexico  9. Taiwan',
-    },
-    '3': {
-      SearchResult: 21198,
-      Bodies: 5,
-      'Dancing Bodies': 105990,
-      'Total Bodies': 425678,
-      Company: 'Big Hit Entertainment',
-      Artist: 'BTS (방탄소년단)',
-      'Song Title': 'On',
-      Date: '27.02.2020',
-      Viewcount: 136950417,
-      Countries:
-        '1. United States  2. Indonesia  3. Brazil  4. Mexico  <br>5. Japan  6. Vietnam  7. Thailand  8. Philippines  9. India',
-    },
-    '4': {
-      SearchResult: 29531,
-      Bodies: 6,
-      'Dancing Bodies': 177186,
-      'Total Bodies': 602864,
-      Company: 'Yuehua Entertainment',
-      Artist: 'Everglow (에버글로우)',
-      'Song Title': 'Dun Dun',
-      Date: '03.02.2020',
-      Viewcount: 123784414,
-      Countries:
-        '1. Vietnam  2. Indonesia  3. Thailand  4. Brazil  <br>5. Mexico  6. United States  7. Philippines  8. Japan  9. Russia',
-    },
-    '5': {
-      SearchResult: 49555,
-      Bodies: 4,
-      'Dancing Bodies': 198220,
-      'Total Bodies': 801084,
-      Company: 'RBW',
-      Artist: 'Mamamoo (마마무)',
-      'Song Title': 'Hip',
-      Date: '14.11.2019',
-      Viewcount: 119826496,
-      Countries:
-        '1. Japan  2. United States  3. Mexico  4. Taiwan  <br>5. Brazil  6. Thailand  7. Vietnam  8. Indonesia  9. Philippines',
-    },
-  },
-];
+// const data = [
+//   {
+//     '1': {
+//       SearchResult: 10713,
+//       Bodies: 6,
+//       'Dancing Bodies': 64278,
+//       'Total Bodies': 64278,
+//       Company: 'Cube Entertainment',
+//       Artist: '(G)I-dle ((여자)아이들)',
+//       'Song Title': 'Oh My God',
+//       Date: '06.04.2020',
+//       Viewcount: 91222062,
+//       Countries:
+//         '1. Thailand  2. Vietnam  3. Indonesia  4. United States <br> 5. Brazil  6. Taiwan  7. India  8. Mexico  9. Philippines',
+//     },
+//     '2': {
+//       SearchResult: 51082,
+//       Bodies: 5,
+//       'Dancing Bodies': 255410,
+//       'Total Bodies': 319688,
+//       Company: 'JYP Entertainment ',
+//       Artist: 'ITZY (있지)',
+//       'Song Title': 'Wannabe',
+//       Date: '09.03.2020',
+//       Viewcount: 136934108,
+//       Countries:
+//         '1. Indonesia  2. Japan  3. Thailand  4. Phillipines  <br>5. Vietnam,  6. United States  7. Brazil  8. Mexico  9. Taiwan',
+//     },
+//     '3': {
+//       SearchResult: 21198,
+//       Bodies: 5,
+//       'Dancing Bodies': 105990,
+//       'Total Bodies': 425678,
+//       Company: 'Big Hit Entertainment',
+//       Artist: 'BTS (방탄소년단)',
+//       'Song Title': 'On',
+//       Date: '27.02.2020',
+//       Viewcount: 136950417,
+//       Countries:
+//         '1. United States  2. Indonesia  3. Brazil  4. Mexico  <br>5. Japan  6. Vietnam  7. Thailand  8. Philippines  9. India',
+//     },
+//     '4': {
+//       SearchResult: 29531,
+//       Bodies: 6,
+//       'Dancing Bodies': 177186,
+//       'Total Bodies': 602864,
+//       Company: 'Yuehua Entertainment',
+//       Artist: 'Everglow (에버글로우)',
+//       'Song Title': 'Dun Dun',
+//       Date: '03.02.2020',
+//       Viewcount: 123784414,
+//       Countries:
+//         '1. Vietnam  2. Indonesia  3. Thailand  4. Brazil  <br>5. Mexico  6. United States  7. Philippines  8. Japan  9. Russia',
+//     },
+//     '5': {
+//       SearchResult: 49555,
+//       Bodies: 4,
+//       'Dancing Bodies': 198220,
+//       'Total Bodies': 801084,
+//       Company: 'RBW',
+//       Artist: 'Mamamoo (마마무)',
+//       'Song Title': 'Hip',
+//       Date: '14.11.2019',
+//       Viewcount: 119826496,
+//       Countries:
+//         '1. Japan  2. United States  3. Mexico  4. Taiwan  <br>5. Brazil  6. Thailand  7. Vietnam  8. Indonesia  9. Philippines',
+//     },
+//   },
+// ];
+const local_data = data;
 
 const progressBar = document.getElementById('progress');
 const progressBarContainer = document.getElementsByClassName('slider')[0];
@@ -227,3 +228,16 @@ function onPlayerStateChange(event) {
 function stopVideo() {
   console.log('asdds');
 }
+
+function zoomIn() {
+  $('.video').css('transform', 'scale(1.5)');
+  $('.container').css('width', '155vw');
+  $('.container').css('height', '135vh');
+  ;
+}
+function zoomOut() {
+  $('.video').css('transform', 'scale(1)');
+  $('.container').css('width', '130vw');
+  $('.container').css('height', '110vh');
+}
+
