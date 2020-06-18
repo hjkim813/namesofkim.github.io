@@ -152,10 +152,29 @@ tag.src = 'https://www.youtube.com/iframe_api';
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+$(document).ready(function(){
+  setTimeout(function(){
+     $("#pleaseWait").css({"opacity":"1"})
+   }, 100);
+   setTimeout(function(){
+    $("#pleaseClick").css({"opacity":"1"})
+  }, 100);
+});
+
+// document.getElementById("placeholder").addEventListener("click", function(){
+//   this.style.display = 'none';
+//   player.playVideo();
+//   console.log("video plays")
+// });
+
+
 document.getElementById("placeholder").addEventListener("click", function(){
-  this.style.display = 'none';
+  setTimeout(function() {
+    document.getElementById('placeholder').style.display = 'none';
+  },2000);
   player.playVideo();
   console.log("video plays")
+  $(".instructions").css({"opacity":"0"})
 });
 
 // 2. This code loads the IFrame Player API code asynchronously.

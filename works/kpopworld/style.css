@@ -420,11 +420,44 @@ textarea {
   height: 100%;
   z-index: 1000;
   position: fixed;
+  text-align: center;
 }
 
 #placeholder img {
   width: 100%;
   height: 100%;
+  position: absolute;
+}
+
+.instructions {
+  text-align: center;
+  top: 80%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  position: fixed;
+  display: inline-block;
+}
+
+.instructions p {
+  padding: 0.5rem;
+  font-size: 3.5rem;
+  color: black;
+}
+
+.instructions #pleaseWait{
+  opacity: 0;
+  transition: all linear 3s;
+  -webkit-transition: all linear 3s;
+}
+
+.instructions #pleaseClick {
+  opacity: 0;
+  transition: all linear 2s;
+  -webkit-transition: all linear 2s;
 }
 
 .container {
