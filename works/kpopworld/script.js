@@ -281,7 +281,7 @@ function onPlayerStateChange(event) {
       changeContent(currentTime);
       updatePlayer(currentTime, totalTime);
       clickOnPlayer(player, totalTime);
-    }, 2000);
+    }, 1000);
 
     document.getElementById('box').onclick = function() {
       player.pauseVideo();
