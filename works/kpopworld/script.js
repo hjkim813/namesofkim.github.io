@@ -186,32 +186,24 @@ document.getElementById("plus").addEventListener("click", function(){
 
   // console.log(matrix) 
   if (matrix==`matrix(0.5, 0, 0, 0.5, 0, 0)`){
-    div.style.setProperty('transform', 'scale(0.75)');
-    container.style.width =  "160vw";
-    container.style.height =  "175vh";
-    div.style.top = "-20%";
-    div.style.left = "-75%";
+    container.style.setProperty('transform', 'scale(0.75)');
+    div.style.top = "-40%";
+    div.style.left = "-100%";
     }
   else if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
-    div.style.setProperty('transform', 'scale(1)');
-    container.style.width =  "210vw";
-    container.style.height =  "200vh";
-    div.style.top = "-20%";
-    div.style.left = "-45%";
+    container.style.setProperty('transform', 'scale(1)');
+    div.style.top = "-25%";
+    div.style.left = "-100%";
     }
   else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
-    div.style.setProperty('transform', 'scale(1.5)');
-    container.style.width =  "360vw";
-    container.style.height =  "300vh";
-    div.style.top = "0";
-    div.style.left = "0";
+    container.style.setProperty('transform', 'scale(1.5)');
+    div.style.top = "-10%";
+    div.style.left = "-40%";
     }
   else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`) {
-    div.style.setProperty('transform', 'scale(2)');
-    container.style.width =  "420vw";
-    container.style.height =  "400vh";
-    div.style.top = "10%";
-    div.style.left = "2%";
+    container.style.setProperty('transform', 'scale(2)');
+    div.style.top = "0";
+    div.style.left = "-40%";
   }
   // else if (matrix==`matrix(2, 0, 0, 2, 0, 0)`) {
   //   div.style.setProperty('transform', 'scale(2.5)');
@@ -225,38 +217,28 @@ document.getElementById("minus").addEventListener("click", function(){
 
   if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.5)');
-    container.style.width =  "100vw";
-    container.style.height =  "100vh";
     div.style.top = "-55%";
     div.style.left = "-100%";
   }
   else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
-    div.style.setProperty('transform', 'scale(0.75)');
-    container.style.width =  "160vw";
-    container.style.height =  "175vh";
-    div.style.top = "-20%";
-    div.style.left = "-75%";
+    container.style.setProperty('transform', 'scale(0.75)');
+    div.style.top = "-40%";
+    div.style.left = "-100%";
   }
   else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`){
-    div.style.setProperty('transform', 'scale(1)');
-    container.style.width =  "210vw";
-    container.style.height =  "200vh";
-    div.style.top = "-20%";
-    div.style.left = "-45%";
+    container.style.setProperty('transform', 'scale(1)');
+    div.style.top = "-25%";
+    div.style.left = "-100%";
   }
   else if (matrix==`matrix(2, 0, 0, 2, 0, 0)`) {
-    div.style.setProperty('transform', 'scale(1.5)');
-    container.style.width =  "360vw";
-    container.style.height =  "300vh";
-    div.style.top = "0";
-    div.style.left = "0";
+    container.style.setProperty('transform', 'scale(1.5)');
+    div.style.top = "-10%";
+    div.style.left = "-40%";
   }
   else if (matrix==`matrix(2.5, 0, 0, 2.5, 0, 0)`) {
-    div.style.setProperty('transform', 'scale(2)');
-    container.style.width =  "420vw";
-    container.style.height =  "400vh";
-    div.style.top = "10%";
-    div.style.left = "2%";
+    container.style.setProperty('transform', 'scale(2)');
+    div.style.top = "0";
+    div.style.left = "-40%";
   }
 });
 

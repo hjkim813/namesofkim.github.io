@@ -459,6 +459,7 @@ textarea {
 .container {
 z-index: -1000;
 position: relative;
+overflow: scroll;
 top: 0;
 left: 0;
 width: 100vw;
@@ -469,10 +470,10 @@ transform: scale(0.5);
 
 .container .video {
 position: relative;
-overflow: scroll;
+overflow: hidden;
 width: 4400px;
 height: 1900px;
-top: -55%;
+top: -60%;
 left: -100%;
 border: blue 3px solid;
 }
