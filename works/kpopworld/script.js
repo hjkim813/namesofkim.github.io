@@ -1,72 +1,4 @@
-// const data = [
-//   {
-//     '1': {
-//       SearchResult: 10713,
-//       Bodies: 6,
-//       'Dancing Bodies': 64278,
-//       'Total Bodies': 64278,
-//       Company: 'Cube Entertainment',
-//       Artist: '(G)I-dle ((여자)아이들)',
-//       'Song Title': 'Oh My God',
-//       Date: '06.04.2020',
-//       Viewcount: 91222062,
-//       Countries:
-//         '1. Thailand  2. Vietnam  3. Indonesia  4. United States <br> 5. Brazil  6. Taiwan  7. India  8. Mexico  9. Philippines',
-//     },
-//     '2': {
-//       SearchResult: 51082,
-//       Bodies: 5,
-//       'Dancing Bodies': 255410,
-//       'Total Bodies': 319688,
-//       Company: 'JYP Entertainment ',
-//       Artist: 'ITZY (있지)',
-//       'Song Title': 'Wannabe',
-//       Date: '09.03.2020',
-//       Viewcount: 136934108,
-//       Countries:
-//         '1. Indonesia  2. Japan  3. Thailand  4. Phillipines  <br>5. Vietnam,  6. United States  7. Brazil  8. Mexico  9. Taiwan',
-//     },
-//     '3': {
-//       SearchResult: 21198,
-//       Bodies: 5,
-//       'Dancing Bodies': 105990,
-//       'Total Bodies': 425678,
-//       Company: 'Big Hit Entertainment',
-//       Artist: 'BTS (방탄소년단)',
-//       'Song Title': 'On',
-//       Date: '27.02.2020',
-//       Viewcount: 136950417,
-//       Countries:
-//         '1. United States  2. Indonesia  3. Brazil  4. Mexico  <br>5. Japan  6. Vietnam  7. Thailand  8. Philippines  9. India',
-//     },
-//     '4': {
-//       SearchResult: 29531,
-//       Bodies: 6,
-//       'Dancing Bodies': 177186,
-//       'Total Bodies': 602864,
-//       Company: 'Yuehua Entertainment',
-//       Artist: 'Everglow (에버글로우)',
-//       'Song Title': 'Dun Dun',
-//       Date: '03.02.2020',
-//       Viewcount: 123784414,
-//       Countries:
-//         '1. Vietnam  2. Indonesia  3. Thailand  4. Brazil  <br>5. Mexico  6. United States  7. Philippines  8. Japan  9. Russia',
-//     },
-//     '5': {
-//       SearchResult: 49555,
-//       Bodies: 4,
-//       'Dancing Bodies': 198220,
-//       'Total Bodies': 801084,
-//       Company: 'RBW',
-//       Artist: 'Mamamoo (마마무)',
-//       'Song Title': 'Hip',
-//       Date: '14.11.2019',
-//       Viewcount: 119826496,
-//       Countries:
-//         '1. Japan  2. United States  3. Mexico  4. Taiwan  <br>5. Brazil  6. Thailand  7. Vietnam  8. Indonesia  9. Philippines',
-//     },
-//   },
-// ];
+
 const local_data = data;
 
 const progressBar = document.getElementById('progress');
@@ -155,10 +87,10 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 $(document).ready(function(){
   setTimeout(function(){
      $("#pleaseWait").css({"opacity":"1"})
-   }, 100);
+   }, 1000);
    setTimeout(function(){
     $("#pleaseClick").css({"opacity":"1"})
-  }, 100);
+  }, 8000);
 });
 
 // document.getElementById("placeholder").addEventListener("click", function(){
@@ -168,13 +100,11 @@ $(document).ready(function(){
 // });
 
 
-document.getElementById("placeholder").addEventListener("click", function(){
-  setTimeout(function() {
-    document.getElementById('placeholder').style.display = 'none';
-  },2000);
+document.getElementById("pleaseClick").addEventListener("click", function(){
+  $(".instructions").css({"opacity":"0"})
+  document.getElementById('placeholder').style.display = 'none';
   player.playVideo();
   console.log("video plays")
-  $(".instructions").css({"opacity":"0"})
 });
 
 // 2. This code loads the IFrame Player API code asynchronously.
@@ -186,7 +116,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '0',
     width: '0',
-    videoId: '8PyoEoCkuVQ',
+    videoId: '5WY3KBwCVDQ',
     playerVars: {
       controls: 0,
       autoplay: 1,
@@ -248,15 +178,104 @@ function stopVideo() {
   console.log('asdds');
 }
 
-function zoomIn() {
-  $('.video').css('transform', 'scale(1.5)');
-  $('.container').css('width', '155vw');
-  $('.container').css('height', '135vh');
-  ;
-}
-function zoomOut() {
-  $('.video').css('transform', 'scale(1)');
-  $('.container').css('width', '130vw');
-  $('.container').css('height', '110vh');
-}
+document.getElementById("plus").addEventListener("click", function(){
+  var matrix = $('.video').css('transform');
+  var div = document.getElementsByClassName('video')[0];
+  var container = document.getElementsByClassName('container')[0];
+
+  // console.log(matrix) 
+  if (matrix==`matrix(0.5, 0, 0, 0.5, 0, 0)`){
+    div.style.setProperty('transform', 'scale(0.75)');
+    container.style.width =  "160vw";
+    container.style.height =  "175vh";
+    div.style.top = "-20%";
+    div.style.left = "-75%";
+    }
+  else if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
+    div.style.setProperty('transform', 'scale(1)');
+    container.style.width =  "210vw";
+    container.style.height =  "200vh";
+    div.style.top = "-20%";
+    div.style.left = "-45%";
+    }
+  else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
+    div.style.setProperty('transform', 'scale(1.5)');
+    container.style.width =  "360vw";
+    container.style.height =  "300vh";
+    div.style.top = "0";
+    div.style.left = "0";
+    }
+  else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`) {
+    div.style.setProperty('transform', 'scale(2)');
+    container.style.width =  "420vw";
+    container.style.height =  "400vh";
+    div.style.top = "10%";
+    div.style.left = "2%";
+  }
+  // else if (matrix==`matrix(2, 0, 0, 2, 0, 0)`) {
+  //   div.style.setProperty('transform', 'scale(2.5)');
+  // }
+});
+
+document.getElementById("minus").addEventListener("click", function(){
+  var matrix = $('.video').css('transform');
+  var div = document.getElementsByClassName('video')[0];
+  var container = document.getElementsByClassName('container')[0];
+
+  if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
+    div.style.setProperty('transform', 'scale(0.5)');
+    container.style.width =  "115vw";
+    container.style.height =  "110vh";
+    div.style.top = "-75%";
+    div.style.left = "-120%";
+  }
+  else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
+    div.style.setProperty('transform', 'scale(0.75)');
+    container.style.width =  "160vw";
+    container.style.height =  "175vh";
+    div.style.top = "-20%";
+    div.style.left = "-75%";
+  }
+  else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`){
+    div.style.setProperty('transform', 'scale(1)');
+    container.style.width =  "210vw";
+    container.style.height =  "200vh";
+    div.style.top = "-20%";
+    div.style.left = "-45%";
+  }
+  else if (matrix==`matrix(2, 0, 0, 2, 0, 0)`) {
+    div.style.setProperty('transform', 'scale(1.5)');
+    container.style.width =  "360vw";
+    container.style.height =  "300vh";
+    div.style.top = "0";
+    div.style.left = "0";
+  }
+  else if (matrix==`matrix(2.5, 0, 0, 2.5, 0, 0)`) {
+    div.style.setProperty('transform', 'scale(2)');
+    container.style.width =  "420vw";
+    container.style.height =  "400vh";
+    div.style.top = "10%";
+    div.style.left = "2%";
+  }
+});
+
+// function zoomOut() {
+//   $('.video').css('transform', 'scale(1)');
+//   $('.container').css('width', '130vw');
+//   $('.container').css('height', '110vh');
+// }
+
+
+
+// function zoomIn() {
+//   $('.video').css('transform', 'scale(1.5)');
+//   $('.container').css('width', '155vw');
+//   $('.container').css('height', '135vh');
+//   ;
+// }
+// function zoomOut() {
+//   $('.video').css('transform', 'scale(1)');
+//   $('.container').css('width', '130vw');
+//   $('.container').css('height', '110vh');
+// }
 
