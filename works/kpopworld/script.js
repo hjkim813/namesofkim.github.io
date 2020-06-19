@@ -224,11 +224,11 @@ document.getElementById("minus").addEventListener("click", function(){
   var container = document.getElementsByClassName('container')[0];
 
   if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
-    div.style.setProperty('transform', 'scale(0.5)');
-    container.style.width =  "115vw";
-    container.style.height =  "110vh";
-    div.style.top = "-75%";
-    div.style.left = "-120%";
+    container.style.setProperty('transform', 'scale(0.5)');
+    container.style.width =  "100vw";
+    container.style.height =  "100vh";
+    div.style.top = "-55%";
+    div.style.left = "-100%";
   }
   else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
     div.style.setProperty('transform', 'scale(0.75)');
