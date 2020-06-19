@@ -456,7 +456,7 @@ textarea {
   opacity: 0;}
 
 
-.container {
+/* .container {
 z-index: -1000;
 position: relative;
 overflow: scroll;
@@ -476,9 +476,9 @@ height: 1900px;
 top: -60%;
 left: -100%;
 border: blue 3px solid;
-}
+} */
  
-/* .container {
+.container {
   z-index: -1000;
   position: relative;
   top: 0;
@@ -498,7 +498,7 @@ border: blue 3px solid;
   top: -5%;
   left: -50%;
   border: blue 3px solid;
-  } */
+  }
 
 .container .video iframe {
   width: 5080px;
