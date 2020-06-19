@@ -439,6 +439,7 @@ textarea {
   z-index: 1001;
   position: fixed;
   display: inline-block;
+  cursor: default;
 }
 
 .instructions p {
@@ -447,13 +448,6 @@ textarea {
   color: black;
 }
 
-.instructions #pleaseWait{
-  cursor: default;
-  opacity: 0;}
-
-.instructions #pleaseClick {
-  cursor: default;
-  opacity: 0;}
 
 
 /* .container {
@@ -485,8 +479,7 @@ border: blue 3px solid;
   left: 0;
   width: 100vw;
   height: 100vh;
-  border: red 1px solid;
-  transform: scale(1);
+  transform: scale(0.75);
   
   }
   
@@ -495,9 +488,8 @@ border: blue 3px solid;
   overflow: scroll;
   width: 4400px;
   height: 1900px;
-  top: -5%;
-  left: -50%;
-  border: blue 3px solid;
+  top: -25%;
+  left: -100%;
   }
 
 .container .video iframe {
