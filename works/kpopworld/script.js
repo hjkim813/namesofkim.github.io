@@ -1,5 +1,6 @@
 
-const local_data = data;
+// const local_data = data;
+// var data = require('./datacomma.json'); //(with path)
 
 const progressBar = document.getElementById('progress');
 const progressBarContainer = document.getElementsByClassName('slider')[0];
