@@ -219,8 +219,6 @@ $(document).ready(function(){
   setTimeout(function(){
     $('#pleaseClick').fadeIn(1000);
 },10000);
-
-
 });
 
 

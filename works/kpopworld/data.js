@@ -5,7 +5,7 @@ var data = [
       "SearchResult": "417",
       "Bodies": 7,
       "Dancing Bodies": "2,919",
-      "Total Bodies": "1,379,628",
+      "Total Bodies": "1,383,415",
       "Company": "WM Entertainment",
       "Artist": "OH MY GIRL(오마이걸)",
       "Date": "27.04.2020",
@@ -17,7 +17,7 @@ var data = [
       "SearchResult": "949",
       "Bodies": 6,
       "Dancing Bodies": "5,694",
-      "Total Bodies": "1,376,709",
+      "Total Bodies": "1,380,496",
       "Company": "Cube Entertainment",
       "Artist": "에이핑크(Apink)",
       "Date": "13.04.2020",
@@ -29,7 +29,7 @@ var data = [
       "SearchResult": "398",
       "Bodies": 6,
       "Dancing Bodies": "2,388",
-      "Total Bodies": "1,371,015",
+      "Total Bodies": "1,374,802",
       "Company": "Cube Entertainment",
       "Artist": "(G)I-dle ((여자)아이들)",
       "Date": "06.04.2020",
@@ -41,7 +41,7 @@ var data = [
       "SearchResult": "10,092",
       "Bodies": 5,
       "Dancing Bodies": "50,460",
-      "Total Bodies": "1,368,627",
+      "Total Bodies": "1,372,414",
       "Company": "JYP Entertainment ",
       "Artist": "ITZY (있지)",
       "Date": "09.03.2020",
@@ -53,7 +53,7 @@ var data = [
       "SearchResult": "4,166",
       "Bodies": 5,
       "Dancing Bodies": "20,830",
-      "Total Bodies": "1,318,167",
+      "Total Bodies": "1,321,954",
       "Company": "Big Hit Entertainment",
       "Artist": "BTS (방탄소년단)",
       "Date": "27.02.2020",
@@ -65,7 +65,7 @@ var data = [
       "SearchResult": "3,223",
       "Bodies": 6,
       "Dancing Bodies": "19,338",
-      "Total Bodies": "1,297,337",
+      "Total Bodies": "1,301,124",
       "Company": "Yuehua Entertainment",
       "Artist": "Everglow (에버글로우)",
       "Date": "03.02.2020",
@@ -77,7 +77,7 @@ var data = [
       "SearchResult": "4,560",
       "Bodies": 4,
       "Dancing Bodies": "18,240",
-      "Total Bodies": "1,277,999",
+      "Total Bodies": "1,281,786",
       "Company": "RBW",
       "Artist": "Mamamoo (마마무)",
       "Date": "14.11.2019",
@@ -89,7 +89,7 @@ var data = [
       "SearchResult": "1,096",
       "Bodies": 7,
       "Dancing Bodies": "7,672",
-      "Total Bodies": "1,259,759",
+      "Total Bodies": "1,263,546",
       "Company": "SM Entertainment",
       "Artist": "Super M (슈퍼주니어-M)",
       "Date": "04.10.2019",
@@ -101,7 +101,7 @@ var data = [
       "SearchResult": "8,253",
       "Bodies": 9,
       "Dancing Bodies": "74,277",
-      "Total Bodies": "1,252,087",
+      "Total Bodies": "1,255,874",
       "Company": "JYP Entertainment",
       "Artist": "Twice (트와이스)",
       "Date": "23.09.2019",
@@ -113,19 +113,19 @@ var data = [
       "SearchResult": "2,917",
       "Bodies": 6,
       "Dancing Bodies": "17,502",
-      "Total Bodies": "1,177,810",
+      "Total Bodies": "1,181,597",
       "Company": "Yuehua Entertainment",
       "Artist": "Everglow (에버글로우)",
       "Date": "19.08.2019",
       "Viewcount": "108,912,397",
-      "Countries": "1. Vietnam  2. Indonesia  3. Thailand  4. Brazil  5. Mexico<br>6. United  States  7. Philippines  8. Japan  9. Russua"
+      "Countries": "1. Vietnam  2. Indonesia  3. Thailand  4. Brazil  5. Mexico<br>6. United  States  7. Philippines  8. Japan  9. Russia"
     },
     "11": {
       "Song Title": "Icy",
       "SearchResult": "9,940",
       "Bodies": 5,
       "Dancing Bodies": "49,700",
-      "Total Bodies": "1,160,308",
+      "Total Bodies": "1,164,095",
       "Company": "JYP Entertainment ",
       "Artist": "ITZY (있지)",
       "Date": "28.07.2019",
@@ -137,7 +137,7 @@ var data = [
       "SearchResult": "944",
       "Bodies": 7,
       "Dancing Bodies": "6,608",
-      "Total Bodies": "1,110,608",
+      "Total Bodies": "1,114,395",
       "Company": "SM Entertainment",
       "Artist": "NCT Dream",
       "Date": "25.07.2019",
@@ -149,7 +149,7 @@ var data = [
       "SearchResult": "983",
       "Bodies": 5,
       "Dancing Bodies": "4,915",
-      "Total Bodies": "1,104,000",
+      "Total Bodies": "1,107,787",
       "Company": "SM Entertainment",
       "Artist": "Red Velvet (레드벨벳)",
       "Date": "19.06.2019",
@@ -161,7 +161,7 @@ var data = [
       "SearchResult": "9,617",
       "Bodies": 9,
       "Dancing Bodies": "86,553",
-      "Total Bodies": "1,099,085",
+      "Total Bodies": "1,102,872",
       "Company": "JYP Entertainment",
       "Artist": "Twice (트와이스)",
       "Date": "22.04.2019",
@@ -173,7 +173,7 @@ var data = [
       "SearchResult": "9,179",
       "Bodies": 5,
       "Dancing Bodies": "45,895",
-      "Total Bodies": "1,012,532",
+      "Total Bodies": "1,016,319",
       "Company": "Big Hit Entertainment",
       "Artist": "BTS (방탄소년단)",
       "Date": "12.04.2019",
@@ -185,7 +185,7 @@ var data = [
       "SearchResult": "25,587",
       "Bodies": 5,
       "Dancing Bodies": "127,935",
-      "Total Bodies": "966,637",
+      "Total Bodies": "970,424",
       "Company": "YG Entertainment",
       "Artist": "BLACKPINK (블랙핑크)",
       "Date": "23.04.2019",
@@ -197,7 +197,7 @@ var data = [
       "SearchResult": "1,258",
       "Bodies": 8,
       "Dancing Bodies": "10,064",
-      "Total Bodies": "838,702",
+      "Total Bodies": "842,489",
       "Company": "JYP Entertainment",
       "Artist": "Stray Kids (스트레이 키즈)",
       "Date": "24.03.2019",
@@ -209,7 +209,7 @@ var data = [
       "SearchResult": "278",
       "Bodies": 6,
       "Dancing Bodies": "1,668",
-      "Total Bodies": "828,638",
+      "Total Bodies": "832,425",
       "Company": "Cube Entertainment",
       "Artist": "(G)I-dle ((여자)아이들)",
       "Date": "26.02.2019",
@@ -221,7 +221,7 @@ var data = [
       "SearchResult": "444",
       "Bodies": 1,
       "Dancing Bodies": "444",
-      "Total Bodies": "826,970",
+      "Total Bodies": "830,757",
       "Company": "RBW",
       "Artist": "Hwasa (화사)",
       "Date": "13.02.2019",
@@ -233,7 +233,7 @@ var data = [
       "SearchResult": "6,660",
       "Bodies": 5,
       "Dancing Bodies": "33,300",
-      "Total Bodies": "826,526",
+      "Total Bodies": "830,313",
       "Company": "JYP Entertainment ",
       "Artist": "ITZY (있지)",
       "Date": "10.02.2019",
@@ -245,7 +245,7 @@ var data = [
       "SearchResult": "3,666",
       "Bodies": 9,
       "Dancing Bodies": "32,994",
-      "Total Bodies": "793,226",
+      "Total Bodies": "797,013",
       "Company": "SM Entertainment",
       "Artist": "EXO (엑소)",
       "Date": "13.12.2018",
@@ -257,7 +257,7 @@ var data = [
       "SearchResult": "19,473",
       "Bodies": 1,
       "Dancing Bodies": "19,473",
-      "Total Bodies": "760,232",
+      "Total Bodies": "764,019",
       "Company": "YG Entertainment",
       "Artist": "Jennie (제니)",
       "Date": "12.11.2018",
@@ -269,7 +269,7 @@ var data = [
       "SearchResult": "4,383",
       "Bodies": 9,
       "Dancing Bodies": "39,447",
-      "Total Bodies": "740,759",
+      "Total Bodies": "744,546",
       "Company": "JYP Entertainment",
       "Artist": "Twice (트와이스)",
       "Date": "05.11.2018",
@@ -281,7 +281,7 @@ var data = [
       "SearchResult": "1,282",
       "Bodies": 9,
       "Dancing Bodies": "11,538",
-      "Total Bodies": "701,312",
+      "Total Bodies": "705,099",
       "Company": "SM Entertainment",
       "Artist": "EXO (엑소)",
       "Date": "02.11.2018",
@@ -293,7 +293,7 @@ var data = [
       "SearchResult": "237",
       "Bodies": 12,
       "Dancing Bodies": "2,844",
-      "Total Bodies": "689,774",
+      "Total Bodies": "693,561",
       "Company": "Off The Record Entertainment",
       "Artist": "IZ*ONE (아이즈원)",
       "Date": "29.10.2018",
@@ -305,7 +305,7 @@ var data = [
       "SearchResult": "497",
       "Bodies": 1,
       "Dancing Bodies": "497",
-      "Total Bodies": "686,930",
+      "Total Bodies": "690,717",
       "Company": "Edam Entertainment",
       "Artist": "IU (아이유)",
       "Date": "10.10.2018",
@@ -317,7 +317,7 @@ var data = [
       "SearchResult": "151",
       "Bodies": 9,
       "Dancing Bodies": "1,359",
-      "Total Bodies": "686,433",
+      "Total Bodies": "690,220",
       "Company": "SM Entertainment",
       "Artist": "Super Junior (슈퍼주니어)",
       "Date": "08.10.2018",
@@ -329,7 +329,7 @@ var data = [
       "SearchResult": "587",
       "Bodies": 5,
       "Dancing Bodies": "2,935",
-      "Total Bodies": "685,074",
+      "Total Bodies": "688,861",
       "Company": "SM Entertainment",
       "Artist": "Girl's Generation Oh!GG",
       "Date": "05.09.2018",
@@ -341,7 +341,7 @@ var data = [
       "SearchResult": "8,022",
       "Bodies": 5,
       "Dancing Bodies": "40,110",
-      "Total Bodies": "682,139",
+      "Total Bodies": "685,926",
       "Company": "Big Hit Entertainment",
       "Artist": "BTS (방탄소년단)",
       "Date": "24.08.2018",
@@ -353,7 +353,7 @@ var data = [
       "SearchResult": "299",
       "Bodies": 6,
       "Dancing Bodies": "1,794",
-      "Total Bodies": "642,029",
+      "Total Bodies": "645,816",
       "Company": "Cube Entertainment",
       "Artist": "(G)I-dle ((여자)아이들)",
       "Date": "14.08.2018",
@@ -365,7 +365,7 @@ var data = [
       "SearchResult": "1,534",
       "Bodies": 7,
       "Dancing Bodies": "10,738",
-      "Total Bodies": "640,235",
+      "Total Bodies": "644,022",
       "Company": "YG Entertainment",
       "Artist": "iKON (아이콘)",
       "Date": "02.08.2018",
@@ -377,7 +377,7 @@ var data = [
       "SearchResult": "723",
       "Bodies": 4,
       "Dancing Bodies": "2,892",
-      "Total Bodies": "629,497",
+      "Total Bodies": "633,284",
       "Company": "RBW",
       "Artist": "Mamamoo (마마무)",
       "Date": "16.07.2018",
@@ -389,7 +389,7 @@ var data = [
       "SearchResult": "2,012",
       "Bodies": 9,
       "Dancing Bodies": "18,108",
-      "Total Bodies": "626,605",
+      "Total Bodies": "630,392",
       "Company": "JYP Entertainment",
       "Artist": "Twice (트와이스)",
       "Date": "09.07.2018",
@@ -401,7 +401,7 @@ var data = [
       "SearchResult": "582",
       "Bodies": 6,
       "Dancing Bodies": "3,492",
-      "Total Bodies": "608,497",
+      "Total Bodies": "612,284",
       "Company": "Play M Entertainment",
       "Artist": "Apink (에이핑크)",
       "Date": "02.07.2018",
@@ -413,7 +413,7 @@ var data = [
       "SearchResult": "3,894",
       "Bodies": 7,
       "Dancing Bodies": "27,258",
-      "Total Bodies": "605,005",
+      "Total Bodies": "608,792",
       "Company": "MLD Entertainment",
       "Artist": "Momoland (모모랜드)",
       "Date": "26.06.2018",
@@ -425,7 +425,7 @@ var data = [
       "SearchResult": "9,290",
       "Bodies": 5,
       "Dancing Bodies": "46,450",
-      "Total Bodies": "577,747",
+      "Total Bodies": "581,534",
       "Company": "YG Entertainment",
       "Artist": "BLACKPINK (블랙핑크)",
       "Date": "15.06.2018",
@@ -437,7 +437,7 @@ var data = [
       "SearchResult": "8,684",
       "Bodies": 5,
       "Dancing Bodies": "43,420",
-      "Total Bodies": "531,297",
+      "Total Bodies": "535,084",
       "Company": "Big Hit Entertainment",
       "Artist": "BTS (방탄소년단)",
       "Date": "18.06.2018",
@@ -449,7 +449,7 @@ var data = [
       "SearchResult": "486",
       "Bodies": 6,
       "Dancing Bodies": "2,916",
-      "Total Bodies": "487,877",
+      "Total Bodies": "491,664",
       "Company": "Cube Entertainment",
       "Artist": "(G)I-dle ((여자)아이들)",
       "Date": "02.05.2018",
@@ -461,7 +461,7 @@ var data = [
       "SearchResult": "429",
       "Bodies": 9,
       "Dancing Bodies": "3,861",
-      "Total Bodies": "484,961",
+      "Total Bodies": "488,748",
       "Company": "SM Entertainment",
       "Artist": "Super Junior (슈퍼주니어)",
       "Date": "12.04.2018",
@@ -473,7 +473,7 @@ var data = [
       "SearchResult": "4,223",
       "Bodies": 9,
       "Dancing Bodies": "38,007",
-      "Total Bodies": "481,100",
+      "Total Bodies": "484,887",
       "Company": "JYP Entertainment",
       "Artist": "Twice (트와이스)",
       "Date": "09.04.2018",
@@ -485,7 +485,7 @@ var data = [
       "SearchResult": "534",
       "Bodies": 4,
       "Dancing Bodies": "2,136",
-      "Total Bodies": "443,093",
+      "Total Bodies": "446,880",
       "Company": "RBW",
       "Artist": "Mamamoo (마마무)",
       "Date": "07.03.2018",
@@ -493,6 +493,18 @@ var data = [
       "Countries": "1. Japan  2. United  States  3. Mexico  4. Taiwan  5. Brazil<br>6. Thailand  7. Vietnam  8. Indonesia  9. Philippines"
     },
     "42": {
+      "Song Title": "Baby Don't Stop",
+      "SearchResult": "541",
+      "Bodies": 7,
+      "Dancing Bodies": "3,787",
+      "Total Bodies": "444,744",
+      "Company": "SM Entertainment",
+      "Artist": "NCT U (엔시티 유)",
+      "Date": "26.02.2018",
+      "Viewcount": "66,576,050",
+      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Japan  5. Brazil<br>6. Mexico  7. Malaysia  8. Philippines  9. Vietnam"
+    },
+    "43": {
       "Song Title": "Boss",
       "SearchResult": "1,356",
       "Bodies": 7,
@@ -504,7 +516,7 @@ var data = [
       "Viewcount": "118,606,934",
       "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Japan  5. Brazil<br>6. Mexico  7. Malaysia  8. Philippines  9. Vietnam"
     },
-    "43": {
+    "44": {
       "Song Title": "Bad Boy",
       "SearchResult": "2,330",
       "Bodies": 5,
@@ -516,7 +528,7 @@ var data = [
       "Viewcount": "266,178,734",
       "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Vietna<br>6. Japan  7. Brazil  8. Mexico  9. Malaysia"
     },
-    "44": {
+    "45": {
       "Song Title": "Heart Shaker",
       "SearchResult": "2,217",
       "Bodies": 9,
@@ -528,7 +540,7 @@ var data = [
       "Viewcount": "324,015,895",
       "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
     },
-    "45": {
+    "46": {
       "Song Title": "피카부 (Peek-A-Boo)",
       "SearchResult": "1,616",
       "Bodies": 5,
@@ -540,7 +552,7 @@ var data = [
       "Viewcount": "169,897,618",
       "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Vietna<br>6. Japan  7. Brazil  8. Mexico  9. Malaysia"
     },
-    "46": {
+    "47": {
       "Song Title": "Likey",
       "SearchResult": "4,346",
       "Bodies": 9,
@@ -552,7 +564,7 @@ var data = [
       "Viewcount": "453,553,253",
       "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
     },
-    "47": {
+    "48": {
       "Song Title": "DNA",
       "SearchResult": "6,905",
       "Bodies": 5,
@@ -564,7 +576,7 @@ var data = [
       "Viewcount": "1,011,111,741",
       "Countries": "1. United  States  2. Indonesia  3. Brazil  4. Mexico  5. Japan<br>6. Vietnam  7. Thailand  8. Philippines  9. India"
     },
-    "48": {
+    "49": {
       "Song Title": "Gashina(가시나)",
       "SearchResult": "1,586",
       "Bodies": 1,
@@ -576,7 +588,7 @@ var data = [
       "Viewcount": "127,799,122",
       "Countries": "1. United  States  2. Brazil  3. Vietnam  4. Thailand  5. Indonesia<br>6. Mexico  7. Japan  8. Taiwan  9. Malaysia"
     },
-    "49": {
+    "50": {
       "Song Title": "에너제틱 (Energetic)",
       "SearchResult": "2,153",
       "Bodies": 11,
@@ -588,7 +600,7 @@ var data = [
       "Viewcount": "132,451,060",
       "Countries": "1. Thailand  2. Indonesia  3. Japan  4. Vietnam  5. Malaysia<br>6. Taiwan  7. United  States  8. Philippines  9. Mexico"
     },
-    "50": {
+    "51": {
       "Song Title": "빨간 맛 (Red Flavor)",
       "SearchResult": "2,529",
       "Bodies": 5,
@@ -600,7 +612,7 @@ var data = [
       "Viewcount": "150,929,511",
       "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Vietna<br>6. Japan  7. Brazil  8. Mexico  9. Malaysia"
     },
-    "51": {
+    "52": {
       "Song Title": "마지막처럼 (AS IF IT'S YOUR LAST)",
       "SearchResult": "4,371",
       "Bodies": 5,
@@ -612,7 +624,7 @@ var data = [
       "Viewcount": "798,231,179",
       "Countries": "1. Indonesia  2. Thailand  3. Philippines  4. Brazil  5. Vietnam<br>6. United  States  7. Mexico  8. Japan  9. Malaysia"
     },
-    "52": {
+    "53": {
       "Song Title": "Cherry Bomb",
       "SearchResult": "1,577",
       "Bodies": 9,
@@ -624,7 +636,7 @@ var data = [
       "Viewcount": "98,377,799",
       "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Japan  5. Brazil<br>6. Mexico  7. Philippines  8. Malaysia  9. Vietnam"
     },
-    "53": {
+    "54": {
       "Song Title": "울고 싶지 않아 (Don't Wanna Cry)",
       "SearchResult": "1,674",
       "Bodies": 13,
@@ -636,7 +648,7 @@ var data = [
       "Viewcount": "165,582,686",
       "Countries": "1. Japan  2. Indonesia  3. United  States  4. Thailand  5. Philippines<br>6. Vietnam  7. Malaysia  8. Taiwan  9. Mexico"
     },
-    "54": {
+    "55": {
       "Song Title": "Signal",
       "SearchResult": "2,643",
       "Bodies": 9,
@@ -648,7 +660,7 @@ var data = [
       "Viewcount": "243,915,450",
       "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
     },
-    "55": {
+    "56": {
       "Song Title": "New Face",
       "SearchResult": "1,421",
       "Bodies": 1,
@@ -660,7 +672,7 @@ var data = [
       "Viewcount": "209,078,062",
       "Countries": "1. Vietnam  2. United  States  3. Russia  4. Brazil  5. Mexico<br>6. India  7. Turkey  8. Japan  9. Philippines"
     },
-    "56": {
+    "57": {
       "Song Title": "Never Ever",
       "SearchResult": "2,317",
       "Bodies": 7,
@@ -672,7 +684,7 @@ var data = [
       "Viewcount": "169,323,821",
       "Countries": "1. Thailand  2. United  States  3. Indonesia  4. Mexico  5. Brazil<br>6. Philippines  7. Vietnam  8. Japan  9. Malaysia"
     },
-    "57": {
+    "58": {
       "Song Title": "Not Today",
       "SearchResult": "5,633",
       "Bodies": 5,
@@ -684,7 +696,7 @@ var data = [
       "Viewcount": "406,803,971",
       "Countries": "1. United  States  2. Indonesia  3. Brazil  4. Mexico  5. Japan<br>6. Vietnam  7. Thailand  8. Philippines  9. India"
     },
-    "58": {
+    "59": {
       "Song Title": "Don`t Recall",
       "SearchResult": "2,218",
       "Bodies": 4,
@@ -696,7 +708,7 @@ var data = [
       "Viewcount": "68,168,572",
       "Countries": "1. Brazil  2. Mexico  3. United  States  4. Argentica  5. Indonesia<br>6. Vietnam  7. Peru  8. Chile  9. Thailand"
     },
-    "59": {
+    "60": {
       "Song Title": "TT",
       "SearchResult": "9,753",
       "Bodies": 9,
@@ -708,7 +720,7 @@ var data = [
       "Viewcount": "523,127,556",
       "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
     },
-    "60": {
+    "61": {
       "Song Title": "러시안 룰렛 (Russian Roulette)",
       "SearchResult": "1,722",
       "Bodies": 5,
@@ -720,7 +732,7 @@ var data = [
       "Viewcount": "172,491,853",
       "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Vietnam<br>6. Japan  7. Brazil  8. Mexico  9. Malaysia"
     },
-    "61": {
+    "62": {
       "Song Title": "Lotto",
       "SearchResult": "2,098",
       "Bodies": 9,
@@ -732,7 +744,7 @@ var data = [
       "Viewcount": "138,910,217",
       "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Mexico<br>6. Brazil  7. Japan  8. Vietnam  9. Malaysia"
     },
-    "62": {
+    "63": {
       "Song Title": "Rough (시간을 달려서)",
       "SearchResult": "2,446",
       "Bodies": 6,
@@ -744,7 +756,7 @@ var data = [
       "Viewcount": "66,769,690",
       "Countries": "1. Indonesia  2. Taiwan  3. Vietnam  4. Japan  5. Philipines<br>6. Thailand  7. Malaysia  8. United  States  9. Brazil"
     },
-    "63": {
+    "64": {
       "Song Title": "Bang Bang Bang",
       "SearchResult": "2,802",
       "Bodies": 5,
