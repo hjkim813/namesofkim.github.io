@@ -74,7 +74,7 @@ function changeContent(time) {
     visualiseOutput(41);
   } else if (time > 610 && time < 633) {
     visualiseOutput(40);
-  }else if (time > 633 && time < 652) {
+  } else if (time > 633 && time < 652) {
     visualiseOutput(39);
   } else if (time > 652 && time < 692) {
     visualiseOutput(38);
@@ -122,19 +122,19 @@ function changeContent(time) {
     visualiseOutput(17);
   } else if (time > 1281 && time < 1313) {
     visualiseOutput(16);
-  } else if (time > 1313 && time < 1288) {
+  } else if (time > 1313 && time < 1348) {
     visualiseOutput(15);
-  } else if (time > 1288 && time < 1377) {
+  } else if (time > 1348 && time < 1377) {
     visualiseOutput(14);
   } else if (time > 1377 && time < 1406) {
     visualiseOutput(13);
   } else if (time > 1406 && time < 1438) {
     visualiseOutput(12);
-  } else if (time > 1438 && time < 1409) {
+  } else if (time > 1438 && time < 1469) {
     visualiseOutput(11);
-  } else if (time > 1409 && time < 1446) {
+  } else if (time > 1469 && time < 1506) {
     visualiseOutput(10);
-  } else if (time > 1446 && time < 1537) {
+  } else if (time > 1506 && time < 1537) {
     visualiseOutput(9);
   } else if (time > 1537 && time < 1560) {
     visualiseOutput(8);
@@ -238,7 +238,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '0',
     width: '0',
-    videoId: '5WY3KBwCVDQ',
+    videoId: 'YSrMqiHlQZI',
     playerVars: {
       controls: 0,
       autoplay: 1,
