@@ -10,7 +10,7 @@ var data = [
       "Artist": "OH MY GIRL(오마이걸)",
       "Date": "27.04.2020",
       "Viewcount": "31,105,346",
-      "Countries": "1. Vietnam  2. Indonesia  3. Thailand  4. Japan  5. United  States<br>6. Philippines  7. Taiwan  8. India  9. Malaysia"
+      "Countries": "1. Vietnam  <br>2. Indonesia  <br>3. Thailand  <br>4. Japan  <br>5. United  States<br>6. Philippines  <br>7. Taiwan  <br>8. India  <br>9. Malaysia"
     },
     "2": {
       "Song Title": "덤더럼(Dumhdurum)",
@@ -19,10 +19,10 @@ var data = [
       "Dancing Bodies": "5,694",
       "Total Bodies": "1,380,496",
       "Company": "Cube Entertainment",
-      "Artist": "에이핑크(Apink)",
+      "Artist": "Apink (에이핑크)",
       "Date": "13.04.2020",
       "Viewcount": "18,803,192",
-      "Countries": "1. Indonesia  2. Thailand  3. Japan  4. Taiwan  5. Malaysia<br>6. United  States  7. Vietnam  8. Philippines  9. Hong  Kong"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. Japan  <br>4. Taiwan  <br>5. Malaysia<br>6. United  States  <br>7. Vietnam  <br>8. Philippines  <br>9. Hong  Kong"
     },
     "3": {
       "Song Title": "Oh My God",
@@ -34,7 +34,7 @@ var data = [
       "Artist": "(G)I-dle ((여자)아이들)",
       "Date": "06.04.2020",
       "Viewcount": "91,222,062",
-      "Countries": "1. Thailand  2. Vietnam  3. Indonesia  4. United  States  5. Brazil<br>6. Taiwan  7. India  8. Mexico  9. Philippines"
+      "Countries": "1. Thailand  <br>2. Vietnam  <br>3. Indonesia  <br>4. United  States  <br>5. Brazil<br>6. Taiwan  <br>7. India  <br>8. Mexico  <br>9. Philippines"
     },
     "4": {
       "Song Title": "Wannabe",
@@ -46,7 +46,7 @@ var data = [
       "Artist": "ITZY (있지)",
       "Date": "09.03.2020",
       "Viewcount": "136,934,108",
-      "Countries": "1. Indonesia  2. Japan  3. Thailand  4. Phillipines  5. Vietnam<br>6. United  States  7. Brazil  8. Mexico  9. Taiwan"
+      "Countries": "1. Indonesia  <br>2. Japan  <br>3. Thailand  <br>4. Phillipines  <br>5. Vietnam<br>6. United  States  <br>7. Brazil  <br>8. Mexico  <br>9. Taiwan"
     },
     "5": {
       "Song Title": "On",
@@ -58,7 +58,7 @@ var data = [
       "Artist": "BTS (방탄소년단)",
       "Date": "27.02.2020",
       "Viewcount": "136,950,417",
-      "Countries": "1. United  States  2. Indonesia  3. Brazil  4. Mexico  5. Japan<br>6. Vietnam  7. Thailand  8. Philippines  9. India"
+      "Countries": "1. United  States  <br>2. Indonesia  <br>3. Brazil  <br>4. Mexico  <br>5. Japan<br>6. Vietnam  <br>7. Thailand  <br>8. Philippines  <br>9. India"
     },
     "6": {
       "Song Title": "Dun Dun",
@@ -70,7 +70,7 @@ var data = [
       "Artist": "Everglow (에버글로우)",
       "Date": "03.02.2020",
       "Viewcount": "123,784,414",
-      "Countries": "1. Vietnam  2. Indonesia  3. Thailand  4. Brazil  5. Mexico<br>6. United  States  7. Philippines  8. Japan  9. Russia"
+      "Countries": "1. Vietnam  <br>2. Indonesia  <br>3. Thailand  <br>4. Brazil  <br>5. Mexico<br>6. United  States  <br>7. Philippines  <br>8. Japan  <br>9. Russia"
     },
     "7": {
       "Song Title": "Hip",
@@ -82,7 +82,7 @@ var data = [
       "Artist": "Mamamoo (마마무)",
       "Date": "14.11.2019",
       "Viewcount": "119,826,496",
-      "Countries": "1. Japan  2. United  States  3. Mexico  4. Taiwan  5. Brazil<br>6. Thailand  7. Vietnam  8. Indonesia  9. Philippines"
+      "Countries": "1. Japan  <br>2. United  States  <br>3. Mexico  <br>4. Taiwan  <br>5. Brazil<br>6. Thailand  <br>7. Vietnam  <br>8. Indonesia  <br>9. Philippines"
     },
     "8": {
       "Song Title": "Jopping",
@@ -94,7 +94,7 @@ var data = [
       "Artist": "Super M (슈퍼주니어-M)",
       "Date": "04.10.2019",
       "Viewcount": "69,986,449",
-      "Countries": "1. Indonesia  2. Mexico  3. Taiwan  4. Japan  5. United  States<br>6. Malaysia  7. Thailand  8. Vietnam  9. Peru"
+      "Countries": "1. Indonesia  <br>2. Mexico  <br>3. Taiwan  <br>4. Japan  <br>5. United  States<br>6. Malaysia  <br>7. Thailand  <br>8. Vietnam  <br>9. Peru"
     },
     "9": {
       "Song Title": "Feel Special",
@@ -106,7 +106,7 @@ var data = [
       "Artist": "Twice (트와이스)",
       "Date": "23.09.2019",
       "Viewcount": "223,979,705",
-      "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
+      "Countries": "1. Japan  <br>2. Phillipines  <br>3. Indonesia  <br>4. United  States  <br>5. Thailand<br>6. Brazil  <br>7. Vietnam  <br>8. Mexico  <br>9. Taiwan"
     },
     "10": {
       "Song Title": "Adios",
@@ -118,7 +118,7 @@ var data = [
       "Artist": "Everglow (에버글로우)",
       "Date": "19.08.2019",
       "Viewcount": "108,912,397",
-      "Countries": "1. Vietnam  2. Indonesia  3. Thailand  4. Brazil  5. Mexico<br>6. United  States  7. Philippines  8. Japan  9. Russia"
+      "Countries": "1. Vietnam  <br>2. Indonesia  <br>3. Thailand  <br>4. Brazil  <br>5. Mexico<br>6. United  States  <br>7. Philippines  <br>8. Japan  <br>9. Russia"
     },
     "11": {
       "Song Title": "Icy",
@@ -130,7 +130,7 @@ var data = [
       "Artist": "ITZY (있지)",
       "Date": "28.07.2019",
       "Viewcount": "152,508,650",
-      "Countries": "1. Indonesia  2. Japan  3. Thailand  4. Phillipines  5. Vietnam<br>6. United  States  7. Brazil  8. Mexico  9. Taiwan"
+      "Countries": "1. Indonesia  <br>2. Japan  <br>3. Thailand  <br>4. Phillipines  <br>5. Vietnam<br>6. United  States  <br>7. Brazil  <br>8. Mexico  <br>9. Taiwan"
     },
     "12": {
       "Song Title": "Boom",
@@ -142,7 +142,7 @@ var data = [
       "Artist": "NCT Dream",
       "Date": "25.07.2019",
       "Viewcount": "69,805,852",
-      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Japan  5. Brazil<br>6. Philippines  7. Vietnam  8. Malaysia  9. Mexico"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. United  States  <br>4. Japan  <br>5. Brazil<br>6. Philippines  <br>7. Vietnam  <br>8. Malaysia  <br>9. Mexico"
     },
     "13": {
       "Song Title": "짐살라빔(Zimzalabim)",
@@ -154,7 +154,7 @@ var data = [
       "Artist": "Red Velvet (레드벨벳)",
       "Date": "19.06.2019",
       "Viewcount": "73,918,960",
-      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Vietna<br>6. Japan  7. Brazil  8. Mexico  9. Malaysia"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. United  States  <br>4. Philippines  <br>5. Vietna<br>6. Japan  <br>7. Brazil  <br>8. Mexico  <br>9. Malaysia"
     },
     "14": {
       "Song Title": "Fancy",
@@ -166,7 +166,7 @@ var data = [
       "Artist": "Twice (트와이스)",
       "Date": "22.04.2019",
       "Viewcount": "307,159,891",
-      "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
+      "Countries": "1. Japan  <br>2. Phillipines  <br>3. Indonesia  <br>4. United  States  <br>5. Thailand<br>6. Brazil  <br>7. Vietnam  <br>8. Mexico  <br>9. Taiwan"
     },
     "15": {
       "Song Title": "작은 것들을 위한 시 (Boy with luv)",
@@ -178,7 +178,7 @@ var data = [
       "Artist": "BTS (방탄소년단)",
       "Date": "12.04.2019",
       "Viewcount": "806,493,230",
-      "Countries": "1. United  States  2. Indonesia  3. Brazil  4. Mexico  5. Japan<br>6. Vietnam  7. Thailand  8. Philippines  9. India"
+      "Countries": "1. United  States  <br>2. Indonesia  <br>3. Brazil  <br>4. Mexico  <br>5. Japan<br>6. Vietnam  <br>7. Thailand  <br>8. Philippines  <br>9. India"
     },
     "16": {
       "Song Title": "Kill this love",
@@ -190,7 +190,7 @@ var data = [
       "Artist": "BLACKPINK (블랙핑크)",
       "Date": "23.04.2019",
       "Viewcount": "854,903,313",
-      "Countries": "1. Indonesia  2. Thailand  3. Philippines  4. Brazil  5. Vietnam<br>6. United  States  7. Mexico  8. Japan  9. Malaysia"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. Philippines  <br>4. Brazil  <br>5. Vietnam<br>6. United  States  <br>7. Mexico  <br>8. Japan  <br>9. Malaysia"
     },
     "17": {
       "Song Title": "Miroh",
@@ -202,7 +202,7 @@ var data = [
       "Artist": "Stray Kids (스트레이 키즈)",
       "Date": "24.03.2019",
       "Viewcount": "78,711,778",
-      "Countries": "1. United  States  2. Indonesia  3. Brazil  4. Mexico  5. Vietnam<br>6. Argentina  7. Philippines  8. Thailand  9. Japan  10. France"
+      "Countries": "1. United  States  <br>2. Indonesia  <br>3. Brazil  <br>4. Mexico  <br>5. Vietnam<br>6. Argentina  <br>7. Philippines  <br>8. Thailand  <br>9. Japan  <br>10. France"
     },
     "18": {
       "Song Title": "Senorita",
@@ -214,7 +214,7 @@ var data = [
       "Artist": "(G)I-dle ((여자)아이들)",
       "Date": "26.02.2019",
       "Viewcount": "42,515,885",
-      "Countries": "1. Thailand  2. Vietnam  3. Indonesia  4. United  States  5. Brazil<br>6. Taiwan  7. India  8. Mexico  9. Philippines"
+      "Countries": "1. Thailand  <br>2. Vietnam  <br>3. Indonesia  <br>4. United  States  <br>5. Brazil<br>6. Taiwan  <br>7. India  <br>8. Mexico  <br>9. Philippines"
     },
     "19": {
       "Song Title": "Twit",
@@ -226,7 +226,7 @@ var data = [
       "Artist": "Hwasa (화사)",
       "Date": "13.02.2019",
       "Viewcount": "65,383,570",
-      "Countries": "1. Japan  2. United  States  3. Mexico  4. Taiwan  5. Brazil<br>6. Thailand  7. Vietnam  8. Indonesia  9. Philippines"
+      "Countries": "1. Japan  <br>2. United  States  <br>3. Mexico  <br>4. Taiwan  <br>5. Brazil<br>6. Thailand  <br>7. Vietnam  <br>8. Indonesia  <br>9. Philippines"
     },
     "20": {
       "Song Title": "달라달라(DALLA DALLA)",
@@ -238,7 +238,7 @@ var data = [
       "Artist": "ITZY (있지)",
       "Date": "10.02.2019",
       "Viewcount": "197,699,169",
-      "Countries": "1. Indonesia  2. Japan  3. Thailand  4. Phillipines  5. Vietnam<br>6. United  States  7. Brazil  8. Mexico  9. Taiwan"
+      "Countries": "1. Indonesia  <br>2. Japan  <br>3. Thailand  <br>4. Phillipines  <br>5. Vietnam<br>6. United  States  <br>7. Brazil  <br>8. Mexico  <br>9. Taiwan"
     },
     "21": {
       "Song Title": "Love Shot",
@@ -250,7 +250,7 @@ var data = [
       "Artist": "EXO (엑소)",
       "Date": "13.12.2018",
       "Viewcount": "272,709,615",
-      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Mexico<br>6. Brazil  7. Japan  8. Vietnam  9. Malaysia"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. United  States  <br>4. Philippines  <br>5. Mexico<br>6. Brazil  <br>7. Japan  <br>8. Vietnam  <br>9. Malaysia"
     },
     "22": {
       "Song Title": "Solo",
@@ -262,7 +262,7 @@ var data = [
       "Artist": "Jennie (제니)",
       "Date": "12.11.2018",
       "Viewcount": "466,697,329",
-      "Countries": "1. Indonesia  2. Thailand  3. Philippines  4. Brazil  5. Vietnam<br>6. United  States  7. Mexico  8. Japan  9. Malaysia"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. Philippines  <br>4. Brazil  <br>5. Vietnam<br>6. United  States  <br>7. Mexico  <br>8. Japan  <br>9. Malaysia"
     },
     "23": {
       "Song Title": "YES or YES",
@@ -274,7 +274,7 @@ var data = [
       "Artist": "Twice (트와이스)",
       "Date": "05.11.2018",
       "Viewcount": "247,381,324",
-      "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
+      "Countries": "1. Japan  <br>2. Phillipines  <br>3. Indonesia  <br>4. United  States  <br>5. Thailand<br>6. Brazil  <br>7. Vietnam  <br>8. Mexico  <br>9. Taiwan"
     },
     "24": {
       "Song Title": "Tempo",
@@ -286,7 +286,7 @@ var data = [
       "Artist": "EXO (엑소)",
       "Date": "02.11.2018",
       "Viewcount": "162,261,400",
-      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Mexico<br>6. Brazil  7. Japan  8. Vietnam  9. Malaysia"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. United  States  <br>4. Philippines  <br>5. Mexico<br>6. Brazil  <br>7. Japan  <br>8. Vietnam  <br>9. Malaysia"
     },
     "25": {
       "Song Title": "La Vie en Rose",
@@ -298,7 +298,7 @@ var data = [
       "Artist": "IZ*ONE (아이즈원)",
       "Date": "29.10.2018",
       "Viewcount": "126,248,241",
-      "Countries": "1. Japan  2. Indonesia  3. Thailand  4. Vietnam  5. Philippines<br>6. United  States  7. Taiwan  8. Malaysia  9. Brazil"
+      "Countries": "1. Japan  <br>2. Indonesia  <br>3. Thailand  <br>4. Vietnam  <br>5. Philippines<br>6. United  States  <br>7. Taiwan  <br>8. Malaysia  <br>9. Brazil"
     },
     "26": {
       "Song Title": "BbiBbi",
@@ -310,7 +310,7 @@ var data = [
       "Artist": "IU (아이유)",
       "Date": "10.10.2018",
       "Viewcount": "152,287,643",
-      "Countries": "1. Thailand  2. Indonesia  3. Taiwan  4. Vietnam  5. Philippines<br>6. United  States  7. Japan  8. Malaysia  9. India"
+      "Countries": "1. Thailand  <br>2. Indonesia  <br>3. Taiwan  <br>4. Vietnam  <br>5. Philippines<br>6. United  States  <br>7. Japan  <br>8. Malaysia  <br>9. India"
     },
     "27": {
       "Song Title": "One more time",
@@ -322,7 +322,7 @@ var data = [
       "Artist": "Super Junior (슈퍼주니어)",
       "Date": "08.10.2018",
       "Viewcount": "66,056,704",
-      "Countries": "1. Indonesia  2. Mexico  3. Japan  4. United  States  5. Taiwan<br>6. Malaysia  7. Thailand  8. Philippines  9. Peru"
+      "Countries": "1. Indonesia  <br>2. Mexico  <br>3. Japan  <br>4. United  States  <br>5. Taiwan<br>6. Malaysia  <br>7. Thailand  <br>8. Philippines  <br>9. Peru"
     },
     "28": {
       "Song Title": "Lil' Touch",
@@ -334,7 +334,7 @@ var data = [
       "Artist": "Girl's Generation Oh!GG",
       "Date": "05.09.2018",
       "Viewcount": "128,716,101",
-      "Countries": "1. Japan  2. Indonesia  3. Thailand  4. United  States  5. Vietnam<br>6. Taiwan  7. Philippines  8. Malaysia  9. Brazil"
+      "Countries": "1. Japan  <br>2. Indonesia  <br>3. Thailand  <br>4. United  States  <br>5. Vietnam<br>6. Taiwan  <br>7. Philippines  <br>8. Malaysia  <br>9. Brazil"
     },
     "29": {
       "Song Title": "Idol",
@@ -346,7 +346,7 @@ var data = [
       "Artist": "BTS (방탄소년단)",
       "Date": "24.08.2018",
       "Viewcount": "675,858,450",
-      "Countries": "1. United  States  2. Indonesia  3. Brazil  4. Mexico  5. Japan<br>6. Vietnam  7. Thailand  8. Philippines  9. India"
+      "Countries": "1. United  States  <br>2. Indonesia  <br>3. Brazil  <br>4. Mexico  <br>5. Japan<br>6. Vietnam  <br>7. Thailand  <br>8. Philippines  <br>9. India"
     },
     "30": {
       "Song Title": "HANN (Alone)(한(一))",
@@ -358,7 +358,7 @@ var data = [
       "Artist": "(G)I-dle ((여자)아이들)",
       "Date": "14.08.2018",
       "Viewcount": "34,217,562",
-      "Countries": "1. Thailand  2. Vietnam  3. Indonesia  4. United  States  5. Brazil<br>6. Taiwan  7. India  8. Mexico  9. Philippines"
+      "Countries": "1. Thailand  <br>2. Vietnam  <br>3. Indonesia  <br>4. United  States  <br>5. Brazil<br>6. Taiwan  <br>7. India  <br>8. Mexico  <br>9. Philippines"
     },
     "31": {
       "Song Title": "죽겠다 (Killing me)",
@@ -370,7 +370,7 @@ var data = [
       "Artist": "iKON (아이콘)",
       "Date": "02.08.2018",
       "Viewcount": "162,612,220",
-      "Countries": "1. Indonesia  2. Thailand  3. Japan  4. United  States  5. Vietnam<br>6. Philippines  7. Malaysia  8. Mexico  9. Brazil"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. Japan  <br>4. United  States  <br>5. Vietnam<br>6. Philippines  <br>7. Malaysia  <br>8. Mexico  <br>9. Brazil"
     },
     "32": {
       "Song Title": "Egotistic (너나 해)",
@@ -382,7 +382,7 @@ var data = [
       "Artist": "Mamamoo (마마무)",
       "Date": "16.07.2018",
       "Viewcount": "82,529,876",
-      "Countries": "1. Japan  2. United  States  3. Mexico  4. Taiwan  5. Brazil<br>6. Thailand  7. Vietnam  8. Indonesia  9. Philippines"
+      "Countries": "1. Japan  <br>2. United  States  <br>3. Mexico  <br>4. Taiwan  <br>5. Brazil<br>6. Thailand  <br>7. Vietnam  <br>8. Indonesia  <br>9. Philippines"
     },
     "33": {
       "Song Title": "Dance The Night Away",
@@ -394,7 +394,7 @@ var data = [
       "Artist": "Twice (트와이스)",
       "Date": "09.07.2018",
       "Viewcount": "230,410,656",
-      "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
+      "Countries": "1. Japan  <br>2. Phillipines  <br>3. Indonesia  <br>4. United  States  <br>5. Thailand<br>6. Brazil  <br>7. Vietnam  <br>8. Mexico  <br>9. Taiwan"
     },
     "34": {
       "Song Title": "I'm so sick(1도 없어)",
@@ -402,11 +402,11 @@ var data = [
       "Bodies": 6,
       "Dancing Bodies": "3,492",
       "Total Bodies": "612,284",
-      "Company": "Play M Entertainment",
+      "Company": "Cube Entertainment",
       "Artist": "Apink (에이핑크)",
       "Date": "02.07.2018",
       "Viewcount": "79,756,162",
-      "Countries": "1. Indonesia  2. Thailand  3. Japan  4. Taiwan  5. Malaysia<br>6. United  States  7. Vietnam  8. Philippines  9. Hong  Kong  "
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. Japan  <br>4. Taiwan  <br>5. Malaysia<br>6. United  States  <br>7. Vietnam  <br>8. Philippines  <br>9. Hong  Kong  "
     },
     "35": {
       "Song Title": "Baam",
@@ -418,7 +418,7 @@ var data = [
       "Artist": "Momoland (모모랜드)",
       "Date": "26.06.2018",
       "Viewcount": "193,820,759",
-      "Countries": "1. Philippines  2. Vietnam  3. Indonesia  4. Japan  5. Mexico<br>6. United  States  7. Thailand  8. Brazil  9. Peru"
+      "Countries": "1. Philippines  <br>2. Vietnam  <br>3. Indonesia  <br>4. Japan  <br>5. Mexico<br>6. United  States  <br>7. Thailand  <br>8. Brazil  <br>9. Peru"
     },
     "36": {
       "Song Title": "뚜두뚜두 (DDU-DU DDU-DU)",
@@ -430,7 +430,7 @@ var data = [
       "Artist": "BLACKPINK (블랙핑크)",
       "Date": "15.06.2018",
       "Viewcount": "1,172,497,434",
-      "Countries": "1. Indonesia  2. Thailand  3. Philippines  4. Brazil  5. Vietnam<br>6. United  States  7. Mexico  8. Japan  9. Malaysia"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. Philippines  <br>4. Brazil  <br>5. Vietnam<br>6. United  States  <br>7. Mexico  <br>8. Japan  <br>9. Malaysia"
     },
     "37": {
       "Song Title": "Fake love",
@@ -442,7 +442,7 @@ var data = [
       "Artist": "BTS (방탄소년단)",
       "Date": "18.06.2018",
       "Viewcount": "709,211,468",
-      "Countries": "1. United  States  2. Indonesia  3. Brazil  4. Mexico  5. Japan<br>6. Vietnam  7. Thailand  8. Philippines  9. India"
+      "Countries": "1. United  States  <br>2. Indonesia  <br>3. Brazil  <br>4. Mexico  <br>5. Japan<br>6. Vietnam  <br>7. Thailand  <br>8. Philippines  <br>9. India"
     },
     "38": {
       "Song Title": "LATATA",
@@ -454,7 +454,7 @@ var data = [
       "Artist": "(G)I-dle ((여자)아이들)",
       "Date": "02.05.2018",
       "Viewcount": "143,698,785",
-      "Countries": "1. Thailand  2. Vietnam  3. Indonesia  4. United  States  5. Brazil<br>6. Taiwan  7. India  8. Mexico  9. Philippines"
+      "Countries": "1. Thailand  <br>2. Vietnam  <br>3. Indonesia  <br>4. United  States  <br>5. Brazil<br>6. Taiwan  <br>7. India  <br>8. Mexico  <br>9. Philippines"
     },
     "39": {
       "Song Title": "Lo Siento",
@@ -466,7 +466,7 @@ var data = [
       "Artist": "Super Junior (슈퍼주니어)",
       "Date": "12.04.2018",
       "Viewcount": "73,575,404",
-      "Countries": "1. Indonesia  2. Mexico  3. Japan  4. United  States  5. Taiwan<br>6. Malaysia  7. Thailand  8. Philippines  9. Peru"
+      "Countries": "1. Indonesia  <br>2. Mexico  <br>3. Japan  <br>4. United  States  <br>5. Taiwan<br>6. Malaysia  <br>7. Thailand  <br>8. Philippines  <br>9. Peru"
     },
     "40": {
       "Song Title": "What is Love?",
@@ -478,7 +478,7 @@ var data = [
       "Artist": "Twice (트와이스)",
       "Date": "09.04.2018",
       "Viewcount": "394,065,383",
-      "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
+      "Countries": "1. Japan  <br>2. Phillipines  <br>3. Indonesia  <br>4. United  States  <br>5. Thailand<br>6. Brazil  <br>7. Vietnam  <br>8. Mexico  <br>9. Taiwan"
     },
     "41": {
       "Song Title": "Starry Night(별이 빛나는 밤)",
@@ -490,7 +490,7 @@ var data = [
       "Artist": "Mamamoo (마마무)",
       "Date": "07.03.2018",
       "Viewcount": "68,814,528",
-      "Countries": "1. Japan  2. United  States  3. Mexico  4. Taiwan  5. Brazil<br>6. Thailand  7. Vietnam  8. Indonesia  9. Philippines"
+      "Countries": "1. Japan  <br>2. United  States  <br>3. Mexico  <br>4. Taiwan  <br>5. Brazil<br>6. Thailand  <br>7. Vietnam  <br>8. Indonesia  <br>9. Philippines"
     },
     "42": {
       "Song Title": "Baby Don't Stop",
@@ -502,7 +502,7 @@ var data = [
       "Artist": "NCT U (엔시티 유)",
       "Date": "26.02.2018",
       "Viewcount": "66,576,050",
-      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Japan  5. Brazil<br>6. Mexico  7. Malaysia  8. Philippines  9. Vietnam"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. United  States  <br>4. Japan  <br>5. Brazil<br>6. Mexico  <br>7. Malaysia  <br>8. Philippines  <br>9. Vietnam"
     },
     "43": {
       "Song Title": "Boss",
@@ -514,7 +514,7 @@ var data = [
       "Artist": "NCT U (엔씨티 유)",
       "Date": "18.02.2018",
       "Viewcount": "118,606,934",
-      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Japan  5. Brazil<br>6. Mexico  7. Malaysia  8. Philippines  9. Vietnam"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. United  States  <br>4. Japan  <br>5. Brazil<br>6. Mexico  <br>7. Malaysia  <br>8. Philippines  <br>9. Vietnam"
     },
     "44": {
       "Song Title": "Bad Boy",
@@ -526,7 +526,7 @@ var data = [
       "Artist": "Red Velvet (레드벨벳)",
       "Date": "29.01.2018",
       "Viewcount": "266,178,734",
-      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Vietna<br>6. Japan  7. Brazil  8. Mexico  9. Malaysia"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. United  States  <br>4. Philippines  <br>5. Vietna<br>6. Japan  <br>7. Brazil  <br>8. Mexico  <br>9. Malaysia"
     },
     "45": {
       "Song Title": "Heart Shaker",
@@ -538,7 +538,7 @@ var data = [
       "Artist": "Twice (트와이스)",
       "Date": "11.12.2017",
       "Viewcount": "324,015,895",
-      "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
+      "Countries": "1. Japan  <br>2. Phillipines  <br>3. Indonesia  <br>4. United  States  <br>5. Thailand<br>6. Brazil  <br>7. Vietnam  <br>8. Mexico  <br>9. Taiwan"
     },
     "46": {
       "Song Title": "피카부 (Peek-A-Boo)",
@@ -550,7 +550,7 @@ var data = [
       "Artist": "Red Velvet (레드벨벳)",
       "Date": "17.11.2017",
       "Viewcount": "169,897,618",
-      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Vietna<br>6. Japan  7. Brazil  8. Mexico  9. Malaysia"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. United  States  <br>4. Philippines  <br>5. Vietna<br>6. Japan  <br>7. Brazil  <br>8. Mexico  <br>9. Malaysia"
     },
     "47": {
       "Song Title": "Likey",
@@ -562,7 +562,7 @@ var data = [
       "Artist": "Twice (트와이스)",
       "Date": "30.10.2017",
       "Viewcount": "453,553,253",
-      "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
+      "Countries": "1. Japan  <br>2. Phillipines  <br>3. Indonesia  <br>4. United  States  <br>5. Thailand<br>6. Brazil  <br>7. Vietnam  <br>8. Mexico  <br>9. Taiwan"
     },
     "48": {
       "Song Title": "DNA",
@@ -574,7 +574,7 @@ var data = [
       "Artist": "BTS (방탄소년단)",
       "Date": "18.09.2017",
       "Viewcount": "1,011,111,741",
-      "Countries": "1. United  States  2. Indonesia  3. Brazil  4. Mexico  5. Japan<br>6. Vietnam  7. Thailand  8. Philippines  9. India"
+      "Countries": "1. United  States  <br>2. Indonesia  <br>3. Brazil  <br>4. Mexico  <br>5. Japan<br>6. Vietnam  <br>7. Thailand  <br>8. Philippines  <br>9. India"
     },
     "49": {
       "Song Title": "Gashina(가시나)",
@@ -586,7 +586,7 @@ var data = [
       "Artist": "Sunmi (선미)",
       "Date": "22.08.2017",
       "Viewcount": "127,799,122",
-      "Countries": "1. United  States  2. Brazil  3. Vietnam  4. Thailand  5. Indonesia<br>6. Mexico  7. Japan  8. Taiwan  9. Malaysia"
+      "Countries": "1. United  States  <br>2. Brazil  <br>3. Vietnam  <br>4. Thailand  <br>5. Indonesia<br>6. Mexico  <br>7. Japan  <br>8. Taiwan  <br>9. Malaysia"
     },
     "50": {
       "Song Title": "에너제틱 (Energetic)",
@@ -598,7 +598,7 @@ var data = [
       "Artist": "Wanna One (워너원)",
       "Date": "07.08.2017",
       "Viewcount": "132,451,060",
-      "Countries": "1. Thailand  2. Indonesia  3. Japan  4. Vietnam  5. Malaysia<br>6. Taiwan  7. United  States  8. Philippines  9. Mexico"
+      "Countries": "1. Thailand  <br>2. Indonesia  <br>3. Japan  <br>4. Vietnam  <br>5. Malaysia<br>6. Taiwan  <br>7. United  States  <br>8. Philippines  <br>9. Mexico"
     },
     "51": {
       "Song Title": "빨간 맛 (Red Flavor)",
@@ -610,7 +610,7 @@ var data = [
       "Artist": "Red Velvet (레드벨벳)",
       "Date": "09.07.2017",
       "Viewcount": "150,929,511",
-      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Vietna<br>6. Japan  7. Brazil  8. Mexico  9. Malaysia"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. United  States  <br>4. Philippines  <br>5. Vietna<br>6. Japan  <br>7. Brazil  <br>8. Mexico  <br>9. Malaysia"
     },
     "52": {
       "Song Title": "마지막처럼 (AS IF IT'S YOUR LAST)",
@@ -622,7 +622,7 @@ var data = [
       "Artist": "BLACKPINK (블랙핑크)",
       "Date": "22.06.2017",
       "Viewcount": "798,231,179",
-      "Countries": "1. Indonesia  2. Thailand  3. Philippines  4. Brazil  5. Vietnam<br>6. United  States  7. Mexico  8. Japan  9. Malaysia"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. Philippines  <br>4. Brazil  <br>5. Vietnam<br>6. United  States  <br>7. Mexico  <br>8. Japan  <br>9. Malaysia"
     },
     "53": {
       "Song Title": "Cherry Bomb",
@@ -634,7 +634,7 @@ var data = [
       "Artist": "NCT 127 (엔시티 127)",
       "Date": "14.06.2017",
       "Viewcount": "98,377,799",
-      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Japan  5. Brazil<br>6. Mexico  7. Philippines  8. Malaysia  9. Vietnam"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. United  States  <br>4. Japan  <br>5. Brazil<br>6. Mexico  <br>7. Philippines  <br>8. Malaysia  <br>9. Vietnam"
     },
     "54": {
       "Song Title": "울고 싶지 않아 (Don't Wanna Cry)",
@@ -646,7 +646,7 @@ var data = [
       "Artist": "SEVENTEEN(세븐틴)",
       "Date": "22.05.2017",
       "Viewcount": "165,582,686",
-      "Countries": "1. Japan  2. Indonesia  3. United  States  4. Thailand  5. Philippines<br>6. Vietnam  7. Malaysia  8. Taiwan  9. Mexico"
+      "Countries": "1. Japan  <br>2. Indonesia  <br>3. United  States  <br>4. Thailand  <br>5. Philippines<br>6. Vietnam  <br>7. Malaysia  <br>8. Taiwan  <br>9. Mexico"
     },
     "55": {
       "Song Title": "Signal",
@@ -658,7 +658,7 @@ var data = [
       "Artist": "Twice (트와이스)",
       "Date": "15.05.2017",
       "Viewcount": "243,915,450",
-      "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
+      "Countries": "1. Japan  <br>2. Phillipines  <br>3. Indonesia  <br>4. United  States  <br>5. Thailand<br>6. Brazil  <br>7. Vietnam  <br>8. Mexico  <br>9. Taiwan"
     },
     "56": {
       "Song Title": "New Face",
@@ -670,7 +670,7 @@ var data = [
       "Artist": "PSY (싸이)",
       "Date": "10.05.2017",
       "Viewcount": "209,078,062",
-      "Countries": "1. Vietnam  2. United  States  3. Russia  4. Brazil  5. Mexico<br>6. India  7. Turkey  8. Japan  9. Philippines"
+      "Countries": "1. Vietnam  <br>2. United  States  <br>3. Russia  <br>4. Brazil  <br>5. Mexico<br>6. India  <br>7. Turkey  <br>8. Japan  <br>9. Philippines"
     },
     "57": {
       "Song Title": "Never Ever",
@@ -682,7 +682,7 @@ var data = [
       "Artist": "GOT7",
       "Date": "13.03.2017",
       "Viewcount": "169,323,821",
-      "Countries": "1. Thailand  2. United  States  3. Indonesia  4. Mexico  5. Brazil<br>6. Philippines  7. Vietnam  8. Japan  9. Malaysia"
+      "Countries": "1. Thailand  <br>2. United  States  <br>3. Indonesia  <br>4. Mexico  <br>5. Brazil<br>6. Philippines  <br>7. Vietnam  <br>8. Japan  <br>9. Malaysia"
     },
     "58": {
       "Song Title": "Not Today",
@@ -694,7 +694,7 @@ var data = [
       "Artist": "BTS (방탄소년단)",
       "Date": "19.02.2017",
       "Viewcount": "406,803,971",
-      "Countries": "1. United  States  2. Indonesia  3. Brazil  4. Mexico  5. Japan<br>6. Vietnam  7. Thailand  8. Philippines  9. India"
+      "Countries": "1. United  States  <br>2. Indonesia  <br>3. Brazil  <br>4. Mexico  <br>5. Japan<br>6. Vietnam  <br>7. Thailand  <br>8. Philippines  <br>9. India"
     },
     "59": {
       "Song Title": "Don`t Recall",
@@ -706,7 +706,7 @@ var data = [
       "Artist": "K.A.R.D",
       "Date": "15.02.2017",
       "Viewcount": "68,168,572",
-      "Countries": "1. Brazil  2. Mexico  3. United  States  4. Argentica  5. Indonesia<br>6. Vietnam  7. Peru  8. Chile  9. Thailand"
+      "Countries": "1. Brazil  <br>2. Mexico  <br>3. United  States  <br>4. Argentica  <br>5. Indonesia<br>6. Vietnam  <br>7. Peru  <br>8. Chile  <br>9. Thailand"
     },
     "60": {
       "Song Title": "TT",
@@ -718,7 +718,7 @@ var data = [
       "Artist": "Twice (트와이스)",
       "Date": "23.10.2016",
       "Viewcount": "523,127,556",
-      "Countries": "1. Japan  2. Phillipines  3. Indonesia  4. United  States  5. Thailand<br>6. Brazil  7. Vietnam  8. Mexico  9. Taiwan"
+      "Countries": "1. Japan  <br>2. Phillipines  <br>3. Indonesia  <br>4. United  States  <br>5. Thailand<br>6. Brazil  <br>7. Vietnam  <br>8. Mexico  <br>9. Taiwan"
     },
     "61": {
       "Song Title": "러시안 룰렛 (Russian Roulette)",
@@ -730,7 +730,7 @@ var data = [
       "Artist": "Red Velvet (레드벨벳)",
       "Date": "06.09.2016",
       "Viewcount": "172,491,853",
-      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Vietnam<br>6. Japan  7. Brazil  8. Mexico  9. Malaysia"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. United  States  <br>4. Philippines  <br>5. Vietnam<br>6. Japan  <br>7. Brazil  <br>8. Mexico  <br>9. Malaysia"
     },
     "62": {
       "Song Title": "Lotto",
@@ -742,7 +742,7 @@ var data = [
       "Artist": "EXO (엑소)",
       "Date": "18.08.2016",
       "Viewcount": "138,910,217",
-      "Countries": "1. Indonesia  2. Thailand  3. United  States  4. Philippines  5. Mexico<br>6. Brazil  7. Japan  8. Vietnam  9. Malaysia"
+      "Countries": "1. Indonesia  <br>2. Thailand  <br>3. United  States  <br>4. Philippines  <br>5. Mexico<br>6. Brazil  <br>7. Japan  <br>8. Vietnam  <br>9. Malaysia"
     },
     "63": {
       "Song Title": "Rough (시간을 달려서)",
@@ -754,7 +754,7 @@ var data = [
       "Artist": "GFriend (여자친구)",
       "Date": "24.01.2016",
       "Viewcount": "66,769,690",
-      "Countries": "1. Indonesia  2. Taiwan  3. Vietnam  4. Japan  5. Philipines<br>6. Thailand  7. Malaysia  8. United  States  9. Brazil"
+      "Countries": "1. Indonesia  <br>2. Taiwan  <br>3. Vietnam  <br>4. Japan  <br>5. Philipines<br>6. Thailand  <br>7. Malaysia  <br>8. United  States  <br>9. Brazil"
     },
     "64": {
       "Song Title": "Bang Bang Bang",
@@ -766,7 +766,7 @@ var data = [
       "Artist": "Bigbang (빅뱅)",
       "Date": "01.06.2015",
       "Viewcount": "451,653,175",
-      "Countries": "1. Vietnam  2. Japan  3. Indonesia  4. Thailand  5. United  States<br>6. Malaysia  7. Philippines  8. Mexico  9. Taiwan"
+      "Countries": "1. Vietnam  <br>2. Japan  <br>3. Indonesia  <br>4. Thailand  <br>5. United  States<br>6. Malaysia  <br>7. Philippines  <br>8. Mexico  <br>9. Taiwan"
     }
   }
 ]

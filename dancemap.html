@@ -19,38 +19,50 @@
             <div class="topcountries">
                 <p id="topcountries"> Top9 countries</p>
                 <div id ="info">
-                    <a>www.charts.youtube.com/artist Period: 12 Months, Region: Global</a>
+                    <a>Top viewing countries of the K-Pop group, retrieved from Youtube music chart (charts.youtube.com). 
+                        <br>Period: 12 Months<br>Region: Global</a>
                 </div>
             </div>
  
             <div class="dancingbodies">
                 <div id="txt-dancingbodies">
-                    <p>Dancing Bodies</p>
+                    <p>Dancing Bodies:</p>
+                </div>
+                <div id="info" div class="info1">
+                    <a>Dancing Bodies = Number of search results of dance covers × Number of members in the original K-Pop group</a>
                 </div>
                 <div class="num-dancingbodies">
                     <p id="num-dancingbodies">num:bodies</p>
                 </div>
-                <div class="num-total">
+                
+                <div class="num-total"div id="num-total">
                     <p id="num-total">num:total</p>
                 </div>
-                <div id ="info">
-                    <a>Youtube Search Term = intitle: "Artist Name Song Title" + "Dance Cover"<br>
-                    Dancing Bodies = Number of Video Results * Number of Members in the group
+                <div id ="info" div class="info2">
+                    <a> Number of dancing bodies added up until this time <br>
                     </a>
                 </div>
             </div>
 
             <div id="songinfo" class="songinfo">
-                <div id="firstcol"> viewcount </div>
+                <div id="firstcol"> Viewcount </div>
+                <div id ="info" div class="info1">
+                    <a>View count of the original music video.</a>
+                </div>
                 <div id="secondcol"> artist-title company release date </div>
-                <div id ="info">
-                    <a> Artist – Song Title – Release Date – Company</a></div>
+                <div id ="info" div class="info2">
+                    <a> Artist – Song Title / Release Date / Company</a></div>
             </div>
 
             <div id="about" class="about">
-                <img src="./dancemap/res/img/menu2.png">
+                <img class="aboutimg" src="./dancemap/res/img/menu2.png">
                 <button id="plus" > <span>+</span></button>
                 <button id="minus"> <span> – </span> </button>
+                <div id ="info" class="info_about">
+                    <a> <b>About</b><br>Dance Map visualises 594 dance cover videos of K-Pop songs from Youtube. Highly participatory culture has shifted the agents of the industry to the consumers. 
+                        Number of dancing bodies accumulates, leaveing traces and disturbing or liberating the borders on the world map.
+                        <br> &emsp; A part of the project <i>The Global K</i>.</a>
+                </div>
             </div>
         </nav>
 
@@ -69,7 +81,7 @@
 
     <div class="instructions">
         <p id="pleaseWait">Please wait until the video loads</p>
-        <p id="howto">Map can be navigated with scrolling and keyboard arrows</p>
+        <p id="howto">Map can be navigated with scrolling or keyboard arrows. <br> Play the video with spacebar or click.</p>
         <p id="pleaseClick">Click to continue</p>
     </div>
 
@@ -80,6 +92,7 @@
     </div>
 
     </div>
+
 
     <script src="./dancemap/script.js"></script>
     <script src="./dancemap/data.js"></script>

@@ -211,19 +211,19 @@ $(document).ready(function(){
 
   setTimeout(function(){
       $('#pleaseWait').fadeIn(1000);
-  },1000);
+  },100);
   setTimeout(function(){
     $('#howto').fadeIn(1000);
-},3000);
+},300);
 
   setTimeout(function(){
     $('#pleaseClick').fadeIn(1000);
-},10000);
+},1000);
 });
 
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
-  $(".instructions").css({"opacity":"0"})
+  $(".instructions").css({"display":"none"})
   document.getElementById('placeholder').style.display = 'none';
   player.playVideo();
   console.log("video plays")
@@ -244,6 +244,7 @@ function onYouTubeIframeAPIReady() {
       autoplay: 1,
       iv_load_policy: 3,
       loop: 1,
+      playlist: 'YSrMqiHlQZI',
       fs: 0,
       modestbranding: 1,
       frameborder:0,
