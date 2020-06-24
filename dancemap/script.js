@@ -211,14 +211,14 @@ $(document).ready(function(){
 
   setTimeout(function(){
       $('#pleaseWait').fadeIn(1000);
-  },100);
+  },1000);
   setTimeout(function(){
     $('#howto').fadeIn(1000);
-},300);
+},3000);
 
   setTimeout(function(){
     $('#pleaseClick').fadeIn(1000);
-},1000);
+},10000);
 });
 
 
@@ -329,22 +329,22 @@ document.getElementById("plus").addEventListener("click", function(){
   if (matrix==`matrix(0.5, 0, 0, 0.5, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.75)');
     div.style.top = "-40%";
-    div.style.left = "-50%";
+    div.style.left = "-75%";
     }
   else if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
     container.style.setProperty('transform', 'scale(1)');
     div.style.top = "-25%";
-    div.style.left = "-50%";
+    div.style.left = "-75%";
     }
   else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
     container.style.setProperty('transform', 'scale(1.5)');
     div.style.top = "-10%";
-    div.style.left = "-20%";
+    div.style.left = "-30%";
     }
   else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`) {
     container.style.setProperty('transform', 'scale(2)');
     div.style.top = "0";
-    div.style.left = "-20%";
+    div.style.left = "-30%";
   }
 });
 
@@ -361,21 +361,21 @@ document.getElementById("minus").addEventListener("click", function(){
   else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.75)');
     div.style.top = "-40%";
-    div.style.left = "-50%";
+    div.style.left = "-75%";
   }
   else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`){
     container.style.setProperty('transform', 'scale(1)');
     div.style.top = "-25%";
-    div.style.left = "-50%";
+    div.style.left = "-75%";
   }
   else if (matrix==`matrix(2, 0, 0, 2, 0, 0)`) {
     container.style.setProperty('transform', 'scale(1.5)');
     div.style.top = "-10%";
-    div.style.left = "-20%";
+    div.style.left = "-30%";
   }
   else if (matrix==`matrix(2.5, 0, 0, 2.5, 0, 0)`) {
     container.style.setProperty('transform', 'scale(2)');
     div.style.top = "0";
-    div.style.left = "-20%";
+    div.style.left = "-30%";
   }
 });
