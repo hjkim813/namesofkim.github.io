@@ -501,7 +501,11 @@ border: blue 3px solid;
   width: 100vw;
   height: 100vh;
   transform: scale(0.75);
+  -ms-overflow-style: none;
   
+  }
+  .container::-webkit-scrollbar {
+    display: none;
   }
   
   .container .video {
