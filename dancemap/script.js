@@ -356,7 +356,7 @@ document.getElementById("minus").addEventListener("click", function(){
   if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.5)');
     div.style.top = "-55%";
-    div.style.left = "-50%";
+    div.style.left = "-100%";
   }
   else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.75)');
