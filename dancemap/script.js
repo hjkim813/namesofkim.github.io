@@ -248,6 +248,7 @@ function onYouTubeIframeAPIReady() {
       fs: 0,
       modestbranding: 1,
       frameborder:0,
+      vq:'highres'
     },
     events: {
       onReady: onPlayerReady,
@@ -259,12 +260,15 @@ function onYouTubeIframeAPIReady() {
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
   event.target.playVideo();
+  event.target.setPlaybackQuality('highres');
+
 }
 
 // 5. The API calls this function when the player's state changes.
 //    The function indicates that when playing a video (state=1),
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING) {
+    event.target.setPlaybackQuality('highres');
     var get = $("#current-time");
     var txt = get.html();
     if (txt == ""){
@@ -273,7 +277,6 @@ function onPlayerStateChange(event) {
     }
     
     // Set the onclick event to the button for pause the YouTube video.
-    event.target.setPlaybackQuality('highres');
     setInterval(() => {
       let currentTime = player.getCurrentTime();
       let totalTime = player.getDuration();
@@ -325,23 +328,23 @@ document.getElementById("plus").addEventListener("click", function(){
 
   if (matrix==`matrix(0.5, 0, 0, 0.5, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.75)');
-    div.style.top = "-40vh";
-    div.style.left = "-100vw";
+    div.style.top = "-40%";
+    div.style.left = "-100%";
     }
   else if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
     container.style.setProperty('transform', 'scale(1)');
-    div.style.top = "-25vh";
-    div.style.left = "-100vw";
+    div.style.top = "-25%";
+    div.style.left = "-100%";
     }
   else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
     container.style.setProperty('transform', 'scale(1.5)');
-    div.style.top = "-10vh";
-    div.style.left = "-40vw";
+    div.style.top = "-10%";
+    div.style.left = "-40%";
     }
   else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`) {
     container.style.setProperty('transform', 'scale(2)');
     div.style.top = "0";
-    div.style.left = "-40vw";
+    div.style.left = "-40%";
   }
 });
 
@@ -352,27 +355,27 @@ document.getElementById("minus").addEventListener("click", function(){
 
   if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.5)');
-    div.style.top = "-55vh";
-    div.style.left = "-100vw";
+    div.style.top = "-55%";
+    div.style.left = "-100%";
   }
   else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.75)');
-    div.style.top = "-40vh";
-    div.style.left = "-100vw";
+    div.style.top = "-40%";
+    div.style.left = "-100%";
   }
   else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`){
     container.style.setProperty('transform', 'scale(1)');
-    div.style.top = "-25vh";
-    div.style.left = "-100vw";
+    div.style.top = "-25%";
+    div.style.left = "-100%";
   }
   else if (matrix==`matrix(2, 0, 0, 2, 0, 0)`) {
     container.style.setProperty('transform', 'scale(1.5)');
-    div.style.top = "-10vh";
-    div.style.left = "-40vw";
+    div.style.top = "-10%";
+    div.style.left = "-40%";
   }
   else if (matrix==`matrix(2.5, 0, 0, 2.5, 0, 0)`) {
     container.style.setProperty('transform', 'scale(2)');
     div.style.top = "0";
-    div.style.left = "-40vw";
+    div.style.left = "-40%";
   }
 });

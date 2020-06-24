@@ -501,11 +501,7 @@ border: blue 3px solid;
   width: 100vw;
   height: 100vh;
   transform: scale(0.75);
-  -ms-overflow-style: none;
-  }
-
-  .container::-webkit-scrollbar {
-    display: none;
+  
   }
   
   .container .video {
@@ -513,10 +509,9 @@ border: blue 3px solid;
   overflow: scroll;
   width: 4400px;
   height: 1900px;
-  top: -25vh;
-  left: -100vw;
+  top: -25%;
+  left: -100%;
   }
-
 
 .container .video iframe {
   width: 5080px;
