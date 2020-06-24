@@ -211,14 +211,14 @@ $(document).ready(function(){
 
   setTimeout(function(){
       $('#pleaseWait').fadeIn(1000);
-  },1000);
+  },100);
   setTimeout(function(){
     $('#howto').fadeIn(1000);
-},3000);
+},300);
 
   setTimeout(function(){
     $('#pleaseClick').fadeIn(1000);
-},10000);
+},1000);
 });
 
 
