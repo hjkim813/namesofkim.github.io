@@ -19,22 +19,39 @@
   $(function() {
     $('textarea').focus();
   });
+  
+  var demo_input = document.getElementById('text');
+  var type_this = "<랙댜후\xa0ㄴㅅㅁㅅㄷ-ㅠ개ㅏ두\xa0ㅣ무혐ㅎㄷ>\n\n소ㅑㄴ\xa0ㅈ갸샤ㅜㅎ\xa0뇬ㅅ드\xa0래ㅣㅣㅐㅈㄴ\xa0솓\xa0ㄴㅅ겿셕ㄷ\xa0ㅐㄹ\xa0ㅗ무혀ㅣ(gksrmf),\xa0솓\xa0ㅏㅐㄱㄷ무\xa0미ㅔㅗ뮫ㅅㄴ.\xa0\n\n쟈소\xa0ㅏㅐㄱㄷ무ㅑㄴㄷㅇ\xa0미ㅔㅗ뮫ㅅㄴ\xa0뭉\xa0두히ㅑ노랻ㅇ\xa0ㅗ무혀ㅣ,\xa0솓\xa0ㅔ개ㅓㄷㅊㅅ\xa0ㄷ텍ㄷㄴㄷㄴ\xa0쳐ㅣ셕미\xa0(채ㅜ)려냐ㅐㅜ\xa0ㄷ텓갸둧ㄷㅇ\xa0ㅁㄴ\xa0ㅁ\xa0랙댜훋ㄱ.\n\n*\xa0솓\xa0뇬ㅅ드\xa0ㅑㄴ\xa0ㅠ댜ㅜㅎ\xa0ㅕㅔㅇㅁㅅㄷㅇ\xa0ㅁㅅ\xa0미ㅣ\xa0샤ㅡㄷ.\n\n*\xa0ㅑㄹ\xa0ㅛㅐㅕ\xa0ㅗㅁㅍㄷ\xa0ㅏㅐㄱㄷ무\xa0ㅣ무혐ㅎㄷ\xa0ㅑㅞㅕㅅ,\xa0ㄹ띠\xa0ㄹㄱㄸ\xa0새\xa0ㅈ걋ㄷ\xa0내ㅡㄷ소ㅑㅜㅎ\xa0쟈소\xa0소드\xa0새ㅐ.\n\n*ㅅ교\xa0채ㅔㅛ&ㅔㅁㄴㅅㄷ\xa0소ㅑㄴ\xa0ㅅㄷㅌㅅㄴ\xa0ㅐㅜ\xa0ㅐ솓ㄱ\xa0ㅠ갲ㄴㄷㄱ/ㅔ갷ㄱ므;)\n\n*\xa0쇼ㅔㄷㄹㅁㅊㄷ\xa0ㅊㄱㄷ얏:\xa0마컁둨\xa0ㅎ갯ㄷ나\n\n------------------------\n\nㅂ.\xa0ㅁㄱㄷ\xa0ㅛㅐㅕ\xa0채ㅜ련ㄷㅇ?\xa0애\xa0ㅛㅐㅕ\xa0소ㅑㅜㅏ\xa0ㅛㅐㅕ\xa0ㅕㅜㅇㄷㄱㄴㅅ뭉\xa0좀ㅅ\xa0ㅑ'ㅡ\xa0ㅅ미ㅏㅑㅜㅎ\xa0뮤ㅐㅕㅅ?\n\n";
+  var index = 0;
+  var $textarea = $('#text');
 
-  window.onbeforeunload = function() {
-       $('textarea').each(function(){
-          var id = $(this).attr('id');
-          var value = $(this).val();
-         localStorage.setItem(id, value);
-      });
-  }
-  window.onload = function() {
-      $('textarea').each(function(){
-         var id = $(this).attr('id');
-         var text = localStorage.getItem(id);
-         if (text !== null) $('#'+id).val(text);
-      });
+  window.next_letter = function() {
+      if (index <= type_this.length) {
+          demo_input.value = type_this.substr(0, index++);
+          setTimeout("next_letter()", 1);
+      }
+
+      $textarea.scrollTop($textarea[0].scrollHeight);
+      scrollToBottom();
+
   }
 
+  next_letter();
+  // window.onbeforeunload = function() {
+  //      $('textarea').each(function(){
+  //         var id = $(this).attr('id');
+  //         var value = $(this).val();
+  //        localStorage.setItem(id, value);
+  //     });
+  // }
+  // window.onload = function() {
+  //     $('textarea').each(function(){
+  //        var id = $(this).attr('id');
+  //        var text = localStorage.getItem(id);
+  //        if (text !== null) $('#'+id).val(text);
+  //     });
+  // }
+  //
 
   </script>
 
