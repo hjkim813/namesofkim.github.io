@@ -229,14 +229,14 @@ $(document).ready(function(){
 
 setTimeout(function(){
   $('#pleaseWait').fadeIn(1000);
-},100);
+},1000);
 setTimeout(function(){
 $('#howto').fadeIn(1000);
-},300);
+},3000);
 
 setTimeout(function(){
 $('#pleaseClick').fadeIn(1000);
-},1000);
+},10000);
 });
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
