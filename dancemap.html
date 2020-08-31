@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="#" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Global K – Dance Map</title>
-    <link rel="stylesheet" href="./dancemap/res/reset.css">
-    <link rel="stylesheet" href="./dancemap/style.css">
+    <link rel="stylesheet" href="./dancemap/res/reset.css"  media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./dancemap/style.css"  media="print" onload="this.media='all'">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
@@ -31,11 +32,12 @@
                 <div id="info" div class="info1">
                     <a>Dancing Bodies = Number of search results of dance covers × Number of members in the original K-Pop group</a>
                 </div>
-                <div class="num-dancingbodies">
+  
+                <div class="num-dancingbodies" id="num-dancingbodies">
                     <p id="num-dancingbodies">num:bodies</p>
                 </div>
-                
-                <div class="num-total"div id="num-total">
+
+                <div class="num-total" id="num-total">
                     <p id="num-total">num:total</p>
                 </div>
                 <div id ="info" div class="info2">
@@ -81,8 +83,7 @@
 
     <div class="instructions">
         <p id="pleaseWait">Please wait until the video loads</p>
-        <p id="howto">Map can be navigated with scrolling or keyboard arrows. <br> 
-            Video can be controlled with spacebar or click.</p>
+        <p id="howto">Map can be navigated with scrolling or keyboard arrows. <br> Play the video with spacebar or click.</p>
         <p id="pleaseClick">Click to continue</p>
     </div>
 
@@ -94,10 +95,8 @@
 
     </div>
 
-
     <script src="./dancemap/script.js"></script>
     <script src="./dancemap/data.js"></script>
-
 
 </body>
 
