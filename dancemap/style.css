@@ -1,4 +1,41 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Swift-Light";
+  src: url("./res/fonts/Swift-03-Light.eot"); /* IE9 Compat Modes */
+  src: url("./res/fonts/Swift-03-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./res/fonts/Swift-03-Light.otf") format("opentype"), /* Open Type Font */
+    url("./res/fonts/Swift-03-Light.svg") format("svg"), /* Legacy iOS */
+    url("./res/fonts/Swift-03-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./res/fonts/Swift-03-Light.woff") format("woff"), /* Modern Browsers */
+    url("./res/fonts/Swift-03-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Swift-Regular";
+  src: url("./res/fonts/Swift-04-Regular.eot"); /* IE9 Compat Modes */
+  src: url("./res/fonts/Swift-04-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./res/fonts/Swift-04-Regular.otf") format("opentype"), /* Open Type Font */
+    url("./res/fonts/Swift-04-Regular.svg") format("svg"), /* Legacy iOS */
+    url("./res/fonts/Swift-04-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./res/fonts/Swift-04-Regular.woff") format("woff"), /* Modern Browsers */
+    url("./res/fonts/Swift-04-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Swift-Bold";
+  src: url("./res/fonts/Swift-07-Bold.eot"); /* IE9 Compat Modes */
+  src: url("./res/fonts/Swift-07-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./res/fonts/Swift-07-Bold.otf") format("opentype"), /* Open Type Font */
+    url("./res/fonts/Swift-07-Bold.svg") format("svg"), /* Legacy iOS */
+    url("./res/fonts/Swift-07-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./res/fonts/Swift-07-Bold.woff") format("woff"), /* Modern Browsers */
+    url("./res/fonts/Swift-07-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 html {
   width: 100%;
@@ -14,14 +51,12 @@ body {
   font-size: 1.1vw;
   line-height: 1.1;
   color: black;
-  font-family: 'Swift', serif;
-  src: local('Swift');
+  font-family: 'Swift-Regular';
 }
 
 ::-webkit-scrollbar {
-  width: 0px;  /* Remove scrollbar space */
+  width: 0px;  
   height: 0px;
-  /* background: transparent;  */
 }
 
 a {
@@ -94,17 +129,17 @@ textarea {
 
 .wrapper nav .topcountries {
   left: 0;
-  bottom: 2.5vh;
+  bottom: 3vh;
   padding: 0.5%;
   width: 10vw;
-  box-shadow: rgba(0, 0, 0, 0.5) 4px 2px 10px;
-  text-shadow: rgba(0, 0, 0, 0.8) 3px 2px 4px;
+  box-shadow: rgba(0, 0, 0, 0.9) 4px 2px 10px;
 }
 
 .wrapper nav .topcountries p {
   text-align-last: left;
   white-space: nowrap;
   color: white;
+  text-shadow: rgba(0, 0, 0, 0.9) 2px 1px 3px;
 }
 
 .wrapper nav .about {
@@ -126,17 +161,19 @@ textarea {
 
 .about button {
   padding: 0;
+  margin: 0;
   margin-bottom: 1rem;
   border: none;
   display: block;
-  top: 16vh;
   width: 100%;
-  height: 6vh;
+  height: 30%;
   background-color: rgba(255, 255, 255, 0);
+  box-shadow: rgba(0, 0, 0, 0.8) 4px 2px 10px;
 }
 
 .about button span {
-  top: 0;
+  margin: 0;
+  padding: 0;
   text-align-last: left; 
   background: linear-gradient(0deg, white, black);
   background-clip: text;
@@ -145,11 +182,12 @@ textarea {
 }
 
 #plus {
-  font-size: 6vw;
+  font-size: 4vw;
+  
 }
 
 #minus {
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 .wrapper nav .dancingbodies {
@@ -169,7 +207,7 @@ textarea {
   top: 0%;
   font-size: 6vw;
   color: white;
-  text-shadow: rgba(0, 0, 0, 0.8) 5px 3px 8px;
+  font-family: Swift-Bold;
 }
 
 p:first-line {
@@ -177,30 +215,31 @@ p:first-line {
 }
 
 .wrapper nav #txt-dancingbodies p {
-  font-weight: bolder;
   margin:0;
+  text-shadow: rgba(0, 0, 0, 0.8) 5px 3px 8px;
 }
 
+
 .wrapper nav .num-dancingbodies {
+  font-family: 'Swift-Bold';
   text-align-last: left;
   left: 35vw;
   font-size: 6vw;
   top: 0;
-  font-weight: bolder;
   padding: 0;
   color: black;
-  text-shadow: rgba(0, 0, 0, 0.5) 4px 2px 10px;
+  text-shadow: white 4px 2px 8px;
 }
 
 .wrapper nav .num-total {
+  font-family: 'Swift-Bold';
   text-align-last: left;
   right: 0;
   font-size: 6vw;
   top: 0;
-  font-weight: bolder;
   padding: 0;
   color: black;
-  text-shadow: rgba(0, 0, 0, 0.5) 4px 2px 10px;
+  text-shadow: white 4px 2px 8px;
 }
 
 .wrapper nav .songinfo {
@@ -209,20 +248,18 @@ p:first-line {
   max-height: 8vw;
   right: 0;
   bottom: 1vh;
-  box-shadow: rgba(0, 0, 0, 0.8) 4px 2px 10px;
-  text-shadow: rgba(0, 0, 0, 0.5) 2px 1px 5px;
 }
 
 .wrapper nav .songinfo #firstcol {
+  font-family: 'Swift-Bold';
   text-align-last: right;
   bottom: 0;
   right: 51%;
   font-size: 6vw;
   margin: 0;
   padding:0;
-  font-weight: bolder;
   color: black;
-  text-shadow: rgba(0, 0, 0, 0.5) 4px 2px 10px;
+  text-shadow: white 4px 2px 8px;
 }
 
 .wrapper nav .songinfo #secondcol {
@@ -235,8 +272,8 @@ p:first-line {
   margin: 0;
   color: white;
   white-space: nowrap;
-  box-shadow: rgba(0, 0, 0, 0.5) 4px 2px 10px;
-  text-shadow: rgba(0, 0, 0, 0.8) 3px 2px 4px;
+  box-shadow: rgba(0, 0, 0, 0.8) 4px 2px 10px;
+  text-shadow: rgba(0, 0, 0, 0.9) 2px 1px 3px;
 
 }
 .wrapper nav .songinfo #secondcol p{
@@ -383,7 +420,7 @@ p:first-line {
 
 .instructions {
   text-align: center;
-  bottom: 10%;
+  bottom: 3vh;
   left: 0;
   padding: 0;
   margin: 0;
@@ -395,9 +432,14 @@ p:first-line {
 }
 
 .instructions p {
-  padding: 0.5vh;
-  font-size: 2vw;
-  color: black;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-transform: uppercase;
+  font-family: 'Swift-Light';
+  font-size: 4vw;
+  line-height: normal;
+  color: white;
+  text-shadow: black 0px 0px 5px;
 }
 
 .container {

@@ -17,7 +17,7 @@ function visualiseOutput(id) {
   numDancingBodies.innerHTML = entry['Dancing Bodies'];
   totalBodies.innerHTML = entry['Total Bodies'];
   firstcol.innerHTML = entry['Viewcount'];
-  secondcol.innerHTML = `<p> ${entry['Artist']} – ${entry['Song Title']} &thinsp; ${entry['Date']} &thinsp; ${entry['Company']} &thinsp;&thinsp;</p>`;
+  secondcol.innerHTML = `<p> ${entry['Artist']} – ${entry['Song Title']} &thinsp; ${entry['Date']} &thinsp; ${entry['Company']} &ensp;</p>`;
 }
 
 function changeContent(time) {
@@ -154,7 +154,7 @@ function changeContent(time) {
 
 function updatePlayer(currentTime, totalTime) {
 
-  console.log(currentTime);
+  // console.log(currentTime);
   
   progress = (currentTime / totalTime) * 100;
   progressApx = progress.toFixed(1);
