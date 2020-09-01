@@ -413,7 +413,7 @@ $(document).ready(function () {
 
 function timerIncrement() {
     idleTime = idleTime + 1;
-    if (idleTime > 5) { // 5 minutes
+    if (idleTime > 3) { // 3 minutes
         window.location.reload();
     }
 }
