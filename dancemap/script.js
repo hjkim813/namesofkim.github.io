@@ -239,12 +239,8 @@ $('#pleaseClick').fadeIn(1000);
 document.getElementById("pleaseWait").addEventListener("load", autoPlay);
 
 function autoPlay() {
-  var get = $("#current-time");
-  var txt = get.html();
-  if (txt == ""){
-    player.playVideo();
-    console.log("video autoplays")
-  }
+  player.playVideo();
+  console.log("video autoplays")
 }
 
 
