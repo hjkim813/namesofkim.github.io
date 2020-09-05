@@ -228,7 +228,6 @@ $('#pleaseClick').fadeIn(1000);
 });
 
 
-
 document.getElementById("pleaseWait").addEventListener("load", function(){
   player.playVideo();
   console.log("video autoplays")
