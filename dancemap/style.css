@@ -469,8 +469,8 @@ p:first-line {
   overflow: scroll;
   width: 4400px;
   height: 1900px;
-  top: -40%;
-  left: -75%;
+  top: -25%;
+  left: -55%;
   }
 
 .container .video iframe {

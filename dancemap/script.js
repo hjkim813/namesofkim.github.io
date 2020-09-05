@@ -338,8 +338,8 @@ document.getElementById("plus").addEventListener("click", function(){
 
   if (matrix==`matrix(0.5, 0, 0, 0.5, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.75)');
-    div.style.top = "-40%";
-    div.style.left = "-75%";
+    div.style.top = "-25%";
+    div.style.left = "-55%";
     }
   else if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
     container.style.setProperty('transform', 'scale(1)');
@@ -370,8 +370,8 @@ document.getElementById("minus").addEventListener("click", function(){
   }
   else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.75)');
-    div.style.top = "-40%";
-    div.style.left = "-75%";
+    div.style.top = "-25%";
+    div.style.left = "-55%";
   }
   else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`){
     container.style.setProperty('transform', 'scale(1)');
