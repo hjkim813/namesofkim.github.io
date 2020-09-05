@@ -209,20 +209,14 @@ tag.src = 'https://www.youtube.com/iframe_api';
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+
 $(document).ready(function(){
-  var get = $("#current-time");
-  var txt = get.html();
-  if (txt == ""){
-    player.playVideo();
-    console.log("video autoplays")
-  }
-  
   $('#pleaseWait').hide();
   $('#howto').hide();
   $('#pleaseClick').hide();
 
-
 setTimeout(function(){
+  
   $('#pleaseWait').fadeIn(1000);
 },1000);
 setTimeout(function(){
@@ -247,6 +241,13 @@ document.getElementById("pleaseClick").addEventListener("click", function(){
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
 var player;
+var get = $("#current-time");
+var txt = get.html();
+if (txt == ""){
+  player.playVideo();
+  console.log("video autoplays")
+}
+
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '0',
@@ -272,20 +273,6 @@ function onYouTubeIframeAPIReady() {
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {  
     event.target.playVideo();
-}
-
-function trackPlayerChanges(playerStatus) {
-  if (playerStatus == -1) {
-  //playback hasn't started, but the player is loaded
-  // player.playVideo();
-  console.log("video notstarted");
-  } else if (playerStatus == 3) {
-      // video is buffering
-      console.log("video buffering");
-  } else if (playerStatus == 5) {
-      // video is cued; loaded but not playing
-      console.log("video cued");
-  }
 }
 
 // 5. The API calls this function when the player's state changes.
