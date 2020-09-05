@@ -237,9 +237,16 @@ $('#pleaseClick').fadeIn(1000);
 document.getElementById("pleaseClick").addEventListener("click", function(){
   $(".instructions").css({"display":"none"})
   document.getElementById('placeholder').style.display = 'none';
+  player.pauseVideo();
+  console.log("video pauses on click box")
+});
+document.getElementById("pleaseClick").addEventListener("click", function(){
+  $(".instructions").css({"display":"none"})
+  document.getElementById('placeholder').style.display = 'none';
   player.playVideo();
   console.log("video plays on click box")
 });
+
 
 
 // 2. This code loads the IFrame Player API code asynchronously.
@@ -269,7 +276,6 @@ function onYouTubeIframeAPIReady() {
     },
   });
 }
-
 
 
 // 4. The API will call this function when the video player is ready.
