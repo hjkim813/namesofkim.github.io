@@ -221,7 +221,7 @@ setTimeout(function(){
 },1000);
 setTimeout(function(){
 $('#howto').fadeIn(1000);
-},3000);
+},5000);
 
 setTimeout(function(){
 $('#pleaseClick').fadeIn(1000);
@@ -270,21 +270,14 @@ function onPlayerReady(event) {
 // 5. The API calls this function when the player's state changes.
 //    The function indicates that when playing a video (state=1),
 function onPlayerStateChange(event) {
-  var get = $("#current-time");
-  var txt = get.html();
-  if (txt == ""){
-    player.pauseVideo();
-    console.log("video paused for load")
-  }
-  if (event.data == YT.PlayerState.PLAYING) {
-    console.log("video auto-plays")
 
-    // var get = $("#current-time");
-    // var txt = get.html();
-    // if (txt == ""){
-    //   player.pauseVideo();
-    //   console.log("video paused for load")
-    // }
+  if (event.data == YT.PlayerState.PLAYING) {
+    var get = $("#current-time");
+    var txt = get.html();
+    if (txt == "00:00:00 / 00:28:37"){
+      player.pauseVideo();
+      console.log("video paused for load")
+    }
 
 
       setInterval(() => {
