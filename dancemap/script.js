@@ -270,15 +270,20 @@ function onPlayerReady(event) {
 // 5. The API calls this function when the player's state changes.
 //    The function indicates that when playing a video (state=1),
 function onPlayerStateChange(event) {
-
+  var get = $("#current-time");
+  var txt = get.html();
+  if (txt == ""){
+    player.pauseVideo();
+    console.log("video paused for load")
+  }
   if (event.data == YT.PlayerState.PLAYING) {
 
-    var get = $("#current-time");
-    var txt = get.html();
-    if (txt == ""){
-      player.pauseVideo();
-      console.log("video paused")
-    }
+    // var get = $("#current-time");
+    // var txt = get.html();
+    // if (txt == ""){
+    //   player.pauseVideo();
+    //   console.log("video paused for load")
+    // }
 
 
       setInterval(() => {
@@ -306,7 +311,6 @@ function onPlayerStateChange(event) {
       document.getElementById('box').onclick = function() {
         player.playVideo();
         console.log("video plays")
-
     };           
       document.body.onkeyup = function(e){
         if(e.keyCode == 32){
