@@ -228,9 +228,6 @@ $('#pleaseClick').fadeIn(1000);
 });
 
 
-
-
-
 document.getElementById("pleaseClick").addEventListener("click", function(){
   $(".instructions").css({"display":"none"})
   document.getElementById('placeholder').style.display = 'none';
@@ -238,7 +235,7 @@ document.getElementById("pleaseClick").addEventListener("click", function(){
   console.log("video plays on click box")
 });
 
-document.getElementById("pleaseWait").addEventListener("load", function(){
+document.getElementById("placeholder").addEventListener("load", function(){
   player.playVideo();
   console.log("video autoplays")
 });
