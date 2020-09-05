@@ -247,7 +247,7 @@ function onYouTubeIframeAPIReady() {
     videoId: 'YSrMqiHlQZI',
     playerVars: {
       controls: 0,
-      autoplay: 0,
+      // autoplay: 0,
       iv_load_policy: 3,
       loop: 1,
       playlist: 'YSrMqiHlQZI',
@@ -262,17 +262,21 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
+var get = $("#current-time");
+var txt = get.html();
+if (txt == ""){
+  player.playVideo();
+  console.log("video autoplays for gods sake")
+}
+
 // 4. The API will call this function when the video player is ready.
-// function onPlayerReady(event) {
-//   event.target.playVideo();
-//   console.log("video auto plays?")
+function onPlayerReady(event) {
+  event.target.playVideo();
+}
+// function onPlayerReady() {
 //   player.playVideo();
 //   console.log("video auto plays")
 // }
-function onPlayerReady() {
-  player.playVideo();
-  console.log("video auto plays")
-}
 
 // 5. The API calls this function when the player's state changes.
 //    The function indicates that when playing a video (state=1),
@@ -326,6 +330,10 @@ window.onkeydown = function(e) {
 
 function stopVideo() {
   console.log('initial video pause');
+}
+
+function playVideo() { 
+  youtubePlayer.playVideo();
 }
 
 document.getElementById("plus").addEventListener("click", function(){
