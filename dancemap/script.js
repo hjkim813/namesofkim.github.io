@@ -212,11 +212,14 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 $(document).ready(function(){
 
-  // document.getElementById("placeholder").addEventListener("load", function(){
-  //   player.playVideo();
-  //   console.log("video autoplays")
-  // });
-
+  document.getElementById("placeholder").addEventListener("load", function(){
+    $('#pleaseWait').hide();
+    $('#howto').hide();
+    $('#pleaseClick').hide();
+    player.playVideo();
+    console.log("video plays on load")
+  });
+  
   $('#pleaseWait').hide();
   $('#howto').hide();
   $('#pleaseClick').hide();
@@ -233,14 +236,10 @@ $('#pleaseClick').fadeIn(1000);
 },1000);
 });
 
-document.getElementById("placeholder").addEventListener("click", function(){
-  $(".instructions").css({"display":"none"})
-  document.getElementById('placeholder').style.display = 'none';
-  player.playVideo();
-  console.log("video plays on click box")
-});
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
+  $(".instructions").css({"display":"none"})
+  document.getElementById('placeholder').style.display = 'none';
   player.pauseVideo();
   console.log("video pauses on click box")
 });
