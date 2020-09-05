@@ -264,14 +264,14 @@ function onYouTubeIframeAPIReady() {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {  
-  if (event.data == YT.PlayerState.UNSTARTED || YT.PlayerState.CUED) {
     event.target.playVideo();
-    console.log("#current-time");
-  }
 }
 
 // 5. The API calls this function when the player's state changes.
 function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.UNSTARTED || YT.PlayerState.CUED) {
+    player.playVideo();
+  }
   if (event.data == YT.PlayerState.PLAYING) {
     var get = $("#current-time");
     var txt = get.html();
