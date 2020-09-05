@@ -260,8 +260,6 @@ function onYouTubeIframeAPIReady() {
       onStateChange: onPlayerStateChange,
     },
   });
-  player.playVideo();
-  console.log("video autoplays");
 }
 
 // 4. The API will call this function when the video player is ready.
