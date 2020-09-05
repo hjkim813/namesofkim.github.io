@@ -211,11 +211,14 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 $(document).ready(function(){
-  
   $('#pleaseWait').hide();
   $('#howto').hide();
   $('#pleaseClick').hide();
+});
 
+document.getElementById("placeholder").addEventListener("load", function(){
+  player.playVideo();
+  console.log("video plays on load")
   setTimeout(function(){
     $('#pleaseWait').fadeIn(1000);
   },100);
@@ -225,15 +228,9 @@ $(document).ready(function(){
   setTimeout(function(){
   $('#pleaseClick').fadeIn(1000);
   },1000);
-
 });
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
-  player.playVideo();
-  console.log("video plays on first click")
-});
-
-document.getElementById("placeholder").addEventListener("click", function(){
   $(".instructions").css({"display":"none"})
   document.getElementById("placeholder").style.display = 'none';
   player.pauseVideo();
