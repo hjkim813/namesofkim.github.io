@@ -228,10 +228,7 @@ $('#pleaseClick').fadeIn(1000);
 });
 
 
-document.getElementById("pleaseWait").addEventListener("load", function(){
-  player.playVideo();
-  console.log("video autoplays")
-});
+
 
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
@@ -241,6 +238,10 @@ document.getElementById("pleaseClick").addEventListener("click", function(){
   console.log("video plays on click box")
 });
 
+document.getElementById("pleaseWait").addEventListener("load", function(){
+  player.playVideo();
+  console.log("video autoplays")
+});
 
 // 2. This code loads the IFrame Player API code asynchronously.
 
