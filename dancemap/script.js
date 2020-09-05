@@ -248,12 +248,6 @@ document.getElementById("pleaseClick").addEventListener("click", function(){
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
 var player;
-var get = $("#current-time");
-var txt = get.html();
-if (txt == ""){
-  player.playVideo();
-  console.log("video autoplays")
-}
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
