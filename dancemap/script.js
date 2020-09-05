@@ -329,12 +329,12 @@ document.getElementById("plus").addEventListener("click", function(){
   var matrix = $('.container').css('transform');
 
 
-  if (matrix==`matrix(0.5, 0, 0, 0.5, 0, 0)`){
-    container.style.setProperty('transform', 'scale(0.75)');
-    div.style.top = "-20%";
-    div.style.left = "-55%";
-    }
-  else if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
+  // if (matrix==`matrix(0.5, 0, 0, 0.5, 0, 0)`){
+  //   container.style.setProperty('transform', 'scale(0.75)');
+  //   div.style.top = "-20%";
+  //   div.style.left = "-55%";
+  //   }
+  if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
     container.style.setProperty('transform', 'scale(1)');
     div.style.top = "-25%";
     div.style.left = "-50%";
@@ -356,12 +356,12 @@ document.getElementById("minus").addEventListener("click", function(){
   var div = document.getElementsByClassName('video')[0];
   var container = document.getElementsByClassName('container')[0];
 
-  if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
-    container.style.setProperty('transform', 'scale(0.5)');
-    div.style.top = "-65%";
-    div.style.left = "-120%";
-  }
-  else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
+  // if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
+  //   container.style.setProperty('transform', 'scale(0.5)');
+  //   div.style.top = "-65%";
+  //   div.style.left = "-120%";
+  // }
+  if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.75)');
     div.style.top = "-20%";
     div.style.left = "-55%";
