@@ -264,7 +264,7 @@ function onYouTubeIframeAPIReady() {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {  
-  if (event.data == YT.PlayerState.UNSTARTED) {
+  if (event.data == YT.PlayerState.UNSTARTED || YT.PlayerState.CUED) {
     event.target.playVideo();
     console.log("#current-time");
   }
