@@ -228,13 +228,13 @@ $(document).ready(function(){
 
 });
 
-document.getElementById("placeholder").addEventListener("click", function(){
-  $(".instructions").css({"display":"none"})
+document.getElementById("pleaseClick").addEventListener("click", function(){
   player.playVideo();
   console.log("video plays on first click")
 });
 
-document.getElementById("pleaseClick").addEventListener("click", function(){
+document.getElementById("placeholder").addEventListener("click", function(){
+  $(".instructions").css({"display":"none"})
   document.getElementById("placeholder").style.display = 'none';
   player.pauseVideo();
   console.log("video pauses on second click")
