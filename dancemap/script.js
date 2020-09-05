@@ -332,9 +332,6 @@ function stopVideo() {
   console.log('initial video pause');
 }
 
-function playVideo() { 
-  youtubePlayer.playVideo();
-}
 
 document.getElementById("plus").addEventListener("click", function(){
   
