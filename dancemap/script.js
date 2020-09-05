@@ -212,17 +212,13 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 $(document).ready(function(){
 
-  document.getElementById("placeholder").addEventListener("load", function(){
+  $( "#placeholder" ).load(function() {
     $('#pleaseWait').hide();
     $('#howto').hide();
     $('#pleaseClick').hide();
     player.playVideo();
     console.log("video plays on load")
   });
-  
-  $('#pleaseWait').hide();
-  $('#howto').hide();
-  $('#pleaseClick').hide();
 
 setTimeout(function(){
   $('#pleaseWait').fadeIn(1000);
@@ -230,10 +226,10 @@ setTimeout(function(){
 setTimeout(function(){
 $('#howto').fadeIn(1000);
 },500);
-
 setTimeout(function(){
 $('#pleaseClick').fadeIn(1000);
 },1000);
+
 });
 
 
