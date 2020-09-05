@@ -223,16 +223,20 @@ $(document).ready(function(){
 
 setTimeout(function(){
   $('#pleaseWait').fadeIn(1000);
-},1000);
+},100);
 setTimeout(function(){
 $('#howto').fadeIn(1000);
-},5000);
+},500);
 
 setTimeout(function(){
 $('#pleaseClick').fadeIn(1000);
-},10000);
+},1000);
 });
 
+document.getElementById("placeholder").addEventListener("load", function(){
+  player.playVideo();
+  console.log("video plays on click box")
+});
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
   $(".instructions").css({"display":"none"})
@@ -240,12 +244,8 @@ document.getElementById("pleaseClick").addEventListener("click", function(){
   player.pauseVideo();
   console.log("video pauses on click box")
 });
-document.getElementById("pleaseClick").addEventListener("click", function(){
-  $(".instructions").css({"display":"none"})
-  document.getElementById('placeholder').style.display = 'none';
-  player.playVideo();
-  console.log("video plays on click box")
-});
+
+
 
 
 
