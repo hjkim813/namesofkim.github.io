@@ -227,10 +227,6 @@ $('#pleaseClick').fadeIn(1000);
 },10000);
 });
 
-document.getElementById("placeholder").addEventListener("load", function(){
-  player.playVideo();
-  console.log("video autoplays")
-});
 
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
@@ -268,6 +264,11 @@ function onYouTubeIframeAPIReady() {
     },
   });
 }
+
+document.getElementById("placeholder").addEventListener("load", function(){
+  player.playVideo();
+  console.log("video autoplays")
+});
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {  
