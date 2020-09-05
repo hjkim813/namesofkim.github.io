@@ -261,18 +261,18 @@ function onYouTubeIframeAPIReady() {
     },
   });
 }
-
+// var get = $("#current-time");
+// var txt = get.html();
+// if (txt == ""){
+//   event.target.playVideo();
+//   console.log("video autoplays for gods sake")
+// }
 
 
 // 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-  console.log("video player is ready at least")
-  
-  var get = $("#current-time");
-  var txt = get.html();
-  if (txt == ""){
+function onPlayerReady(event, playerStatus) {  
+  if (playerStatus == -1) {
     event.target.playVideo();
-    console.log("video autoplays for gods sake")
   }
 }
 // function onPlayerReady() {
