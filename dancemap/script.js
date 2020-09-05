@@ -337,17 +337,17 @@ document.getElementById("plus").addEventListener("click", function(){
   else if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
     container.style.setProperty('transform', 'scale(1)');
     div.style.top = "-25%";
-    div.style.left = "-55%";
+    div.style.left = "-50%";
     }
   else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
     container.style.setProperty('transform', 'scale(1.5)');
     div.style.top = "-10%";
-    div.style.left = "-80%";
+    div.style.left = "-45%";
     }
   else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`) {
     container.style.setProperty('transform', 'scale(2)');
     div.style.top = "0";
-    div.style.left = "-100%";
+    div.style.left = "-35%";
   }
 });
 
@@ -369,17 +369,17 @@ document.getElementById("minus").addEventListener("click", function(){
   else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`){
     container.style.setProperty('transform', 'scale(1)');
     div.style.top = "-25%";
-    div.style.left = "-55%";
+    div.style.left = "-50%";
   }
   else if (matrix==`matrix(2, 0, 0, 2, 0, 0)`) {
     container.style.setProperty('transform', 'scale(1.5)');
     div.style.top = "-10%";
-    div.style.left = "-80%";
+    div.style.left = "-45%";
   }
   else if (matrix==`matrix(2.5, 0, 0, 2.5, 0, 0)`) {
     container.style.setProperty('transform', 'scale(2)');
     div.style.top = "0";
-    div.style.left = "-100%";
+    div.style.left = "-35%";
   }
 });
 
