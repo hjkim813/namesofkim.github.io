@@ -261,34 +261,24 @@ function onYouTubeIframeAPIReady() {
     },
   });
 }
-// var get = $("#current-time");
-// var txt = get.html();
-// if (txt == ""){
-//   event.target.playVideo();
-//   console.log("video autoplays for gods sake")
-// }
-
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {  
+  if (event.data == YT.PlayerState.UNSTARTED) {
     event.target.playVideo();
+    console.log("#current-time");
+  }
 }
-// function onPlayerReady() {
-//   player.playVideo();
-//   console.log("video auto plays")
-// }
+
 
 // 5. The API calls this function when the player's state changes.
-//    The function indicates that when playing a video (state=1),
 function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.UNSTARTED) {
-    player.playVideo();
-  }
+  // if (event.data == YT.PlayerState.UNSTARTED) {
+  //   player.playVideo();}
 
   if (event.data == YT.PlayerState.PLAYING) {
     var get = $("#current-time");
     var txt = get.html();
-    console.log(txt);
     if (txt == ""){
       player.pauseVideo();
       console.log("video paused for load")
