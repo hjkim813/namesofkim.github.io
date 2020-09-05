@@ -216,7 +216,6 @@ $(document).ready(function(){
   $('#pleaseClick').hide();
 
 setTimeout(function(){
-  
   $('#pleaseWait').fadeIn(1000);
 },1000);
 setTimeout(function(){
@@ -228,14 +227,26 @@ $('#pleaseClick').fadeIn(1000);
 },10000);
 });
 
-window.onload = () => {
+// window.onload = () => {
+//   var get = $("#current-time");
+//   var txt = get.html();
+//   if (txt == ""){
+//     player.playVideo();
+//     console.log("video autoplays")
+//   }
+// };
+
+document.getElementById("pleaseWait").addEventListener("load", autoPlay);
+
+function autoPlay() {
   var get = $("#current-time");
   var txt = get.html();
   if (txt == ""){
     player.playVideo();
     console.log("video autoplays")
   }
-};
+}
+
 
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
