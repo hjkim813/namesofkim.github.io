@@ -212,11 +212,11 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 $(document).ready(function(){
 
-  document.getElementById("placeholder").addEventListener("load", function(){
-    player.playVideo();
-    console.log("video autoplays")
-  });
-  
+  // document.getElementById("placeholder").addEventListener("load", function(){
+  //   player.playVideo();
+  //   console.log("video autoplays")
+  // });
+
   $('#pleaseWait').hide();
   $('#howto').hide();
   $('#pleaseClick').hide();
@@ -233,6 +233,10 @@ $('#pleaseClick').fadeIn(1000);
 },10000);
 });
 
+function OnLoadDocument () {
+  player.playVideo();
+  console.log("video autoplays")
+}
 
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
