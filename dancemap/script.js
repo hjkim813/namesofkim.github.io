@@ -232,7 +232,7 @@ document.getElementById("pleaseClick").addEventListener("click", function(){
   $(".instructions").css({"display":"none"})
   document.getElementById('placeholder').style.display = 'none';
   player.playVideo();
-  console.log("video plays")
+  console.log("video plays on click box")
 });
 
 // 2. This code loads the IFrame Player API code asynchronously.
@@ -277,6 +277,7 @@ function onPlayerStateChange(event) {
     console.log("video paused for load")
   }
   if (event.data == YT.PlayerState.PLAYING) {
+    console.log("video auto-plays")
 
     // var get = $("#current-time");
     // var txt = get.html();
@@ -310,7 +311,7 @@ function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.PAUSED) {
       document.getElementById('box').onclick = function() {
         player.playVideo();
-        console.log("video plays")
+        console.log("video plays on click")
     };           
       document.body.onkeyup = function(e){
         if(e.keyCode == 32){
@@ -338,7 +339,7 @@ document.getElementById("plus").addEventListener("click", function(){
 
   if (matrix==`matrix(0.5, 0, 0, 0.5, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.75)');
-    div.style.top = "-25%";
+    div.style.top = "-20%";
     div.style.left = "-55%";
     }
   else if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
@@ -370,7 +371,7 @@ document.getElementById("minus").addEventListener("click", function(){
   }
   else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
     container.style.setProperty('transform', 'scale(0.75)');
-    div.style.top = "-25%";
+    div.style.top = "-20%";
     div.style.left = "-55%";
   }
   else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`){
