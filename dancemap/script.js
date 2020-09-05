@@ -210,7 +210,13 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 $(document).ready(function(){
-
+  var get = $("#current-time");
+  var txt = get.html();
+  if (txt == ""){
+    player.playVideo();
+    console.log("video autoplays")
+  }
+  
   $('#pleaseWait').hide();
   $('#howto').hide();
   $('#pleaseClick').hide();
@@ -234,6 +240,7 @@ document.getElementById("pleaseClick").addEventListener("click", function(){
   player.playVideo();
   console.log("video plays on click box")
 });
+
 
 // 2. This code loads the IFrame Player API code asynchronously.
 
@@ -270,6 +277,7 @@ function onPlayerReady(event) {
 function trackPlayerChanges(playerStatus) {
   if (playerStatus == -1) {
   //playback hasn't started, but the player is loaded
+  // player.playVideo();
   console.log("video notstarted");
   } else if (playerStatus == 3) {
       // video is buffering
@@ -282,7 +290,6 @@ function trackPlayerChanges(playerStatus) {
 
 // 5. The API calls this function when the player's state changes.
 function onPlayerStateChange(event) {
-
   if (event.data == YT.PlayerState.PLAYING) {
     var get = $("#current-time");
     var txt = get.html();
