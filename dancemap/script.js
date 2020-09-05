@@ -260,6 +260,8 @@ function onYouTubeIframeAPIReady() {
       onStateChange: onPlayerStateChange,
     },
   });
+  player.playVideo();
+  console.log("video autoplays");
 }
 
 // 4. The API will call this function when the video player is ready.
@@ -269,9 +271,10 @@ function onPlayerReady(event) {
 
 // 5. The API calls this function when the player's state changes.
 function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.UNSTARTED || YT.PlayerState.CUED) {
-    player.playVideo();
-  }
+  // if (event.data == YT.PlayerState.UNSTARTED || YT.PlayerState.CUED) {
+  //   player.playVideo();
+  //   console.log("video autoplays");
+  // }
   if (event.data == YT.PlayerState.PLAYING) {
     var get = $("#current-time");
     var txt = get.html();
