@@ -275,12 +275,10 @@ function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING) {
     var get = $("#current-time");
     var txt = get.html();
-    if (txt == "00:00:00 / 00:28:37"){
+    if (txt == ""){
       player.pauseVideo();
       console.log("video paused for load")
     }
-
-
       setInterval(() => {
         let currentTimeMax = player.getCurrentTime();
         let currentTime = parseInt(currentTimeMax);
