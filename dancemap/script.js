@@ -227,22 +227,12 @@ $('#pleaseClick').fadeIn(1000);
 },10000);
 });
 
-// window.onload = () => {
-//   var get = $("#current-time");
-//   var txt = get.html();
-//   if (txt == ""){
-//     player.playVideo();
-//     console.log("video autoplays")
-//   }
-// };
 
-document.getElementById("pleaseWait").addEventListener("load", autoPlay);
 
-function autoPlay() {
+document.getElementById("pleaseWait").addEventListener("load", function(){
   player.playVideo();
   console.log("video autoplays")
-}
-
+});
 
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
