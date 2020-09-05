@@ -233,7 +233,7 @@ $('#pleaseClick').fadeIn(1000);
 },1000);
 });
 
-document.getElementById("placeholderIMG").addEventListener("load", function(){
+document.getElementById("placeholder").addEventListener("click", function(){
   player.playVideo();
   console.log("video plays on click box")
 });
@@ -244,6 +244,8 @@ document.getElementById("pleaseClick").addEventListener("click", function(){
   player.pauseVideo();
   console.log("video pauses on click box")
 });
+
+
 
 
 
