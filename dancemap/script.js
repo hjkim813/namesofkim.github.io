@@ -228,6 +228,16 @@ $('#pleaseClick').fadeIn(1000);
 },10000);
 });
 
+window.onload = () => {
+  var get = $("#current-time");
+  var txt = get.html();
+  if (txt == ""){
+    player.playVideo();
+    console.log("video autoplays")
+  }
+};
+
+
 document.getElementById("pleaseClick").addEventListener("click", function(){
   $(".instructions").css({"display":"none"})
   document.getElementById('placeholder').style.display = 'none';
