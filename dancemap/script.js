@@ -247,7 +247,7 @@ function onYouTubeIframeAPIReady() {
     videoId: 'YSrMqiHlQZI',
     playerVars: {
       controls: 0,
-      autoplay: 1,
+      autoplay: 0,
       iv_load_policy: 3,
       loop: 1,
       playlist: 'YSrMqiHlQZI',
