@@ -269,12 +269,42 @@ function onPlayerReady(event) {
     event.target.playVideo();
 }
 
+function trackPlayerChanges(playerStatus) {
+  var videoInfo = getVideoInfo();
+
+  if (playerStatus == -1) {
+//playback hasn't started, but the player is loaded
+      mixpanel.track('video started!', videoInfo);
+//start the 'video buffered' timer
+      mixpanel.time_event('video buffered!'); 
+  } else if (playerStatus == 0) {
+   //playback has ended
+      mixpanel.track('video finish!', videoInfo);
+  } else if (playerStatus == 1) {
+   //video is playing
+      mixpanel.track('playback started!', videoInfo);
+//re-start the 'video buffered' timer
+      mixpanel.time_event('video buffered!'); 
+//start the 'video finish!' timer
+      mixpanel.time_event('video finish!'); 
+  } else if (playerStatus == 2) {
+    //video is paused, get the current time it’s paused at
+      videoInfo.$duration = player.getCurrentTime(); 
+      mixpanel.track('playback paused!', videoInfo);
+  } else if (playerStatus == 3) {
+      // video is buffering
+      mixpanel.track('video buffered!', videoInfo);
+  } else if (playerStatus == 5) {
+      // video is cued; loaded but not playing
+      // we don't really care about this
+
+  }
+
+}
+
 // 5. The API calls this function when the player's state changes.
 function onPlayerStateChange(event) {
-  // if (event.data == YT.PlayerState.UNSTARTED || YT.PlayerState.CUED) {
-  //   player.playVideo();
-  //   console.log("video autoplays");
-  // }
+
   if (event.data == YT.PlayerState.PLAYING) {
     var get = $("#current-time");
     var txt = get.html();
