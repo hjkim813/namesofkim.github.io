@@ -296,10 +296,8 @@ function trackPlayerChanges(playerStatus) {
       mixpanel.track('video buffered!', videoInfo);
   } else if (playerStatus == 5) {
       // video is cued; loaded but not playing
-      // we don't really care about this
-
+      console.log("video cued");
   }
-
 }
 
 // 5. The API calls this function when the player's state changes.
