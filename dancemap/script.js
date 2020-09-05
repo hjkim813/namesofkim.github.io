@@ -211,6 +211,12 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 $(document).ready(function(){
+
+  document.getElementById("placeholder").addEventListener("load", function(){
+    player.playVideo();
+    console.log("video autoplays")
+  });
+  
   $('#pleaseWait').hide();
   $('#howto').hide();
   $('#pleaseClick').hide();
@@ -265,10 +271,7 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-document.getElementById("placeholder").addEventListener("load", function(){
-  player.playVideo();
-  console.log("video autoplays")
-});
+
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {  
