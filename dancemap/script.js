@@ -344,7 +344,7 @@ document.getElementById("plus").addEventListener("click", function(){
   else if (matrix==`matrix(0.75, 0, 0, 0.75, 0, 0)`){
     container.style.setProperty('transform', 'scale(1)');
     div.style.top = "-25%";
-    div.style.left = "-95%";
+    div.style.left = "-55%";
     }
   else if (matrix==`matrix(1, 0, 0, 1, 0, 0)`){
     container.style.setProperty('transform', 'scale(1.5)');
@@ -376,7 +376,7 @@ document.getElementById("minus").addEventListener("click", function(){
   else if (matrix==`matrix(1.5, 0, 0, 1.5, 0, 0)`){
     container.style.setProperty('transform', 'scale(1)');
     div.style.top = "-25%";
-    div.style.left = "-90%";
+    div.style.left = "-55%";
   }
   else if (matrix==`matrix(2, 0, 0, 2, 0, 0)`) {
     container.style.setProperty('transform', 'scale(1.5)');
