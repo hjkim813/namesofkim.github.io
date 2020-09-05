@@ -263,9 +263,13 @@ function onYouTubeIframeAPIReady() {
 }
 
 // 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-  event.target.playVideo();
-  console.log("video auto plays?")
+// function onPlayerReady(event) {
+//   event.target.playVideo();
+//   console.log("video auto plays?")
+//   player.playVideo();
+//   console.log("video auto plays")
+// }
+function onPlayerReady() {
   player.playVideo();
   console.log("video auto plays")
 }
@@ -277,7 +281,7 @@ function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING) {
     var get = $("#current-time");
     var txt = get.html();
-    if (txt == "00:00:00 / 00:28:37"){
+    if (txt == "00:00:01 / 00:28:37"){
       player.pauseVideo();
       console.log("video paused for load")
     }
