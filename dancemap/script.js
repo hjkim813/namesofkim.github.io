@@ -247,8 +247,6 @@ document.getElementById("pleaseClick").addEventListener("click", function(){
 
 
 
-
-
 // 2. This code loads the IFrame Player API code asynchronously.
 
 // 3. This function creates an <iframe> (and YouTube player)
