@@ -216,27 +216,28 @@ $(document).ready(function(){
   $('#howto').hide();
   $('#pleaseClick').hide();
 
-setTimeout(function(){
-  $('#pleaseWait').fadeIn(1000);
-},100);
-setTimeout(function(){
-$('#howto').fadeIn(1000);
-},500);
-setTimeout(function(){
-$('#pleaseClick').fadeIn(1000);
-},1000);
+  setTimeout(function(){
+    $('#pleaseWait').fadeIn(1000);
+  },100);
+  setTimeout(function(){
+  $('#howto').fadeIn(1000);
+  },500);
+  setTimeout(function(){
+  $('#pleaseClick').fadeIn(1000);
+  },1000);
 
 });
-document.getElementById("pleaseClick").addEventListener("click", function(){
+
+document.getElementById("placeholder").addEventListener("click", function(){
+  $(".instructions").css({"display":"none"})
   player.playVideo();
   console.log("video plays on first click")
 });
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
-  $(".instructions").css({"display":"none"})
-  document.getElementById('placeholder').style.display = 'none';
+  document.getElementById("placeholder").style.display = 'none';
   player.pauseVideo();
-  console.log("video plays on second click")
+  console.log("video pauses on second click")
 });
 
 
