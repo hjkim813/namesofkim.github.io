@@ -211,8 +211,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 $(document).ready(function(){
-
-  $( "#placeholder" ).load(function() {
+  $('#placeholder').load(function() {
     $('#pleaseWait').hide();
     $('#howto').hide();
     $('#pleaseClick').hide();
