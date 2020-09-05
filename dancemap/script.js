@@ -270,30 +270,12 @@ function onPlayerReady(event) {
 }
 
 function trackPlayerChanges(playerStatus) {
-  var videoInfo = getVideoInfo();
-
   if (playerStatus == -1) {
-//playback hasn't started, but the player is loaded
-      mixpanel.track('video started!', videoInfo);
-//start the 'video buffered' timer
-      mixpanel.time_event('video buffered!'); 
-  } else if (playerStatus == 0) {
-   //playback has ended
-      mixpanel.track('video finish!', videoInfo);
-  } else if (playerStatus == 1) {
-   //video is playing
-      mixpanel.track('playback started!', videoInfo);
-//re-start the 'video buffered' timer
-      mixpanel.time_event('video buffered!'); 
-//start the 'video finish!' timer
-      mixpanel.time_event('video finish!'); 
-  } else if (playerStatus == 2) {
-    //video is paused, get the current time it’s paused at
-      videoInfo.$duration = player.getCurrentTime(); 
-      mixpanel.track('playback paused!', videoInfo);
+  //playback hasn't started, but the player is loaded
+  console.log("video notstarted");
   } else if (playerStatus == 3) {
       // video is buffering
-      mixpanel.track('video buffered!', videoInfo);
+      console.log("video buffering");
   } else if (playerStatus == 5) {
       // video is cued; loaded but not playing
       console.log("video cued");
