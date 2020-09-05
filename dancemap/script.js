@@ -233,7 +233,7 @@ $('#pleaseClick').fadeIn(1000);
 },1000);
 });
 
-document.getElementById("placeholder").addEventListener("load", function(){
+document.getElementById("placeholderIMG").addEventListener("load", function(){
   player.playVideo();
   console.log("video plays on click box")
 });
