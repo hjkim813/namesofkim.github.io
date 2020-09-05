@@ -234,13 +234,13 @@ $('#pleaseClick').fadeIn(1000);
 });
 
 document.getElementById("placeholder").addEventListener("click", function(){
+  $(".instructions").css({"display":"none"})
+  document.getElementById('placeholder').style.display = 'none';
   player.playVideo();
   console.log("video plays on click box")
 });
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
-  $(".instructions").css({"display":"none"})
-  document.getElementById('placeholder').style.display = 'none';
   player.pauseVideo();
   console.log("video pauses on click box")
 });
