@@ -214,29 +214,24 @@ $(document).ready(function(){
   $('#pleaseWait').hide();
   $('#howto').hide();
   $('#pleaseClick').hide();
-});
 
-document.addEventListener("mouseenter", function(){
-  player.playVideo();
-  console.log("video plays on mouseenter")
   setTimeout(function(){
     $('#pleaseWait').fadeIn(1000);
-  },100);
+  },10);
   setTimeout(function(){
   $('#howto').fadeIn(1000);
-  },500);
+  },40);
   setTimeout(function(){
   $('#pleaseClick').fadeIn(1000);
-  },1000);
+  },80);
 });
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
   $(".instructions").css({"display":"none"})
   document.getElementById("placeholder").style.display = 'none';
-  player.pauseVideo();
-  console.log("video pauses on second click")
+  player.playVideo();
+  console.log("video plays click")
 });
-
 
 
 // 2. This code loads the IFrame Player API code asynchronously.
@@ -270,15 +265,34 @@ function onYouTubeIframeAPIReady() {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {  
+    player.mute();
     event.target.playVideo();
+    console.log("video autoplays")
+
+    var muted = document.getElementById("muted");
+
+    document.getElementById("muted").addEventListener("click", function(){
+      if(!!player.isMuted()){
+        muted.style.opacity = '0';
+        player.unMute();
+      }
+      else {
+        muted.style.opacity = '1';
+        player.mute();
+      }
+  });
 }
+
 
 // 5. The API calls this function when the player's state changes.
 function onPlayerStateChange(event) {
+  var muted = document.getElementById("muted");
+
   if (event.data == YT.PlayerState.PLAYING) {
+    
     var get = $("#current-time");
     var txt = get.html();
-    if (txt == "00:00:00 / 00:28:37"){
+    if (txt == ""){
       player.pauseVideo();
       console.log("video paused for load")
     }
@@ -295,26 +309,25 @@ function onPlayerStateChange(event) {
       player.pauseVideo();
       console.log("video paused")
   }
-
-  document.body.onkeyup = function(e){
-    if(e.keyCode == 32){
-      player.pauseVideo();
+    document.body.onkeyup = function(e){
+      if(e.keyCode == 32){
+        player.pauseVideo();
+      }
     }
   };
-
-  }
-    if (event.data == YT.PlayerState.PAUSED) {
-      document.getElementById('box').onclick = function() {
+ 
+  if (event.data == YT.PlayerState.PAUSED) {
+    document.getElementById('box').onclick = function() {
+      player.playVideo();
+  };           
+    document.body.onkeyup = function(e){
+      if(e.keyCode == 32){
         player.playVideo();
-        console.log("video plays on click")
-    };           
-      document.body.onkeyup = function(e){
-        if(e.keyCode == 32){
-          player.playVideo();
-        }
-      };
+      }
+    }
   }
 }
+
 
 
 window.onkeydown = function(e) { 
