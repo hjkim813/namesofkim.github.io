@@ -216,9 +216,9 @@ $(document).ready(function(){
   $('#pleaseClick').hide();
 });
 
-document.addEventListener("mousemove", function(){
+document.addEventListener("mouseenter", function(){
   player.playVideo();
-  console.log("video plays on mousemove")
+  console.log("video plays on mouseenter")
   setTimeout(function(){
     $('#pleaseWait').fadeIn(1000);
   },100);
