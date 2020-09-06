@@ -217,13 +217,13 @@ $(document).ready(function(){
 
   setTimeout(function(){
     $('#pleaseWait').fadeIn(1000);
-  },10);
+  },1000);
   setTimeout(function(){
   $('#howto').fadeIn(1000);
-  },40);
+  },4000);
   setTimeout(function(){
   $('#pleaseClick').fadeIn(1000);
-  },80);
+  },8000);
 });
 
 document.getElementById("pleaseClick").addEventListener("click", function(){
