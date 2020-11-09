@@ -21,7 +21,7 @@ container{
 img{
     position: relative;
     max-height: 100vh;
-    max-width: 65%;
+    max-width: 70%;
     display: inline;
     left:0;
     margin-top: 1%;
@@ -36,7 +36,7 @@ video {
     /* display: inline-block; */
     position: relative;
     max-height: 100vh;
-    max-width: 65%;
+    max-width: 70%;
     display: inline;
     left:0;
     margin-bottom: -0.5%;
