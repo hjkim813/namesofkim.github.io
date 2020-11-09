@@ -121,27 +121,6 @@ span:lang(ko){
 }
 
 
-
-/* .header img {
-  position: fixed;
-  opacity: 0.9;
-  display: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-height: 80vh;
-  max-width: 50vw;
-}
-
-.header:hover img {
-  display: block;
-  pointer-events: none;
-  z-index: 1001;
-}
-.header.active:hover img {
-  display: none;
-} */
-
 .projects{
   font-family:'F-Grotesk-Thin';
   line-height: 19px;
@@ -312,10 +291,6 @@ accordion.active {
   margin-right: auto;
 }
 
-
-/* .panel:hover .singleimg {
-  opacity: 1;
-} */
 
 #label{
   font-size:18pt;
