@@ -81,9 +81,15 @@ a {
     font-size: 1em;
     color: black;
     text-decoration: none;
+    left:0;
 }
 
 #backto {
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+#backto:any-link{
     text-decoration: underline;
-    float: right;
 }
