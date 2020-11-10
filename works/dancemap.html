@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="#" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Global K – Dance Map</title>
+    <link rel="stylesheet" href="./dancemap/res/reset.css"  media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./dancemap/style.css"  media="print" onload="this.media='all'">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+
+
+<body>
+    <div id="box"></div>
+    <div class="wrapper">
+        
+        <nav>
+            <div class="topcountries">
+                <p id="topcountries"> Top9 countries</p>
+                <div id ="info">
+                    <a>Top viewing countries of the K-Pop group, retrieved from Youtube music chart (charts.youtube.com). 
+                        <br>Period: 12 Months<br>Region: Global</a>
+                </div>
+            </div>
+ 
+            <div class="dancingbodies">
+                <div id="txt-dancingbodies">
+                    <p>Dancing Bodies:</p>
+                </div>
+                <div id="info" div class="info1">
+                    <a>Dancing Bodies = Number of search results of dance covers × Number of members in the original K-Pop group</a>
+                </div>
+  
+                <div class="num-dancingbodies" id="num-dancingbodies">
+                    <p id="num-dancingbodies">num:bodies</p>
+                </div>
+
+                <div class="num-total" id="num-total">
+                    <p id="num-total">num:total</p>
+                </div>
+                <div id ="info" div class="info2">
+                    <a> Number of dancing bodies added up until this time <br>
+                    </a>
+                </div>
+            </div>
+
+            <div id="songinfo" class="songinfo">
+                <div id="firstcol"> Viewcount </div>
+                <div id ="info" div class="info1">
+                    <a>View count of the original music video.</a>
+                </div>
+                <div id="secondcol"> artist-title company release date </div>
+                <div id ="info" div class="info2">
+                    <a> Artist – Song Title / Release Date / Company</a></div>
+            </div>
+
+            <div id="about" class="about">
+                <img class="aboutimg" src="./dancemap/res/img/menu2.png">
+                <button id="plus" > <span>+</span></button>
+                <button id="minus"> <span> – </span> </button>
+                <button id="sound"><img src="./dancemap/res/img/sound.png" alt="sound"></button>
+                <button id="muted"><img src="./dancemap/res/img/muted.png" alt="muted"></button>
+
+                <div id ="info" class="info_about">
+                    <a> <b>About</b><br>Dance Map visualises 594 dance cover videos of K-Pop songs from Youtube. Highly participatory culture has shifted the agents of the industry to the consumers. 
+                        Number of dancing bodies accumulates, leaveing traces and disturbing or liberating the borders on the world map.
+                        <br> &emsp; A part of the project <i>The Global K</i>.</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="slider">
+            <span id='desired-time'></span>
+            <span id='current-time'></span>
+            <div id="progress"></div>
+        </div>
+
+    </div>
+    
+
+    <div id="placeholder">       
+        <img src="./dancemap/res/img/holder.jpg">
+    </div>
+
+    <div class="instructions">
+        <p id="pleaseWait">Please wait until the video loads <br><br></p>
+        <p id="howto">Map can be navigated with scrolling or keyboard arrows <br> 
+            Play the video with spacebar or click</p>
+        <p id="pleaseClick"><br>Click here to continue</p>
+    </div>
+
+    <div class="container">
+        <figure class="video">
+            <div id="player"></div>
+        </figure>
+    </div>
+
+    </div>
+
+    <script src="./dancemap/script.js"></script>
+    <script src="./dancemap/data.js"></script>
+
+</body>
+
+
+</html>

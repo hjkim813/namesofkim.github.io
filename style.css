@@ -154,6 +154,10 @@ span:lang(ko){
   overflow: hidden;
 }
 
+#sketch {
+  color: lightgrey;
+}
+
 button {
   appearance: none !important;
   -webkit-appearance: none !important;
@@ -235,7 +239,7 @@ button {
   margin-top: -1px;
   -webkit-border-style: outset;
   border-style: outset;
-  background-color: rgb(255, 254, 223);
+  background-color: rgb(255, 224, 234);
 
 }
 
@@ -291,6 +295,13 @@ accordion.active {
   margin-right: auto;
 }
 
+.singleimg img {
+  max-width: 100%;
+}
+
+.singleimg video {
+  max-height: 85vh;
+}
 
 #label{
   font-size:18pt;
