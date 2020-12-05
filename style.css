@@ -248,7 +248,7 @@ button {
   margin-top: -1px;
   -webkit-border-style: outset;
   border-style: outset;
-  background-color: darkslateblue;
+  background-color:rgba(229, 197, 255, 0.8);
   color: white;
 }
 
