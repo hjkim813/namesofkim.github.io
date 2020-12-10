@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'ENGKOR';
-  src: url('fonts/ENGKOR.otf');
+  src: url('../fonts/ENGKOR.otf');
 }
 
 html, body{
