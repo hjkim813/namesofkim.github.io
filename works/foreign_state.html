@@ -19,14 +19,14 @@
   });
 
   var demo_input = document.getElementById('text');
-  var type_this = "랙댜후\xa0ㄴㅅㅁㅅㄷ-ㅠ개ㅏ두\xa0ㅣ무혐ㅎㄷ\n\nㅈ디채ㅡㄷ!\n\n소ㅑㄴ\xa0ㅈ갸샤ㅜㅎ\xa0뇬ㅅ드\xa0래ㅣㅣㅐㅈㄴ\xa0솓\xa0ㄴㅅ겿셕ㄷ\xa0ㅐㄹ\xa0ㅗ무혀ㅣ(한글),\xa0솓\xa0ㅏㅐㄱㄷ무\xa0미ㅔㅗ뮫ㅅㄴ.\xa0\n\n쟈소\xa0ㅏㅐㄱㄷ무ㅑㄴㄷㅇ\xa0미ㅔㅗ뮫ㅅㄴ\xa0솓\xa0ㅔ개ㅓㄷㅊㅅ\xa0ㄷ텍ㄷㄴㄴㄷㄴ\xa0쳐ㅣ셕미\xa0(채ㅜ)려냐ㅐㅜ\xa0ㄷ텓갸둧ㄷㅇ\xa0ㅁㄴ\xa0ㅁ\xa0랙댜훋ㄱ.\n\n쇼ㅔㄷㄹㅁㅊㄷ\xa0ㅊㄱㄷ얏:\xa0마컁둨\xa0ㅎ갯ㄷ나,\xa0ㅁ걋ㅁ\n\n\n\nㅂ.\xa0ㅁㄱㄷ\xa0ㅛㅐㅕ\xa0채ㅜ련ㄷㅇ?\xa0애\xa0ㅛㅐㅕ\xa0소ㅑㅜㅏ\xa0ㅛㅐㅕ\xa0ㅕㅜㅇㄷㄱㄴㅅ뭉\xa0좀ㅅ\xa0ㅑ'ㅡ\xa0ㅅ미ㅏㅑㅜㅎ\xa0뮤ㅐㅕㅅ?\n\n";
+  var type_this = "랙댜후\xa0ㄴㅅㅁㅅㄷ-ㅠ개ㅏ두\xa0ㅣ무혐ㅎㄷ\n\nㅈ디채ㅡㄷ!\n\n소ㅑㄴ\xa0ㅈ갸샤ㅜㅎ\xa0뇬ㅅ드\xa0래ㅣㅣㅐㅈㄴ\xa0솓\xa0ㄴㅅ겿셕ㄷ\xa0ㅐㄹ\xa0ㅗ무혀ㅣ(한글),\xa0솓\xa0ㅏㅐㄱㄷ무\xa0미ㅔㅗ뮫ㅅㄴ.\xa0\n\n쟈소\xa0ㅏㅐㄱㄷ무ㅑㄴㄷㅇ\xa0미ㅔㅗ뮫ㅅㄴ\xa0솓\xa0ㅔ개ㅓㄷㅊㅅ\xa0ㄷ텍ㄷㄴㄴㄷㄴ\xa0쳐ㅣ셕미\xa0(채ㅜ)려냐ㅐㅜ\xa0ㄷ텓갸둧ㄷㅇ\xa0ㅁㄴ\xa0ㅁ\xa0랙댜훋ㄱ.\n\n쇼ㅔㄷㄹㅁㅊㄷ\xa0ㅊㄱㄷ얏:\xa0마컁둨\xa0ㅎ갯ㄷ나\xa0뭉\xa0ㅁ걋ㅁ\n\n";
   var index = 0;
   var $textarea = $('#text');
 
   window.next_letter = function() {
       if (index <= type_this.length) {
           demo_input.value = type_this.substr(0, index++);
-          setTimeout("next_letter()", 100);
+          setTimeout("next_letter()", 85);
       }
       $textarea.scrollTop($textarea[0].scrollHeight);
   }

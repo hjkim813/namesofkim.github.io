@@ -23,61 +23,49 @@ html, body{
 textarea {
   box-sizing: border-box;
   padding: 20px;
-  animation: bg-animation 60s infinite;
+  animation: bg-animation 30s infinite;
 }
 
 @-webkit-keyframes bg-animation {
   0% {
-    background-color: #FFABAB;
+    background-color: #e40000;
   }
-  15% {
-    background-color: #FFB85F;
+  10% {
+    background-color: #fcd600;
   }
-  30% {
-    background-color: #FFF3AB;
+  35% {
+    background-color: #33ff00;
   }
-  45% {
-    background-color: #DFFBA8;
-  }
-  60% {
-    background-color: #9AE5E5;
+  55% {
+    background-color: #0051e6;
   }
   75% {
-    background-color: #A9ACEB;
-  }
-  90% {
-    background-color: #D6A0E9;
+    background-color: #6200ff;
   }
   100% {
-    background-color: #FFABAB;
+    background-color: #e70000;
   }
 
 }
 
 @keyframes bg-animation {
   0% {
-    background-color: #FFABAB;
+    background-color: #e40000;
   }
-  15% {
-    background-color: #FFB85F;
+  10% {
+    background-color: #fcd600;
   }
-  30% {
-    background-color: #FFF3AB;
+  35% {
+    background-color: #33ff00;
   }
-  45% {
-    background-color: #DFFBA8;
-  }
-  60% {
-    background-color: #9AE5E5;
+  55% {
+    background-color: #0051e6;
   }
   75% {
-    background-color: #A9ACEB;
-  }
-  90% {
-    background-color: #D6A0E9;
+    background-color: #6200ff;
   }
   100% {
-    background-color: #FFABAB;
+    background-color: #e70000;
   }
 }
 
@@ -88,7 +76,7 @@ textarea {
   border: none;
   height: 100%;
   font-size: 50pt;
-  line-height: 58pt;
+  line-height: 62pt;
   font-family: 'ENGKOR';
   color: white;
 }
