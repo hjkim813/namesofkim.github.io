@@ -55,7 +55,7 @@ hr {
 p {
   display: block;
   margin-block-start: 0px;
-  margin-block-end: 0px;
+  margin-block-end: 1.2rem;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
@@ -75,19 +75,21 @@ p {
     font-family:'LinguisticsPro-Bold';
     font-size: 1rem;
     line-height: 1.3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
   }  
+
   h5{
     margin-block-start: 0;
     margin-block-end: 0;
     font-family:'LinguisticsPro-Bold';
     font-size: 1.2rem;
   }
-  h4{
+  h1{
     margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-end: 0.2rem;
     font-family:'LinguisticsPro-Bold';
-    font-size: 1.8rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
 }
@@ -106,7 +108,7 @@ p {
     font-family:'LinguisticsPro-Bold';
     font-size: 1.1rem;
     line-height: 1.4rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
   }
   h5{
     margin-block-start: 0;
@@ -114,11 +116,12 @@ p {
     font-family:'LinguisticsPro-Bold';
     font-size: 1.3rem;
   }
-  h4{
+  h1{
     margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-end: 0.5rem;
     font-family:'LinguisticsPro-Bold';
-    font-size: 2rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
   }
 }
 
@@ -137,7 +140,7 @@ p {
     font-family:'LinguisticsPro-Bold';
     font-size: 1.2rem;
     line-height: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
   
   h5{
@@ -146,11 +149,12 @@ p {
     font-family:'LinguisticsPro-Bold';
     font-size: 1.6rem;
   }
-  h4{
+  h1{
     margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-end: 0.8rem;
     font-family:'LinguisticsPro-Bold';
-    font-size: 2.5rem;
+    font-size: 2.6rem;
+    line-height: 3.25rem;
   }
 }
 
@@ -175,7 +179,7 @@ p {
 }
 
 .container2 {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .container2 a:link {
@@ -240,9 +244,10 @@ svg {
   padding-inline-start: 0px;
   position: absolute;
   overflow: hidden;
-  background-color: rgba(255,255,255,0.8);
-  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .nav li {
@@ -284,7 +289,6 @@ svg {
 }
 
 .intro {
-  margin-bottom: 2rem;
   overflow: hidden;
 }
 
@@ -308,20 +312,22 @@ svg {
 .content {
   overflow: hidden;
   height: 0;
+  padding-left: 1.5rem;
+  margin: 1rem 0 2rem;
 }
 
 .collapse:after {
   display: block;
   content: '\02795';
-  font-size: 1rem;
+  font-size: 0.8rem;
   float: right;
   margin-left: 5px;
-  margin-top: 0.2rem;
+  margin-top: 0.4rem;
 }
 
 button.active:after {
   content: "\2796";
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .list ul{
@@ -367,18 +373,17 @@ button.active:after {
 /* #filters > * {
 } */
 #shopping:checked ~ #filters label[for="shopping"],
+#books:checked ~ #filters label[for="books"],
 #culture:checked ~ #filters label[for="culture"],
-#busan:checked ~ #filters label[for="busan"],
-#seoul:checked ~ #filters label[for="seoul"],
 #food:checked ~ #filters label[for="food"],
 #art:checked ~ #filters  label[for="art"],
 #museum:checked ~ #filters label[for="museum"] {
   background-color: rgba(255, 198, 119, 0.4);
 }
+
 #shopping:checked ~ ul li[data-shopping],
+#books:checked ~ ul li[data-books],
 #culture:checked ~ ul li[data-culture],
-#busan:checked ~ ul li[data-busan],
-#seoul:checked ~ ul li[data-seoul],
 #food:checked ~ ul li[data-food],
 #art:checked ~ ul li[data-art],
 #museum:checked ~ ul li[data-museum] {
@@ -386,6 +391,6 @@ button.active:after {
 }
 
 .tags {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   position: relative;
 }
