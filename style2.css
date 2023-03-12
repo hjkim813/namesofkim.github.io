@@ -377,11 +377,13 @@ button.active:after {
 #culture:checked ~ #filters label[for="culture"],
 #food:checked ~ #filters label[for="food"],
 #art:checked ~ #filters  label[for="art"],
+#nature:checked ~ #filters  label[for="nature"],
 #museum:checked ~ #filters label[for="museum"] {
   background-color: rgba(255, 198, 119, 0.4);
 }
 
 #shopping:checked ~ ul li[data-shopping],
+#nature:checked ~ ul li[data-nature],
 #books:checked ~ ul li[data-books],
 #culture:checked ~ ul li[data-culture],
 #food:checked ~ ul li[data-food],
