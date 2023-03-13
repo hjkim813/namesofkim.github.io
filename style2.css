@@ -364,6 +364,16 @@ button.active:after {
   display: inline-block;
 }
 
+.tag {
+  font-style: italic;
+  margin-right: 1px;
+  margin-bottom: 4px;
+  padding: 0.2rem 1rem 0.2rem 0.8rem;
+  border-radius: 30px;
+  border: 1px solid grey;
+  display: inline-block;
+}
+
 #filters {
   top: 0;
   text-align: center;
