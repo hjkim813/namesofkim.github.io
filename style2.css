@@ -1,22 +1,23 @@
 
 @font-face {
-  font-family: 'LinguisticsPro-Regular';
-  src: url('fonts/LinguisticsPro-Regular.otf'),
-      url('LinguisticsPro-Regular.eot'),
-      url('LinguisticsPro-Regular.eot?#iefix') format('embedded-opentype'),
-      url('LinguisticsPro-Regular.woff2') format('woff2'),
-      url('LinguisticsPro-Regular.woff') format('woff'),
-      url('LinguisticsPro-Regular.svg#LinguisticsPro-Regular') format('svg');
+  font-family: 'F-Grotesk-Thin';
+  src: url('fonts/F-Grotesk-Thin.otf'),
+      url('F-Grotesk-Thin.eot'),
+      url('F-Grotesk-Thin.eot?#iefix') format('embedded-opentype'),
+      url('F-Grotesk-Thin.woff2') format('woff2'),
+      url('F-Grotesk-Thin.woff') format('woff'),
+      url('F-Grotesk-Thin.svg#F-Grotesk-Thin') format('svg');
 }
 
+
 @font-face {
-  font-family: 'LinguisticsPro-Bold';
-  src: url('fonts/LinguisticsPro-Bold.otf'),
-      url('LinguisticsPro-Bold.eot'),
-      url('LinguisticsPro-Bold.eot?#iefix') format('embedded-opentype'),
-      url('LinguisticsPro-Bold.woff2') format('woff2'),
-      url('LinguisticsPro-Bold.woff') format('woff'),
-      url('LinguisticsPro-Bold.svg#LinguisticsPro-Bold') format('svg');
+  font-family: 'f_grotesk_demi';
+  src: url('fonts/f_grotesk_demi.otf'),
+      url('f_grotesk_demi.eot'),
+      url('f_grotesk_demi.eot?#iefix') format('embedded-opentype'),
+      url('f_grotesk_demi.woff2') format('woff2'),
+      url('f_grotesk_demi.woff') format('woff'),
+      url('f_grotesk_demi.svg#f_grotesk_demi') format('svg');
 }
 
 * {
@@ -28,7 +29,7 @@
 html, body{
   margin: 0 auto;
   padding: 0 0 1rem;
-  font-family:'LinguisticsPro-Regular';
+  font-family:'F-Grotesk-Thin';
   overflow: auto;
   min-height: 100%;
   max-width: 100%;
@@ -47,9 +48,10 @@ hr {
   margin-block-end: 1.5rem;
   margin-inline-start: auto;
   margin-inline-end: auto;
+  height: 1px;
   overflow: hidden;
-  border-style: inset;
-  border-width: 1px;
+  border-style: none none dotted none;
+  color: rgba(108, 0, 170, 0.599);
 }
 
 p {
@@ -64,32 +66,30 @@ p {
 
 @media (max-width: 479px) {
   body {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
     font-size: 1rem; 
     line-height: 150%;
   }
   h6{
     margin-block-start: 0;
     margin-block-end: 4px;
-    font-family:'LinguisticsPro-Bold';
+    font-family:'f_grotesk_demi';
     font-size: 1rem;
     line-height: 1.3rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
   }  
 
   h5{
     margin-block-start: 0;
     margin-block-end: 0;
-    font-family:'LinguisticsPro-Bold';
+    font-family:'f_grotesk_demi';
     font-size: 1.2rem;
   }
   h1{
     margin-block-start: 0;
     margin-block-end: 0.2rem;
-    font-family:'LinguisticsPro-Bold';
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-family:'f_grotesk_demi';
+    font-size: 2.25rem;
+    line-height: 2.75rem;
   }
 
 }
@@ -105,23 +105,23 @@ p {
   h6{
     margin-block-start: 0;
     margin-block-end: 4px;
-    font-family:'LinguisticsPro-Bold';
+    font-family:'f_grotesk_demi';
     font-size: 1.1rem;
     line-height: 1.4rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.75rem;
   }
   h5{
     margin-block-start: 0;
     margin-block-end: 0;
-    font-family:'LinguisticsPro-Bold';
+    font-family:'f_grotesk_demi';
     font-size: 1.3rem;
   }
   h1{
     margin-block-start: 0;
     margin-block-end: 0.5rem;
-    font-family:'LinguisticsPro-Bold';
-    font-size: 2.4rem;
-    line-height: 3rem;
+    font-family:'f_grotesk_demi';
+    font-size: 2.75rem;
+    line-height: 3.25rem;
   }
 }
 
@@ -137,24 +137,24 @@ p {
   h6{
     margin-block-start: 0;
     margin-block-end: 4px;
-    font-family:'LinguisticsPro-Bold';
+    font-family:'f_grotesk_demi';
     font-size: 1.2rem;
     line-height: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
   
   h5{
     margin-block-start: 0;
     margin-block-end: 0;
-    font-family:'LinguisticsPro-Bold';
+    font-family:'f_grotesk_demi';
     font-size: 1.6rem;
   }
   h1{
     margin-block-start: 0;
     margin-block-end: 0.8rem;
-    font-family:'LinguisticsPro-Bold';
-    font-size: 2.6rem;
-    line-height: 3.25rem;
+    font-family:'f_grotesk_demi';
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -164,10 +164,11 @@ p {
 }
 
 .container {
-  padding-top: 4rem;
+  padding: 3rem 1.5rem 0;
 }
 
 .container a:link {
+  font-style: italic;
   color: black;
   text-decoration: none; 
   border-bottom: 1px solid rgb(126, 83, 219);
@@ -179,13 +180,12 @@ p {
 }
 
 .container2 {
-  padding-top: 6rem;
+  padding-top: 3rem;
 }
 
 .container2 a:link {
   display: inline-block;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
+  margin: 0.75rem 0.75rem 0 2px;
   color: black;
   text-decoration: none; 
   background: white;
@@ -230,44 +230,50 @@ svg {
   width: 100%;
   height: auto;
   left:0;
+  backdrop-filter: blur(10px);
 }
 
 .nav ul {
+  background-color: rgb(255, 255, 255, 0.8);
   list-style-type: none;
-  margin: 0;
-  left: 1rem;
-  padding: 1rem 1rem 0;
+  margin: 0 auto !important;
+  display: flex;
+  padding: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   position: absolute;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  justify-content: space-between;
+  text-align: center;
 }
 
 .nav li {
-  display: inline-block;
-  padding: 8px 16px 16px;
+  padding: 1rem;
   font-size: 1rem;
   font-weight: normal;
   line-height: 100%;
+  width: 49%;
 }
 
-.active{
+.collapsible.active{
+  background-color: #f0dfff;
+  margin-bottom: 1rem;
+}
+
+.active {
   border-bottom: 2px solid black;
 }
 
 .active a{
   color: black;
+  font-family: 'f_grotesk_demi';
 }
 
 .inactive a{
-  color: rgb(106, 106, 106);
+  color: black;
 }
 
 .nav a:link{
@@ -280,7 +286,7 @@ svg {
   -webkit-appearance: none !important;
   box-shadow: none;
   -webkit-box-shadow: none;
-  padding: 8px 8px 8px;
+  padding: 8px 12px 8px;
   display: inline-block;
   height: 100%;
   border-radius: 10px;
@@ -288,46 +294,66 @@ svg {
   margin-right: 8px;
 }
 
-.intro {
+.accordion {
   overflow: hidden;
 }
 
-
-.collapse {
+.collapsible {
   cursor: pointer;
   width: 100%;
-  border: none;
-  outline: none;
   text-decoration: none;
   background-color: white;
-  padding: 0 0 0.5rem;
-  margin: 0;
+  padding: 1rem 1.5rem 1rem;
+  border-bottom: 1px rgba(75, 46, 135, 0.6) solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
-.collapse a {
+.collapsible a {
   float: left;
   padding-top: 1px;
 }
 
-.content {
-  overflow: hidden;
-  height: 0;
-  padding-left: 1.5rem;
-  margin: 1rem 0 2rem;
+.collapsible u {
+  text-decoration: none;
 }
 
-.collapse:after {
-  display: block;
-  content: '\02795';
-  font-size: 0.8rem;
-  float: right;
-  margin-left: 5px;
-  margin-top: 0.4rem;
+.content {
+  padding: 0 1.5rem 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
+
+.collapsible:after {
+  display: block;
+  content: '\203A';
+  font-size: 1.5rem;
+  float: right;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 
 button.active:after {
-  content: "\2796";
-  font-size: 0.8rem;
+  content: "\2039";
+  font-size: 1.5rem;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.list{
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  padding: 2rem 1.5rem 0;
 }
 
 .list ul{
@@ -337,7 +363,6 @@ button.active:after {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0;
-  /* transition: display 0.5s linear; */
 }
 
 .list li{
@@ -354,6 +379,10 @@ button.active:after {
   margin-right: 8px;
 }
 
+.list img{
+  max-height: 10vh;
+  width: auto;
+}
 .filter {
   font-style: italic;
   margin-right: 1px;
@@ -372,6 +401,7 @@ button.active:after {
   border-radius: 30px;
   border: 1px solid grey;
   display: inline-block;
+  background-color: #f6f6f6;
 }
 
 #filters {
@@ -403,6 +433,6 @@ button.active:after {
 }
 
 .tags {
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   position: relative;
 }
