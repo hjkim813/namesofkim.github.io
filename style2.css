@@ -67,7 +67,7 @@ p {
 @media (max-width: 479px) {
   body {
     font-size: 1rem; 
-    line-height: 150%;
+    line-height: 160%;
   }
   h6{
     margin-block-start: 0;
@@ -98,7 +98,7 @@ p {
 
   body {
     font-size: 1.1rem; 
-    line-height: 150%;
+    line-height: 160%;
     padding-left: 3rem;
     padding-right: 3rem;
   }
@@ -129,7 +129,7 @@ p {
 
   body {
     font-size: 1.2rem; 
-    line-height: 150%;
+    line-height: 160%;
     padding-left: 60px;
     padding-right: 60px;
     max-width: 75%;
@@ -171,30 +171,36 @@ p {
   font-style: italic;
   color: black;
   text-decoration: none; 
-  border-bottom: 1px solid rgb(126, 83, 219);
+  border-bottom: 1px solid rgb(139, 90, 217);
 }
 
 .container a:visited {
-  color: black;
-  border-bottom: 1px solid  rgb(126, 83, 219);
+  color: rgb(139, 90, 217);
+  border-bottom: 1px solid  rgb(139, 90, 217);
 }
 
 .container2 {
   padding-top: 3rem;
 }
 
-.container2 a:link {
-  display: inline-block;
-  margin: 0.75rem 0.75rem 0 2px;
-  color: black;
+.accordion a:link {
+  color: rgb(139, 90, 217);
   text-decoration: none; 
   background: white;
-  border-bottom: 1px solid rgb(126, 83, 219);
+  border-bottom: 1px solid rgb(139, 90, 217);
+}
+
+.list a:link {
+  display: inline-block;
+  color: rgb(139, 90, 217);
+  margin: 0.75rem 0.75rem 0.75rem 0;
+  text-decoration: none; 
+  background: white;
+  border-bottom: 1px solid rgb(139, 90, 217);
 }
 
 .container2 a:visited {
-  color: black;
-  background: rgb(235, 227, 255);
+  color: rgb(139, 90, 217);
   border: none;
 }
 
@@ -281,17 +287,14 @@ svg {
 }
 
 .download {
-  background-color: white;
+  display: inline-block;
   appearance: none !important;
   -webkit-appearance: none !important;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  padding: 8px 12px 8px;
-  display: inline-block;
+  padding: 0.5rem 0.75rem 0.5rem;
   height: 100%;
   border-radius: 10px;
   box-shadow: 1px 1px 5px  rgba(126, 83, 219, 0.4);
-  margin-right: 8px;
+  margin: 0.5rem 0.5rem 0 0 !important;
 }
 
 .accordion {
