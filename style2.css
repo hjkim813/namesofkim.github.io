@@ -74,7 +74,7 @@ p {
     margin-block-end: 4px;
     font-family:'f_grotesk_demi';
     font-size: 1rem;
-    line-height: 1.3rem;
+    line-height: 1.25rem;
     margin-bottom: 0.5rem;
   }  
 
@@ -193,7 +193,7 @@ p {
 .list a:link {
   display: inline-block;
   color: rgb(139, 90, 217);
-  margin: 0.75rem 0.75rem 0.75rem 0;
+  margin: 0.5rem 0.75rem 0.75rem 0;
   text-decoration: none; 
   background: white;
   border-bottom: 1px solid rgb(139, 90, 217);
@@ -353,7 +353,7 @@ button.active:after {
 }
 
 .list{
-  position: absolute;
+  position: inherit;
   z-index: 100;
   background-color: white;
   padding: 2rem 1.5rem 0;
@@ -370,12 +370,8 @@ button.active:after {
 
 .list li{
   display: none;
-  /* transform: display 0.5s linear; */
-  /* border-radius: 30px; */
-  padding: 1.2rem 0 1.2rem;
-  /* margin-bottom: 1rem; */
+  padding: 1.75rem 0 1.5rem;
   border-bottom: dotted 1px black;
-  /* box-shadow:0 0 3px  rgba(75, 75, 75, 0.8); */
 }
 
 .list a{
@@ -436,6 +432,6 @@ button.active:after {
 }
 
 .tags {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   position: relative;
 }
